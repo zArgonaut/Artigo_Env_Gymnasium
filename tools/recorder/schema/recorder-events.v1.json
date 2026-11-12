@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "recorder-events.v1",
+  "title": "ArtigoEnv recorder event (one line of events.jsonl)",
+  "type": "object",
+  "required": ["seq", "t_mono_ms", "t_wall", "type", "payload"],
+  "additionalProperties": false,
+  "properties": {
+    "seq": { "type": "integer", "minimum": 0 },
+    "t_mono_ms": { "type": "number", "minimum": 0 },
+    "t_wall": { "type": "string", "minLength": 20 },
+    "type": {
+      "enum": [
+        "session.start",
+        "session.end",
+        "net.request",
+        "net.response",
+        "input.click",
+        "input.key",
+        "input.submit",
+        "dom.mutation",
+        "dom.quiescent",
+        "snapshot",
+        "console",
+        "storage",
+        "screen",
+        "third_party.count"
+      ]
+    },
+    "payload": { "type": "object" }
+  },
+  "allOf": [
+    {
+      "if": { "properties": { "type": { "const": "net.request" } } },
+      "then": { "properties": { "payload": { "required": ["method", "url"] } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "net.response" } } },
+      "then": { "properties": { "payload": { "required": ["url", "status"] } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "input.submit" } } },
+      "then": { "properties": { "payload": { "required": ["value"] } } }
+    },
+    {
+      "if": { "properties": { "type": { "enum": ["snapshot", "screen"] } } },
+      "then": { "properties": { "payload": { "required": ["file", "reason"] } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "storage" } } },
+      "then": { "properties": { "payload": { "required": ["items"] } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "third_party.count" } } },
+      "then": { "properties": { "payload": { "required": ["hosts"] } } }
+    },
+    {
+      "if": { "properties": { "type": { "const": "console" } } },
+      "then": { "properties": { "payload": { "required": ["level", "text"] } } }
+    }
+  ]
+}
