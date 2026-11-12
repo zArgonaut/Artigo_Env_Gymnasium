@@ -1,0 +1,5054 @@
+# W splits (SDD 06 §9): W-test, W-val, W-pool of the eligible /Completa pages
+# seed 20261109; max body tokens in w-test+w-val 26154; L_max 26624
+title	split	stratum
+2009	w-test	c1-t2
+2010	w-pool	c1-t2
+2011	w-test	c1-t3
+29 de agosto	w-pool	c2-t2
+30 Rock	w-test	c2-t3
+30 de agosto	w-pool	c2-t2
+4 (álbum de Beyoncé)	w-pool	c3-t2
+50 Cent	w-pool	c2-t3
+7 de setembro	w-pool	c2-t2
+A Arte da Guerra	w-pool	c2-t2
+A Batalha Final	w-pool	c2-t2
+A Chorus Line	w-pool	c2-t3
+A Conquista do Planeta dos Macacos	w-pool	c3-t1
+A Escrava Isaura	w-pool	c2-t2
+A Favorita	w-pool	c1-t2
+A Fazenda 4	w-pool	c2-t1
+A Game of Thrones	w-pool	c3-t2
+A Hora da Estrela	w-pool	c2-t2
+A Igreja de Jesus Cristo dos Santos dos Últimos Dias	w-pool	c4+-t3
+A Igreja de Jesus Cristo dos Santos dos Últimos Dias em Tonga	w-pool	c4+-t1
+A Lenda da Chama Verde	w-pool	c3-t2
+A Moreninha	w-pool	c1-t1
+A Nightmare on Elm Street	w-pool	c4+-t1
+A Riqueza das Nações	w-pool	c2-t3
+A Rosa do Povo	w-pool	c2-t1
+A Song of Ice and Fire	w-pool	c4+-t3
+A Troca	w-pool	c1-t3
+A grande viagem da família Mozart	w-pool	c4+-t3
+A-ha	w-pool	c1-t2
+ABBA	w-pool	c1-t3
+AC/DC	w-pool	c2-t3
+Abel Braga	w-pool	c2-t2
+Abelha	w-test	c1-t2
+Abertura (música)	w-pool	c2-t2
+Abilio Diniz	w-pool	c2-t2
+Abiogênese	w-pool	c1-t3
+Abolicionismo no Brasil	w-pool	c2-t3
+Aborto	w-pool	c1-t3
+Abraham Lincoln	w-pool	c2-t3
+Abraão	w-pool	c1-t3
+Abreu Sodré	w-pool	c2-t1
+Absolutismo	w-pool	c1-t2
+Abu Nuas	w-pool	c2-t1
+Acabou Chorare	w-pool	c2-t3
+Academia Imperial de Belas Artes	w-pool	c4+-t2
+Academicismo	w-test	c1-t3
+Academismo no Brasil	w-test	c2-t3
+Aceleração	w-pool	c1-t2
+Acidente do ônibus espacial Columbia	w-val	c4+-t3
+Acidente radiológico de Goiânia	w-val	c3-t2
+Acidente vascular cerebral	w-pool	c3-t2
+Acne	w-pool	c1-t2
+Acordo Ortográfico de 1990	w-test	c3-t3
+Acre	w-test	c1-t3
+Actinídeo	w-pool	c1-t1
+Action Comics	w-pool	c2-t2
+Acumulação primitiva	w-pool	c2-t1
+Ada Lovelace	w-test	c2-t2
+Adam Sandler	w-pool	c2-t1
+Adam Smith	w-pool	c2-t3
+Adele	w-pool	c1-t3
+Ademar de Barros	w-test	c2-t3
+Adhemar Ferreira da Silva	w-pool	c3-t1
+Adib Jatene	w-test	c2-t1
+Adição de matrizes	w-test	c2-t1
+Adjetivo	w-test	c1-t1
+Administração	w-pool	c1-t2
+Administração financeira	w-pool	c2-t1
+Adolescência	w-pool	c1-t3
+Adolf Hitler	w-test	c2-t3
+Adolfo Caminha	w-pool	c2-t1
+Adolfo Lutz	w-pool	c2-t1
+Adolpho Bloch	w-pool	c2-t1
+Adoniran Barbosa	w-pool	c2-t2
+Adriana Birolli	w-pool	c2-t1
+Adriano Imperador	w-pool	c2-t2
+Advérbio	w-pool	c1-t1
+Aeronave	w-pool	c1-t2
+Aeroporto Internacional de São Paulo-Guarulhos	w-pool	c4+-t3
+Aeroporto Internacional do Rio de Janeiro-Galeão	w-pool	c4+-t3
+Aerosmith	w-pool	c1-t3
+Afeganistão	w-pool	c1-t2
+Afonso Arinos de Melo Franco (sobrinho)	w-test	c4+-t1
+Afonso Celso (poeta)	w-val	c3-t1
+Afonso Celso de Assis Figueiredo	w-val	c4+-t1
+Afonso Pena	w-pool	c2-t2
+Afro-americanos	w-pool	c2-t2
+Afro-brasileiros	w-pool	c2-t3
+Afrocentrismo	w-pool	c1-t2
+Afrodite	w-pool	c1-t3
+Afundamento do ARA General Belgrano	w-pool	c4+-t3
+Agatha Christie	w-pool	c2-t3
+Age of Empires	w-pool	c3-t2
+Aglomeração urbana	w-pool	c2-t1
+Agnosticismo	w-pool	c1-t3
+Agostinho de Hipona	w-pool	c2-t3
+Agricultura	w-pool	c1-t3
+Agricultura no Brasil	w-pool	c2-t3
+Agricultura orgânica	w-pool	c2-t2
+Ajuda humanitária	w-test	c2-t1
+Akira Kurosawa	w-pool	c2-t3
+Al-Qaeda	w-pool	c2-t3
+Alagoas	w-pool	c1-t3
+Alan Turing	w-pool	c2-t3
+Alanis Morissette	w-pool	c2-t3
+Alasca	w-pool	c1-t3
+Alavanca	w-pool	c1-t1
+Albatroz	w-pool	c1-t3
+Albert Camus	w-test	c2-t2
+Albert Einstein	w-pool	c2-t3
+Albert Speer	w-val	c2-t3
+Alberto Henschel	w-pool	c2-t1
+Alberto de Oliveira	w-test	c2-t1
+Albertosaurus	w-pool	c1-t2
+Albrecht Dürer	w-pool	c2-t2
+Albus Dumbledore	w-pool	c2-t3
+Albânia	w-pool	c1-t3
+Alcides Nóbrega Sial	w-pool	c3-t1
+Alcoolismo	w-pool	c1-t2
+Alcorão	w-test	c1-t3
+Alcuarismi	w-test	c1-t2
+Aldemir Martins	w-pool	c2-t2
+Aldeído	w-pool	c1-t1
+Alegoria da Caverna	w-val	c2-t2
+Alegrete (Rio Grande do Sul)	w-pool	c4+-t1
+Aleijadinho	w-pool	c1-t3
+Alejandro (canção)	w-pool	c2-t3
+Alelo	w-pool	c1-t1
+Alemanha	w-pool	c1-t3
+Alemanha Nazista	w-pool	c2-t3
+Alessandro Volta	w-pool	c2-t2
+Alex Atala	w-pool	c2-t1
+Alexandra da Dinamarca	w-val	c2-t2
+Alexandre Herchcovitch	w-pool	c2-t1
+Alexandre Pato	w-test	c2-t3
+Alexandre Pushkin	w-pool	c2-t1
+Alexandre, o Grande	w-pool	c2-t3
+Alexandria	w-pool	c1-t2
+Alexis Sánchez	w-pool	c2-t2
+Alfabetização	w-test	c1-t3
+Alfabeto	w-pool	c1-t1
+Alfabeto cirílico	w-pool	c2-t1
+Alfabeto fonético internacional	w-pool	c3-t2
+Alfabeto grego	w-pool	c2-t2
+Alfabeto latino	w-pool	c2-t1
+Alfabeto árabe	w-test	c2-t1
+Alfred Hitchcock	w-pool	c2-t2
+Alfred Schütz	w-test	c2-t1
+Alfredo Di Stéfano	w-test	c3-t3
+Alfredo Volpi	w-pool	c2-t1
+Alfredo d'Escragnolle Taunay	w-pool	c4+-t1
+Alga	w-pool	c1-t1
+Algazali	w-pool	c1-t3
+Algodão	w-pool	c1-t1
+Algoritmo	w-pool	c1-t2
+Alice (canção de Avril Lavigne)	w-pool	c4+-t2
+Alice do Reino Unido	w-pool	c3-t3
+Alice in Chains	w-test	c3-t3
+Alice no País das Maravilhas	w-pool	c3-t3
+Alienação	w-pool	c1-t1
+Aliger gigas	w-pool	c2-t2
+Alimento	w-pool	c1-t1
+Aline Barros	w-pool	c2-t2
+Allan Kardec	w-test	c2-t2
+Alma	w-pool	c1-t3
+Alma Gêmea	w-pool	c2-t2
+Almost Alice	w-pool	c2-t1
+Alpes	w-pool	c1-t1
+Alquimia	w-pool	c1-t2
+Altamira	w-pool	c1-t2
+Alter ego	w-pool	c2-t1
+Altruísmo	w-pool	c1-t3
+Altura (música)	w-test	c2-t1
+Alumínio	w-pool	c1-t2
+Alusão	w-test	c1-t1
+Aluísio Azevedo	w-test	c2-t1
+Alânia (Turquia)	w-pool	c2-t3
+Amador Aguiar	w-pool	c2-t1
+Amapá	w-test	c1-t3
+Amazonas	w-test	c1-t3
+Amazônia	w-pool	c1-t3
+Amelia Earhart	w-pool	c2-t3
+Americana	w-pool	c1-t1
+Amesterdão	w-val	c1-t3
+Amina primária	w-test	c2-t1
+Aminoácido	w-val	c1-t2
+Amir Slama	w-pool	c2-t1
+Amizade	w-pool	c1-t2
+Amor	w-pool	c1-t3
+Amor platônico	w-pool	c2-t2
+Amoroso	w-pool	c1-t1
+Amostra	w-pool	c1-t1
+Amperímetro	w-pool	c1-t1
+Amplitude	w-test	c1-t1
+Amy Winehouse	w-test	c2-t3
+Amyr Klink	w-pool	c2-t1
+América	w-val	c1-t3
+América (telenovela)	w-pool	c2-t2
+América Anglo-Saxônica	w-pool	c3-t3
+América Central	w-pool	c2-t2
+América Futebol Clube (Belo Horizonte)	w-pool	c4+-t3
+América Futebol Clube (Rio Grande do Norte)	w-pool	c4+-t3
+América Latina	w-pool	c2-t3
+América do Norte	w-pool	c2-t2
+América do Sul	w-pool	c2-t3
+Ana Botafogo	w-val	c2-t1
+Ana Hickmann	w-pool	c2-t2
+Ana Maria Braga	w-pool	c3-t1
+Ana Maria Machado	w-pool	c3-t1
+Anabolismo	w-pool	c1-t1
+Anarquismo	w-pool	c1-t3
+Anatomia	w-pool	c1-t3
+Anatomia humana	w-pool	c2-t2
+Anaximandro	w-pool	c1-t1
+Anaxímenes de Mileto	w-test	c2-t1
+Ancilostomíase	w-val	c1-t1
+Andebol	w-pool	c1-t2
+Anderson Silva	w-pool	c2-t2
+Andes	w-pool	c1-t1
+Andorra	w-pool	c1-t3
+Andrelândia	w-pool	c1-t3
+Android	w-pool	c1-t3
+André Breton	w-pool	c2-t2
+André Rebouças	w-test	c2-t1
+André Santos	w-pool	c2-t1
+Andréa Veiga	w-pool	c2-t1
+Andy Warhol	w-pool	c2-t3
+Anelídeo	w-pool	c1-t3
+Anemia	w-pool	c1-t2
+Anfibologia	w-pool	c1-t1
+Anfíbios	w-pool	c1-t3
+Angelina Jolie	w-pool	c2-t3
+Angiosperma	w-test	c1-t1
+Angola	w-pool	c1-t3
+Angra (banda)	w-pool	c2-t3
+Angélica (apresentadora)	w-test	c2-t3
+Animalia	w-pool	c1-t2
+Animação	w-pool	c1-t1
+Anime	w-test	c1-t2
+Anita Garibaldi	w-pool	c2-t2
+Anita Malfatti	w-pool	c2-t1
+Anjo	w-pool	c1-t2
+Anna Markun	w-test	c2-t1
+Anne Frank	w-pool	c2-t3
+Anne Hathaway	w-test	c2-t3
+Ano	w-pool	c1-t3
+Ano-luz	w-pool	c2-t1
+Anos de chumbo	w-pool	c2-t1
+Anselmo Duarte	w-pool	c2-t1
+Ansiedade	w-test	c1-t1
+Anthony Kiedis	w-pool	c2-t2
+Anti-inflamatórios não esteroides	w-test	c3-t2
+Antibiótico	w-pool	c1-t2
+Antigo Egito	w-test	c2-t3
+Antigo Oriente Próximo	w-pool	c3-t1
+Antiguidade Clássica	w-pool	c2-t1
+Antiguidade Tardia	w-pool	c2-t1
+Antimônio	w-pool	c1-t1
+Antoine Lavoisier	w-pool	c2-t3
+Anton Tchekhov	w-test	c2-t2
+Antonio Canova	w-pool	c2-t3
+Antonio Vivaldi	w-test	c2-t2
+Antonín Dvořák	w-pool	c2-t2
+Antropologia	w-pool	c1-t3
+Antártida	w-pool	c1-t3
+Antígua e Barbuda	w-test	c2-t2
+Antítese	w-pool	c1-t1
+António Vieira	w-pool	c2-t2
+Antônio Calado	w-val	c2-t1
+Antônio Carlos Magalhães	w-pool	c3-t2
+Antônio Conselheiro	w-test	c2-t1
+Antônio Ermírio de Moraes	w-pool	c3-t1
+Antônio Fagundes	w-pool	c2-t1
+Antônio Houaiss	w-pool	c2-t2
+Antônio Paulino Limpo de Abreu	w-pool	c4+-t1
+Antônio Rodrigo Nogueira	w-pool	c3-t1
+Anura	w-pool	c1-t3
+Análise dimensional	w-test	c2-t1
+Análise financeira	w-pool	c2-t3
+Análise matemática	w-pool	c2-t1
+Análise numérica	w-pool	c2-t2
+Anápolis	w-test	c1-t2
+Anéis de Júpiter	w-pool	c2-t2
+Aníbal	w-pool	c1-t3
+Aparelho digestivo	w-pool	c2-t1
+Aparelho reprodutor	w-pool	c2-t1
+Apartheid	w-pool	c1-t3
+Apendicite	w-test	c1-t2
+Apocalipse zumbi	w-pool	c2-t3
+Apollo 11	w-pool	c2-t3
+Apollo 17	w-pool	c2-t2
+Apolo	w-pool	c1-t3
+Appetite for Destruction	w-pool	c3-t2
+Apple	w-pool	c1-t2
+Aprendizagem	w-test	c1-t3
+Aquebar	w-pool	c1-t1
+Aquecimento global	w-pool	c2-t3
+Aquiles	w-val	c1-t3
+Aracaju	w-pool	c1-t3
+Aracnídeos	w-pool	c1-t2
+Arado	w-pool	c1-t3
+Aranha	w-test	c1-t3
+Araraquara	w-test	c1-t3
+Ararinha-azul	w-test	c2-t2
+Araucária	w-pool	c1-t3
+Araçatuba	w-pool	c1-t3
+Arcadismo	w-pool	c1-t1
+Arcadismo no Brasil	w-pool	c2-t1
+Archaea	w-test	c1-t3
+Arco	w-pool	c1-t2
+Arco-íris	w-pool	c2-t3
+Arduino	w-val	c1-t1
+Ares	w-pool	c1-t2
+Argentina	w-pool	c1-t3
+Argélia	w-pool	c1-t3
+Ariano Suassuna	w-pool	c2-t2
+Aristóteles	w-pool	c1-t3
+Aritmética	w-test	c1-t2
+Arlete Salles	w-pool	c2-t2
+Arma	w-pool	c1-t1
+Arma de fogo	w-pool	c2-t2
+Armando de Sales Oliveira	w-pool	c3-t1
+Armas Nacionais do Brasil	w-pool	c3-t2
+Arménia	w-pool	c1-t3
+Arnaldo Jabor	w-pool	c2-t1
+Arnold Schwarzenegger	w-pool	c2-t3
+Arqueologia bíblica	w-pool	c2-t3
+Arquimedes	w-pool	c1-t3
+Arquitetura	w-test	c1-t3
+Arquitetura colonial do Brasil	w-pool	c3-t3
+Arquitetura de Porto Alegre	w-test	c3-t3
+Arquitetura desconstrutivista	w-pool	c2-t2
+Arquitetura pós-moderna	w-pool	c3-t1
+Arroz	w-test	c1-t1
+Ars antiqua	w-pool	c2-t1
+Ars nova	w-pool	c2-t3
+Arsenal Football Club	w-test	c3-t3
+Arsênio	w-pool	c1-t1
+Art nouveau	w-pool	c2-t3
+Arte	w-pool	c1-t3
+Arte abstrata	w-pool	c2-t2
+Arte bizantina	w-pool	c2-t3
+Arte celta	w-test	c2-t3
+Arte cicládica	w-pool	c2-t1
+Arte colonial do Brasil	w-pool	c3-t1
+Arte conceptual	w-pool	c2-t1
+Arte contemporânea	w-pool	c2-t1
+Arte da Antiguidade	w-pool	c2-t1
+Arte da Assíria	w-test	c2-t1
+Arte da Babilônia	w-pool	c2-t1
+Arte da Grécia Antiga	w-pool	c3-t3
+Arte da Mesopotâmia	w-test	c2-t1
+Arte da Roma Antiga	w-pool	c3-t2
+Arte da Suméria	w-pool	c2-t1
+Arte de África	w-pool	c2-t2
+Arte do Antigo Egito	w-pool	c3-t2
+Arte dos povos germânicos	w-pool	c3-t1
+Arte egeia	w-test	c2-t1
+Arte etrusca	w-pool	c2-t1
+Arte fenícia	w-pool	c2-t1
+Arte gótica	w-pool	c2-t3
+Arte helenística	w-pool	c2-t1
+Arte indígena brasileira	w-test	c3-t1
+Arte micénica	w-test	c2-t1
+Arte minoica	w-test	c2-t2
+Arte paleocristã	w-pool	c2-t2
+Arte persa	w-pool	c2-t2
+Arte plumária indígena brasileira	w-pool	c4+-t2
+Arte pré-colombiana	w-val	c3-t2
+Arte pré-histórica	w-pool	c3-t2
+Arte românica	w-pool	c2-t2
+Arte rupestre	w-pool	c2-t2
+Artes marciais	w-pool	c2-t1
+Artes marciais mistas	w-pool	c3-t3
+Arthur Friedenreich	w-pool	c2-t2
+Artrópode	w-pool	c1-t3
+Artur Bernardes	w-pool	c2-t3
+Artur Nogueira	w-test	c2-t1
+Ary Barroso	w-pool	c2-t1
+Ary Toledo	w-test	c2-t1
+Arábia Saudita	w-pool	c2-t3
+As Aventuras de Tintim	w-test	c2-t2
+As Mil e Uma Noites	w-pool	c2-t2
+Ascaridíase	w-pool	c1-t1
+Ashley Tisdale	w-pool	c2-t2
+Ashton Kutcher	w-test	c2-t1
+Assassin's Creed	w-test	c3-t3
+Assis (São Paulo)	w-test	c3-t3
+Assis Brasil	w-pool	c2-t1
+Assis Chateaubriand	w-pool	c2-t2
+Associazione Calcio Milan	w-pool	c3-t2
+Associazione Sportiva Roma	w-test	c3-t3
+Associação Atlética Ponte Preta	w-pool	c4+-t3
+Associação Portuguesa de Desportos	w-test	c3-t3
+Associação de Nações do Sudeste Asiático	w-pool	c4+-t1
+Assédio virtual	w-pool	c2-t1
+Asteroide	w-pool	c1-t3
+Astronomia	w-pool	c1-t3
+Ataque a Pearl Harbor	w-pool	c3-t3
+Ataques de 11 de setembro de 2001	w-pool	c4+-t3
+Atena	w-pool	c1-t3
+Atenas	w-pool	c1-t2
+Ateísmo	w-pool	c1-t3
+Atibaia	w-pool	c1-t2
+Atividade econômica	w-pool	c2-t1
+Atletismo	w-pool	c1-t1
+Atlético Clube Goianiense	w-test	c3-t3
+Atmosfera	w-pool	c1-t1
+Atmosfera da Terra	w-pool	c2-t3
+Atmosfera de Júpiter	w-pool	c2-t3
+Atmosfera de Vênus	w-pool	c2-t3
+Atol das Rocas	w-pool	c2-t1
+Atomismo	w-pool	c1-t1
+Atos Institucionais	w-pool	c2-t2
+Atrito	w-pool	c1-t3
+Audição	w-test	c1-t3
+Auguste Comte	w-val	c2-t3
+Augusto	w-test	c1-t3
+Augusto Boal	w-test	c2-t2
+Augusto Leopoldo de Saxe-Coburgo e Bragança	w-pool	c4+-t2
+Augusto Rademaker	w-test	c2-t1
+Augusto de Lima (político)	w-pool	c3-t1
+Augusto dos Anjos	w-pool	c2-t2
+Aurora polar	w-test	c2-t2
+Aurélio Buarque de Holanda	w-pool	c3-t1
+Aurélio de Lira Tavares	w-pool	c3-t1
+Austregésilo de Athayde	w-pool	c2-t1
+Austrália	w-pool	c1-t3
+Auta de Sousa	w-pool	c2-t2
+Autarquia	w-pool	c1-t1
+Automobilismo	w-test	c1-t2
+Automóvel	w-pool	c1-t2
+Autonomia político-administrativa	w-pool	c3-t1
+Avalancha	w-pool	c1-t1
+Avaliação educacional	w-pool	c2-t2
+Avatar (filme)	w-pool	c2-t2
+Avatar: The Last Airbender	w-pool	c4+-t3
+Avaí Futebol Clube	w-val	c3-t3
+Aveia-comum	w-pool	c2-t1
+Avenged Sevenfold	w-pool	c2-t3
+Aves	w-pool	c1-t3
+Avicena	w-test	c1-t3
+Avião	w-pool	c1-t2
+Avril Lavigne	w-test	c2-t3
+Axl Rose	w-test	c2-t3
+Ayrton Senna	w-pool	c2-t3
+Aziz Ab'Saber	w-pool	c3-t1
+Azoto	w-pool	c1-t2
+Açaí	w-pool	c1-t2
+Aço	w-pool	c1-t1
+Açoca	w-pool	c1-t1
+Ação Integralista Brasileira	w-pool	c3-t2
+Ação afirmativa	w-pool	c2-t2
+Ação coletiva	w-pool	c2-t1
+Ação social	w-pool	c2-t1
+Açúcar	w-test	c1-t2
+BRIC	w-test	c1-t2
+BRICS	w-test	c1-t3
+Baby boomer	w-pool	c2-t1
+Bacia do Paraná	w-test	c2-t3
+Back in Action	w-pool	c3-t2
+Backstreet Boys	w-test	c2-t3
+Bactéria	w-pool	c1-t3
+Bagdá	w-pool	c1-t2
+Bahia	w-pool	c1-t3
+Bahrein	w-pool	c1-t3
+Bairros de Lisboa	w-pool	c2-t1
+Balada	w-pool	c1-t1
+Balanceamento de equações químicas	w-pool	c3-t1
+Balanced scorecard	w-pool	c2-t2
+Baleia-comum	w-pool	c2-t2
+Balé	w-val	c1-t1
+Banana	w-pool	c1-t2
+Banco Mundial	w-test	c2-t3
+Band	w-test	c1-t3
+Banda desenhada	w-pool	c2-t2
+Bandeira da Roménia	w-pool	c2-t1
+Bandeira da Índia	w-pool	c2-t2
+Bandeira do Brasil	w-test	c2-t3
+Bandeira do Japão	w-pool	c2-t3
+Bandeira do México	w-test	c2-t2
+Bandeirantes	w-pool	c1-t3
+Bandido da Luz Vermelha	w-pool	c3-t1
+Bang Bang Bang	w-pool	c3-t1
+Bangladesh	w-pool	c1-t3
+Banguecoque	w-pool	c1-t3
+Barack Obama	w-pool	c2-t3
+Barata	w-pool	c1-t2
+Barba-Negra	w-pool	c2-t3
+Barbosa Lima Sobrinho	w-pool	c3-t1
+Barcelona	w-pool	c1-t2
+Barco	w-pool	c1-t2
+Barra Mansa	w-pool	c2-t3
+Barragem	w-pool	c1-t3
+Barreiras	w-pool	c1-t3
+Barroco	w-test	c1-t3
+Barroco mineiro	w-pool	c2-t3
+Barroco no Brasil	w-test	c2-t3
+Bartolomeu Bueno da Silva	w-pool	c3-t1
+Baruch Espinoza	w-pool	c2-t3
+Base (química)	w-pool	c2-t1
+Basebol	w-test	c1-t2
+Basquetebol	w-pool	c1-t2
+Basílica de São Pedro	w-pool	c3-t3
+Basílica de São Sebastião (Manila)	w-pool	c4+-t1
+Basílio da Gama	w-test	c2-t1
+Batalha de Balaclava	w-pool	c2-t3
+Batalha de Crisópolis	w-pool	c2-t1
+Batalha de Goliad	w-pool	c2-t2
+Batalha de Lipantitlán	w-pool	c2-t2
+Batalha de Midway	w-test	c2-t2
+Batalha de Svolder	w-test	c2-t2
+Batalha do Tenaru	w-pool	c2-t2
+Batata	w-val	c1-t3
+Bateria (instrumento musical)	w-pool	c3-t1
+Bateria de ião lítio	w-pool	c3-t1
+Bateria de níquel cádmio	w-pool	c3-t1
+Batman	w-pool	c1-t3
+Bauhaus	w-pool	c1-t1
+Bauru	w-pool	c1-t3
+Baía Formosa	w-pool	c2-t1
+Beagle	w-pool	c1-t3
+Bebida alcoólica	w-pool	c2-t2
+Bee Gees	w-pool	c2-t3
+Behaviorismo	w-pool	c1-t2
+Beleza	w-pool	c1-t2
+Belize	w-pool	c1-t2
+Belo Horizonte	w-pool	c2-t3
+Belém (Pará)	w-pool	c2-t3
+Belíssima	w-pool	c1-t2
+Ben 10	w-pool	c2-t2
+Beneath the Planet of the Apes	w-pool	c4+-t1
+Benim	w-pool	c1-t2
+Benito Mussolini	w-pool	c2-t3
+Benjamin Abrahão Botto	w-val	c3-t1
+Benjamin Constant	w-pool	c2-t1
+Benjamin Constant (militar)	w-pool	c3-t1
+Bento Gonçalves	w-pool	c2-t1
+Bento Teixeira	w-test	c2-t1
+Benzeno	w-pool	c1-t2
+Berlim	w-pool	c1-t3
+Bernardo Guimarães	w-pool	c2-t1
+Bernd Schuster	w-test	c2-t2
+Bertrand Russell	w-pool	c2-t3
+Berílio	w-pool	c1-t1
+Betinho	w-test	c1-t1
+Betty Faria	w-test	c2-t3
+Beyoncé	w-pool	c1-t3
+Bezerra de Menezes	w-pool	c2-t2
+Bhaskara II	w-pool	c2-t1
+Bia e Branca Feres	w-pool	c3-t1
+Bianca Salgueiro	w-pool	c2-t1
+Bibi Ferreira	w-pool	c2-t1
+Bibliografia	w-pool	c1-t1
+Bicicleta	w-pool	c1-t2
+Bielorrússia	w-test	c1-t3
+Bifrenaria	w-pool	c1-t2
+Big Bang	w-test	c2-t3
+Bill Gates	w-pool	c2-t2
+Bill Nighy	w-test	c2-t1
+Billboard Hot 100	w-pool	c3-t2
+Binómio de Newton	w-pool	c2-t1
+Biocenose	w-pool	c1-t1
+Biocombustível	w-pool	c1-t2
+Biodiesel	w-pool	c1-t3
+Biografia	w-test	c1-t2
+Biogênese	w-test	c1-t1
+Biologia	w-pool	c1-t3
+Bioma	w-test	c1-t2
+Biomas do Brasil	w-test	c2-t2
+Biomecânica	w-pool	c1-t1
+Biomedicina	w-test	c1-t2
+Bioquímica	w-val	c1-t2
+Biosfera	w-pool	c1-t3
+Biotecnologia	w-pool	c1-t2
+Bismuto	w-pool	c1-t1
+Bispo (xadrez)	w-test	c2-t1
+Biótopo	w-pool	c1-t1
+Black Eyed Peas	w-test	c3-t2
+Black Sabbath	w-pool	c2-t3
+Blaise Pascal	w-pool	c2-t2
+Blame It on Lisa	w-pool	c4+-t2
+Bleach (mangá)	w-pool	c2-t3
+Blender	w-pool	c1-t2
+Blind Date (30 Rock)	w-test	c4+-t2
+Blink-182	w-pool	c2-t2
+Bloco comercial	w-pool	c2-t1
+Blues	w-pool	c1-t2
+Blumenau	w-pool	c1-t3
+Boa Sorte, Charlie!	w-pool	c3-t2
+Boa Vista (Roraima)	w-pool	c3-t2
+Bob Burnquist	w-pool	c2-t1
+Bob Dylan	w-pool	c2-t3
+Bob Marley	w-pool	c2-t3
+Bob Wolfenson	w-pool	c2-t1
+Bogotá	w-pool	c1-t3
+Boitatá	w-pool	c1-t1
+Bolsa Família	w-test	c2-t3
+Bolívia	w-pool	c1-t3
+Bomba nuclear	w-pool	c2-t2
+Bombaim	w-pool	c1-t2
+Bombardeamentos atômicos de Hiroshima e Nagasaki	w-test	c4+-t3
+Bon Jovi	w-pool	c2-t2
+Bonaparte cruzando os Alpes	w-test	c3-t2
+Boni	w-pool	c1-t1
+Bono	w-test	c1-t2
+Borba Gato	w-test	c2-t2
+Boris Fausto	w-pool	c2-t1
+Born This Way	w-pool	c3-t3
+Boro	w-pool	c1-t2
+Bos taurus	w-pool	c2-t1
+Bossa nova	w-pool	c2-t3
+Boston	w-pool	c1-t3
+Botafogo de Futebol e Regatas	w-pool	c3-t3
+Botswana	w-pool	c1-t2
+Botânica	w-pool	c1-t1
+Boxe	w-pool	c1-t2
+Brad Pitt	w-test	c2-t3
+Bradesco	w-test	c1-t3
+Braga	w-test	c1-t3
+Brasil	w-test	c1-t3
+Brasil Colônia	w-pool	c2-t3
+Brasileiros	w-pool	c1-t3
+Brasília	w-test	c1-t3
+Brenda Song	w-pool	c2-t2
+Brian May	w-test	c2-t2
+Brilho verde	w-pool	c2-t1
+Brinquedo	w-pool	c1-t1
+Britney Spears	w-pool	c2-t3
+Brock Lesnar	w-pool	c2-t3
+Broken Arrow (canção)	w-pool	c3-t1
+Bromo	w-pool	c1-t1
+Bronquite	w-pool	c1-t1
+Bruce Lee	w-pool	c2-t3
+Bruce Willis	w-pool	c2-t1
+Bruna Surfistinha	w-pool	c2-t2
+Bruno César	w-test	c2-t1
+Bruno Gamberini	w-test	c2-t1
+Bruno Mars	w-pool	c2-t3
+Brusque	w-pool	c1-t2
+Bruxelas	w-pool	c1-t3
+Bryophyta sensu lato	w-pool	c3-t1
+Buda	w-pool	c1-t1
+Budismo	w-test	c1-t3
+Buenos Aires	w-pool	c2-t3
+Bulgária	w-pool	c1-t3
+Bullying	w-pool	c1-t3
+Bumba meu boi	w-pool	c3-t1
+Buraco negro	w-pool	c2-t3
+Burj Khalifa	w-pool	c2-t2
+Burquina Fasso	w-pool	c2-t2
+Burundi	w-pool	c1-t1
+Bussunda	w-pool	c1-t2
+Bário	w-pool	c1-t1
+Bélgica	w-pool	c1-t2
+Bíblia	w-pool	c1-t3
+Bósnia e Herzegovina	w-test	c2-t3
+C (linguagem de programação)	w-test	c3-t2
+C++	w-pool	c1-t3
+CSI: Crime Scene Investigation	w-val	c4+-t2
+Caatinga	w-test	c1-t2
+Cabala	w-test	c1-t3
+Cabanagem	w-pool	c1-t2
+Cabo Anselmo	w-pool	c2-t1
+Cabo Verde	w-pool	c2-t3
+Cachoeira do Sul	w-pool	c2-t3
+Cachoeiro de Itapemirim	w-pool	c2-t3
+Cacilda Becker	w-pool	c2-t1
+Cadeia alimentar	w-pool	c2-t1
+Caetano Veloso	w-pool	c2-t3
+Café	w-pool	c1-t2
+Café Filho	w-pool	c2-t2
+Caio Blat	w-pool	c2-t1
+Caio Castro	w-pool	c2-t1
+Caio Fernando Abreu	w-pool	c3-t1
+Caio Prado Júnior	w-pool	c3-t2
+Cairo	w-pool	c1-t1
+Caixa Econômica Federal	w-pool	c3-t2
+Cajazeiras	w-pool	c1-t2
+Calcogênio	w-pool	c1-t1
+Calcutá	w-pool	c1-t2
+Calendário	w-test	c1-t2
+Calendário gregoriano	w-pool	c2-t3
+Calidaça	w-test	c1-t1
+California King Bed	w-pool	c3-t2
+Califórnia	w-pool	c1-t3
+Caligrafia	w-pool	c1-t2
+Calisto (satélite)	w-test	c2-t2
+Calor	w-pool	c1-t3
+Cama de Gato (telenovela)	w-pool	c3-t2
+Camada pré-sal	w-pool	c3-t2
+Camaiurás	w-test	c1-t2
+Camarões	w-pool	c1-t2
+Camelo	w-test	c1-t2
+Cameron Diaz	w-pool	c2-t2
+Caminho das Índias	w-pool	c2-t2
+Campeonato Brasileiro de Futebol	w-test	c3-t3
+Campeonato Brasileiro de Futebol - Série B	w-pool	c4+-t1
+Campeonato Brasileiro de Futebol - Série C	w-pool	c4+-t2
+Campeonato Brasileiro de Futebol de 2005 - Série A	w-test	c4+-t1
+Campeonato Brasileiro de Futebol de 2009 - Série A	w-pool	c4+-t1
+Campeonato Brasileiro de Futebol de 2010 - Série A	w-test	c4+-t1
+Campeonato Brasileiro de Futebol de 2011 - Série A	w-pool	c4+-t1
+Campeonato Brasileiro de Futebol de 2011 - Série B	w-pool	c4+-t1
+Campeonato Brasileiro de Futebol de 2011 - Série C	w-test	c4+-t1
+Campeonato Brasileiro de Futebol de 2011 - Série D	w-pool	c4+-t1
+Campeonato Capixaba de Futebol Masculino	w-pool	c4+-t1
+Campeonato Carioca de Futebol Masculino	w-pool	c4+-t2
+Campeonato Paranaense de Futebol de 2011 - Segunda Divisão	w-pool	c4+-t1
+Campeonato Paulista de Futebol Masculino	w-pool	c4+-t2
+Campina Grande	w-pool	c2-t3
+Campinas	w-pool	c1-t3
+Campo Grande (Mato Grosso do Sul)	w-val	c4+-t3
+Campo elétrico	w-pool	c2-t2
+Campo magnético	w-val	c2-t3
+Campos Sales	w-test	c2-t2
+Campos dos Goytacazes	w-pool	c2-t3
+Canadá	w-test	c1-t3
+Canal (comunicação)	w-pool	c2-t1
+Canal (hidráulica)	w-test	c2-t3
+Canal de Suez	w-pool	c2-t3
+Canal do Panamá	w-test	c2-t3
+Cancún	w-pool	c1-t2
+Candidatura de Chicago para os Jogos Olímpicos de Verão de 2016	w-val	c4+-t2
+Candidatura de Madri para os Jogos Olímpicos de Verão de 2016	w-pool	c4+-t2
+Candidatura de Tóquio para os Jogos Olímpicos de Verão de 2016	w-test	c4+-t2
+Candidatura do Rio de Janeiro para os Jogos Olímpicos de Verão de 2016	w-pool	c4+-t3
+Candido Portinari	w-pool	c2-t2
+Candidíase	w-pool	c1-t1
+Candomblé	w-pool	c1-t3
+Cangaço	w-pool	c1-t2
+Canguaretama	w-pool	c1-t2
+Cannabis	w-pool	c1-t2
+Cannabis (psicotrópico)	w-pool	c2-t3
+Canoas	w-pool	c1-t3
+Cantata	w-test	c1-t1
+Cantochão	w-pool	c1-t1
+Canção	w-test	c1-t1
+Capacitor	w-pool	c1-t2
+Capital (economia)	w-pool	c2-t1
+Capital (sociologia)	w-pool	c2-t1
+Capital Inicial	w-pool	c2-t2
+Capitalismo	w-pool	c1-t2
+Capitanias do Brasil	w-pool	c2-t3
+Capitão América	w-test	c2-t2
+Capoeira	w-pool	c1-t3
+Carachi	w-pool	c1-t2
+Caras & Bocas	w-pool	c2-t2
+Caras-pintadas	w-pool	c2-t1
+Caratinga	w-test	c1-t3
+Caratê	w-test	c1-t3
+Carboidrato	w-test	c1-t1
+Carbono	w-test	c1-t2
+Cardeal-sobrinho	w-pool	c2-t2
+Cardinalidade	w-pool	c1-t2
+Carequinha	w-pool	c1-t1
+Caribe	w-test	c1-t2
+Carl Friedrich Gauss	w-test	c3-t2
+Carl Gustav Jung	w-pool	c3-t3
+Carla Camurati	w-pool	c2-t1
+Carlinhos de Jesus	w-pool	c2-t1
+Carlos Alberto Parreira	w-pool	c3-t2
+Carlos Alberto de Nóbrega	w-pool	c3-t1
+Carlos Arthur Nuzman	w-pool	c3-t1
+Carlos Castelo Branco	w-pool	c3-t1
+Carlos Chagas	w-test	c2-t2
+Carlos Drummond de Andrade	w-test	c3-t1
+Carlos Ghosn	w-pool	c2-t2
+Carlos Gomes	w-pool	c2-t3
+Carlos Gomes (Rio Grande do Sul)	w-pool	c4+-t2
+Carlos Heitor Cony	w-pool	c3-t1
+Carlos Lacerda	w-pool	c2-t2
+Carlos Lamarca	w-pool	c2-t2
+Carlos Lessa	w-pool	c2-t1
+Carlos Luz	w-val	c2-t2
+Carlos Magno	w-test	c2-t3
+Carlos Marighella	w-pool	c2-t2
+Carlos Tévez	w-pool	c2-t3
+Carmen Miranda	w-pool	c2-t3
+Carne	w-pool	c1-t2
+Carolina Dieckmmann	w-pool	c2-t1
+Carpe diem	w-pool	c2-t1
+Carro de combate	w-pool	c2-t3
+Cartografia	w-pool	c1-t2
+Cartola	w-val	c1-t1
+Cartola (cantor)	w-val	c2-t3
+Casa	w-test	c1-t2
+Casamento	w-pool	c1-t2
+Casi ángeles	w-pool	c2-t3
+Casimiro de Abreu	w-test	c2-t1
+Caso Taman Shud	w-test	c2-t2
+Casta	w-pool	c1-t1
+Castelo Branco	w-pool	c2-t2
+Castelo Rá-Tim-Bum	w-pool	c4+-t2
+Castlevania: Aria of Sorrow	w-val	c4+-t2
+Castlevania: Dawn of Sorrow	w-pool	c4+-t2
+Castro Alves	w-pool	c2-t3
+Catabolismo	w-pool	c1-t1
+Catalão (Goiás)	w-pool	c2-t3
+Catanduva	w-pool	c1-t2
+Catar	w-pool	c1-t3
+Cautília	w-test	c1-t3
+Cavalo	w-pool	c1-t3
+Cavalo (xadrez)	w-pool	c2-t1
+Caxias do Sul	w-test	c2-t3
+Cazaquistão	w-pool	c1-t3
+Cazuza	w-pool	c1-t2
+Caça	w-val	c1-t2
+Caín Velásquez	w-pool	c2-t1
+Ceará	w-pool	c1-t3
+Ceará Sporting Club	w-pool	c3-t3
+Cecília Meireles	w-pool	c2-t2
+Cefaleia	w-val	c1-t1
+Celebridade (telenovela)	w-pool	c2-t2
+Celso Furtado	w-test	c2-t1
+Celtas	w-test	c1-t2
+Centeio	w-pool	c1-t1
+Centro Histórico de Diamantina	w-val	c3-t1
+Centro Histórico de Goiás	w-pool	c3-t2
+Centro Histórico de Olinda	w-pool	c3-t1
+Centro Histórico de Salvador	w-pool	c3-t1
+Centro Histórico de São Luís	w-pool	c4+-t1
+Centríolo	w-pool	c1-t1
+Cerco de Malta	w-pool	c2-t2
+Cereal	w-pool	c1-t1
+Ceres (Goiás)	w-test	c2-t1
+Cerimônia de abertura dos Jogos Olímpicos de Inverno de 2010	w-pool	c4+-t2
+Cerimônia de abertura dos Jogos Olímpicos de Verão de 2008	w-pool	c4+-t2
+Cerimônia de abertura dos Jogos Pan-Americanos de 2007	w-test	c4+-t2
+Cerrado	w-pool	c1-t3
+Cerveja	w-pool	c1-t3
+Cesc Fàbregas	w-pool	c2-t2
+Ceticismo	w-test	c1-t1
+Cetona	w-pool	c1-t2
+Cetáceos	w-test	c1-t2
+Cevada	w-pool	c1-t1
+Chacona	w-pool	c1-t1
+Chacrinha	w-pool	c1-t2
+Chade	w-pool	c1-t3
+Chael Sonnen	w-pool	c2-t1
+Charles Babbage	w-pool	c2-t1
+Charles Bronson	w-pool	c2-t1
+Charles Darwin	w-pool	c2-t3
+Charles Dickens	w-pool	c2-t3
+Charles Miller	w-test	c2-t1
+Charles Sanders Peirce	w-pool	c3-t1
+Charles de Gaulle	w-pool	c2-t2
+Charlie Brown Jr.	w-pool	c3-t3
+Charlie Chaplin	w-pool	c2-t3
+Charlie Sheen	w-test	c2-t2
+Charlton Heston	w-pool	c2-t1
+Charmed	w-val	c1-t3
+Che Guevara	w-pool	c2-t3
+Checoslováquia	w-pool	c1-t1
+Cheers (Drink to That)	w-pool	c3-t2
+Chellsie Memmel	w-pool	c2-t2
+Chelsea Football Club	w-pool	c3-t3
+Cher	w-pool	c1-t3
+Chica da Silva	w-pool	c2-t2
+Chicago	w-pool	c1-t3
+Chichén Itzá	w-pool	c2-t1
+Chico Anysio	w-pool	c2-t2
+Chico Buarque	w-pool	c2-t2
+Chico Landi	w-test	c2-t1
+Chico Mendes	w-pool	c2-t2
+Chico Xavier	w-pool	c2-t2
+Chihuahua (cão)	w-pool	c2-t3
+Chile	w-pool	c1-t3
+China	w-pool	c1-t3
+Chinese Democracy	w-pool	c2-t2
+Chiquinha Gonzaga	w-test	c2-t3
+Chitãozinho	w-pool	c1-t1
+Chocolate	w-pool	c1-t3
+Choque cultural	w-test	c2-t1
+Choque de civilizações	w-val	c2-t1
+Choro	w-pool	c1-t2
+Chow Yun-fat	w-pool	c3-t1
+Chris Brown (cantor)	w-pool	c3-t3
+Christiaan Huygens	w-pool	c2-t2
+Christiane Torloni	w-test	c2-t3
+Christina Aguilera	w-pool	c2-t3
+Chuck (série de televisão)	w-test	c3-t3
+Chuck Norris	w-pool	c2-t2
+Chumbo	w-pool	c1-t2
+Chuva	w-pool	c1-t3
+Chuva de animais	w-pool	c2-t2
+Chuva ácida	w-pool	c2-t2
+Chá	w-test	c1-t2
+Chéquia	w-pool	c1-t2
+Ciclo biogeoquímico	w-pool	c2-t1
+Ciclo da borracha	w-pool	c2-t2
+Ciclo do açúcar	w-pool	c2-t1
+Ciclo do carbono	w-pool	c2-t2
+Ciclo do ouro	w-pool	c2-t2
+Ciclone extratropical	w-pool	c2-t2
+Ciclone tropical	w-pool	c2-t3
+Cid Moreira	w-pool	c2-t1
+Cidadania	w-pool	c1-t2
+Cidade	w-val	c1-t3
+Cidade de Deus (filme)	w-pool	c3-t3
+Cidade do Cabo	w-pool	c2-t2
+Cidade do México	w-pool	c2-t3
+Cidadão Brasileiro	w-pool	c2-t2
+Cientificismo	w-pool	c1-t1
+Cifra de César	w-test	c2-t1
+Cilindro	w-pool	c1-t1
+Cinema	w-pool	c1-t1
+Cinema do Brasil	w-pool	c2-t3
+Cinema western	w-test	c2-t2
+Cinemática	w-pool	c1-t3
+Cinismo	w-pool	c1-t2
+Cinética musical	w-pool	c2-t1
+Cinética química	w-test	c2-t2
+Circuito elétrico	w-pool	c2-t3
+Circuito em série	w-pool	c2-t1
+Circuito paralelo	w-pool	c2-t1
+Circuncisão	w-pool	c1-t2
+Circunferência	w-pool	c1-t2
+Ciro II	w-test	c2-t2
+Citação	w-test	c1-t1
+Citibank Brasil	w-pool	c2-t1
+Citoesqueleto	w-pool	c1-t1
+Citoplasma	w-test	c1-t1
+Civilização	w-pool	c1-t2
+Civilização Minoica	w-pool	c2-t3
+Civilização asteca	w-pool	c2-t3
+Civilização maia	w-pool	c2-t3
+Ciência	w-pool	c1-t3
+Ciência da computação	w-pool	c2-t2
+Ciências sociais	w-pool	c2-t1
+Clara Nunes	w-pool	c2-t2
+Clarice Lispector	w-test	c2-t3
+Classe Yamato	w-pool	c2-t3
+Classe dominante	w-val	c2-t1
+Classe social	w-pool	c2-t2
+Classicismo	w-pool	c1-t1
+Classicismo vienense	w-test	c2-t1
+Classificação científica	w-pool	c2-t2
+Claude Lévi-Strauss	w-pool	c3-t2
+Claudia Leitte	w-pool	c2-t3
+Claudio Monteverdi	w-pool	c2-t3
+Cleópatra	w-test	c1-t3
+Clima	w-pool	c1-t1
+Clima do Brasil	w-pool	c2-t1
+Clint Eastwood	w-pool	c2-t2
+Clodovil Hernandes	w-pool	c2-t3
+Clonagem	w-test	c1-t2
+Cloreto de sódio	w-pool	c2-t1
+Cloro	w-pool	c1-t2
+Cloroplasto	w-test	c1-t1
+Club Athletico Paranaense	w-pool	c3-t3
+Club Atlético Peñarol	w-val	c3-t2
+Club Atlético de Madrid	w-pool	c3-t3
+Club de Regatas Vasco da Gama	w-pool	c4+-t3
+Clube Atlético Mineiro	w-val	c3-t3
+Clube Náutico Capibaribe	w-pool	c3-t3
+Clube de Regatas do Flamengo	w-pool	c3-t3
+Clube do Remo	w-pool	c2-t3
+Clássico Mineiro	w-pool	c2-t2
+Clássico de Florianópolis	w-pool	c2-t3
+Clássico dos Clássicos	w-pool	c2-t2
+Cláudio Galeno	w-pool	c2-t3
+Cláudio Kano	w-pool	c2-t1
+Cláudio Manuel da Costa	w-pool	c3-t2
+Clítoris	w-pool	c1-t2
+Clóvis Beviláqua	w-test	c2-t1
+Cnidaria	w-test	c1-t2
+Cobalto	w-pool	c1-t1
+Cobre	w-pool	c1-t2
+Coca-Cola	w-pool	c2-t2
+Cocaína	w-pool	c1-t3
+Coeficiente de Gini	w-pool	c2-t3
+Coeficiente de variação	w-val	c2-t2
+Coelho	w-test	c1-t2
+Coelho Neto	w-pool	c2-t1
+Coelogyne	w-val	c1-t2
+Coesão social	w-pool	c2-t1
+Coesão textual	w-pool	c2-t1
+Colagem	w-pool	c1-t1
+Coldplay	w-pool	c1-t3
+Colesterol	w-pool	c1-t2
+Coleta seletiva	w-test	c2-t1
+Coliseu	w-pool	c1-t1
+Colisão	w-pool	c1-t2
+Colisão elástica	w-pool	c2-t3
+Colisão inelástica	w-pool	c2-t1
+Colocação pronominal	w-pool	c2-t1
+Colonialismo	w-pool	c1-t1
+Colonização europeia da América	w-pool	c3-t1
+Columbídeos	w-pool	c1-t1
+Coluna Prestes	w-pool	c2-t1
+Colónia (biologia)	w-pool	c2-t1
+Colômbia	w-pool	c1-t3
+Combinatória	w-test	c1-t2
+Combinação	w-pool	c1-t1
+Combustão	w-pool	c1-t3
+Combustível	w-pool	c1-t1
+Combustível fóssil	w-test	c2-t3
+Comensalismo	w-pool	c1-t1
+Cometa	w-pool	c1-t3
+Cometa Shoemaker-Levy 9	w-pool	c4+-t2
+Commonwealth	w-pool	c1-t3
+Comores	w-pool	c1-t3
+Companhia Siderúrgica Nacional	w-pool	c3-t1
+Companhia de Jesus	w-pool	c2-t2
+Complexo de Golgi	w-pool	c2-t2
+Complicated	w-pool	c1-t2
+Comportamento	w-pool	c1-t1
+Composto orgânico	w-pool	c2-t1
+Composto químico	w-pool	c2-t1
+Comprimento de onda	w-pool	c2-t2
+Computador	w-val	c1-t3
+Computador pessoal	w-pool	c2-t1
+Computação em nuvem	w-pool	c2-t3
+Comunicação	w-pool	c1-t3
+Comunicação não verbal	w-pool	c2-t1
+Comunicação visual	w-pool	c2-t1
+Comunidade dos Estados Independentes	w-pool	c3-t1
+Comunidade virtual	w-pool	c2-t1
+Comunismo	w-test	c1-t3
+Comércio	w-pool	c1-t1
+Concentração	w-pool	c1-t1
+Concerto	w-pool	c1-t1
+Concordância gramatical	w-pool	c2-t1
+Concretismo	w-pool	c1-t1
+Condor-da-califórnia	w-pool	c2-t2
+Condoreirismo	w-pool	c1-t1
+Condutividade elétrica	w-pool	c2-t1
+Condutor elétrico	w-val	c2-t1
+Condução térmica	w-pool	c2-t3
+Cone	w-test	c1-t1
+Conferência das Nações Unidas sobre Meio Ambiente e Desenvolvimento	w-test	c4+-t2
+Conferência de Estocolmo	w-pool	c2-t1
+Conflito israelo-palestino	w-pool	c3-t2
+Conflitos no Oriente Médio	w-pool	c3-t1
+Confucionismo	w-pool	c1-t2
+Confúcio	w-test	c1-t3
+Congregação Cristã no Brasil	w-pool	c3-t3
+Congresso Nacional do Brasil	w-pool	c3-t2
+Conhecimento	w-pool	c1-t1
+Conjuntivite	w-pool	c1-t1
+Conjunto	w-pool	c1-t2
+Conjunto de partes	w-test	c2-t1
+Conjunto imagem	w-val	c2-t1
+Conjunto vazio	w-pool	c2-t1
+Conjunção	w-pool	c1-t1
+Conjuração Baiana	w-pool	c2-t2
+Conotação	w-pool	c1-t1
+Consciência coletiva	w-pool	c2-t1
+Consciência de classe	w-val	c2-t1
+Conservadorismo	w-pool	c1-t3
+Conservação da massa	w-test	c2-t1
+Constante de Avogadro	w-pool	c2-t1
+Constante de equilíbrio	w-test	c2-t1
+Constantino	w-pool	c1-t3
+Constipação	w-test	c1-t2
+Constituição	w-test	c1-t1
+Constituição brasileira de 1824	w-pool	c3-t2
+Constituição brasileira de 1934	w-test	c3-t1
+Constituição brasileira de 1988	w-pool	c3-t2
+Construtivismo (desambiguação)	w-pool	c2-t1
+Contabilidade	w-pool	c1-t3
+Contagem	w-test	c1-t2
+Continente	w-pool	c1-t2
+Conto	w-pool	c1-t2
+Conto de fadas	w-test	c2-t3
+Contracepção	w-pool	c1-t3
+Contradomínio	w-test	c1-t1
+Contrarreforma	w-pool	c1-t3
+Contrato social	w-test	c2-t3
+Controvérsia da circuncisão	w-pool	c2-t1
+Controvérsia dos ritos na China	w-pool	c3-t2
+Conurbação	w-test	c1-t1
+Convecção	w-val	c1-t2
+Cooperação (biologia)	w-pool	c2-t1
+Cooperação Econômica Ásia-Pacífico	w-pool	c4+-t1
+Coordenadas geográficas	w-val	c2-t1
+Copa Libertadores da América	w-pool	c3-t3
+Copa do Mundo FIFA	w-pool	c3-t3
+Copa do Mundo FIFA de 1982	w-pool	c4+-t2
+Copa do Mundo FIFA de 1990	w-test	c4+-t1
+Copa do Mundo FIFA de 1994	w-test	c4+-t2
+Copa do Mundo FIFA de 1998	w-pool	c4+-t1
+Copa do Mundo FIFA de 2002	w-pool	c4+-t1
+Copa do Mundo FIFA de 2006	w-val	c4+-t2
+Copa do Mundo FIFA de 2010	w-pool	c4+-t2
+Copa do Mundo FIFA de 2014	w-pool	c4+-t3
+Cor	w-pool	c1-t3
+Cor primária	w-pool	c2-t2
+Cor secundária	w-pool	c2-t1
+Coração	w-pool	c1-t3
+Cordados	w-test	c1-t2
+Cordel Encantado	w-pool	c2-t2
+Coreia do Norte	w-pool	c2-t3
+Coreia do Sul	w-pool	c2-t3
+Coritiba Foot Ball Club	w-pool	c4+-t3
+Coronel Fabriciano	w-pool	c2-t3
+Coronelismo	w-pool	c1-t2
+Corpo humano	w-pool	c2-t3
+Corrente alternada	w-pool	c2-t1
+Corrente contínua	w-pool	c2-t1
+Corrente elétrica	w-pool	c2-t1
+Corrida do ouro na Califórnia	w-pool	c3-t2
+Corrida espacial	w-pool	c2-t3
+Corrupção política	w-test	c2-t3
+Corumbá	w-pool	c1-t3
+Cossecante	w-pool	c1-t1
+Cosseno	w-pool	c1-t1
+Costa Rica	w-pool	c2-t3
+Costa do Marfim	w-pool	c2-t2
+Costa e Silva	w-pool	c2-t3
+Costinha (humorista)	w-pool	c2-t1
+Cotangente	w-pool	c1-t1
+Counter-Strike	w-pool	c2-t2
+Crack	w-pool	c1-t2
+Crase	w-pool	c1-t1
+Crepúsculo (filme)	w-pool	c2-t2
+Crepúsculo (romance)	w-test	c2-t1
+Crescimento natural	w-test	c2-t1
+Crescimento populacional	w-pool	c2-t1
+Criacionismo	w-test	c1-t2
+Criança	w-pool	c1-t2
+Criciúma Esporte Clube	w-test	c3-t3
+Crimes de guerra do Japão Imperial	w-pool	c4+-t3
+Criminal (canção de Britney Spears)	w-pool	c4+-t1
+Criminal Minds	w-pool	c2-t2
+Cris Vianna	w-pool	c2-t1
+Crise Líbia (2011–presente)	w-pool	c4+-t1
+Crise do encilhamento	w-pool	c2-t2
+Crise dos mísseis de Cuba	w-pool	c3-t3
+Crise financeira de 2007–2008	w-pool	c4+-t2
+Cristianismo	w-pool	c1-t3
+Cristianismo Reformado	w-test	c2-t3
+Cristianismo primitivo (papado)	w-pool	c3-t2
+Cristiano Ronaldo	w-pool	c2-t3
+Cristina Mel	w-pool	c2-t1
+Cristo Redentor	w-pool	c2-t2
+Cristovam Buarque	w-pool	c2-t1
+Cristóvão Colombo	w-pool	c2-t3
+Cromo	w-pool	c1-t2
+Cromossomo	w-pool	c1-t2
+Croácia	w-test	c1-t2
+Crustáceo	w-pool	c1-t3
+Cruz Alta (Rio Grande do Sul)	w-pool	c4+-t2
+Cruz Vitória	w-pool	c2-t3
+Cruz e Sousa	w-test	c2-t1
+Cruzadas	w-pool	c1-t3
+Cruzeiro Esporte Clube	w-val	c3-t2
+Crípton	w-pool	c1-t1
+Críquete	w-pool	c1-t2
+Crítica de arte	w-test	c2-t1
+Crítica social	w-pool	c2-t1
+Crônica (gênero)	w-pool	c2-t1
+Cuba	w-pool	c1-t3
+Cubismo	w-pool	c1-t1
+Cuiabá	w-pool	c1-t2
+Culicídeos	w-pool	c1-t1
+Culinária do Brasil	w-test	c2-t3
+Cultura	w-pool	c1-t2
+Cultura afro-brasileira	w-pool	c3-t1
+Cultura da Região Nordeste do Brasil	w-pool	c4+-t2
+Cultura da Região Sul do Brasil	w-pool	c4+-t2
+Cultura do Brasil	w-pool	c2-t3
+Curitiba	w-pool	c1-t3
+Curling	w-pool	c1-t2
+Currais Novos	w-pool	c2-t2
+Curupira	w-test	c1-t1
+Custe o Que Custar	w-test	c2-t2
+Cyanobacteria	w-test	c1-t1
+Cyndi Lauper	w-pool	c2-t3
+Cádmio	w-pool	c1-t2
+Cálcio	w-pool	c1-t2
+Cárie	w-pool	c1-t3
+Cássia Eller	w-pool	c2-t2
+Câmara Cascudo	w-pool	c2-t2
+Câncer	w-pool	c1-t3
+Câncer colorretal	w-pool	c2-t3
+Câncer de próstata	w-pool	c2-t3
+Cândido Mendes de Almeida	w-test	c3-t1
+Cândido Rondon	w-pool	c2-t2
+Cão	w-pool	c1-t3
+Célula	w-pool	c1-t2
+Célula eletrolítica	w-pool	c2-t1
+Célula estaminal	w-pool	c2-t2
+Célula vegetal	w-pool	c2-t2
+Cérebro	w-test	c1-t3
+Cério	w-pool	c1-t1
+César Cielo	w-pool	c2-t2
+César Lattes	w-pool	c2-t2
+Césio	w-pool	c1-t1
+Cílio (citologia)	w-pool	c2-t1
+Círculo social	w-test	c2-t1
+Círculo unitário	w-pool	c2-t1
+Cólera	w-val	c1-t2
+Cúpula	w-pool	c1-t1
+DMZ (revista em quadrinhos)	w-pool	c3-t2
+DNA (álbum de Wanessa Camargo)	w-pool	c4+-t1
+DVD	w-pool	c1-t2
+Daca	w-pool	c1-t2
+Dadaísmo	w-test	c1-t1
+Dalton Vigh	w-pool	c2-t1
+Dama (xadrez)	w-pool	c2-t2
+Damasco	w-pool	c1-t1
+Dan Stulbach	w-pool	c2-t1
+Dancing Queen	w-pool	c2-t2
+Dani Bolina	w-pool	c2-t1
+Dani Calabresa	w-pool	c2-t1
+Daniel Dantas (empresário)	w-test	c3-t2
+Daniel Filho	w-pool	c2-t2
+Daniel Radcliffe	w-test	c2-t2
+Daniela Mercury	w-pool	c2-t3
+Dante Alighieri	w-pool	c2-t3
+Danuza Leão	w-val	c2-t1
+Dança	w-pool	c1-t1
+Dança hip-hop	w-pool	c3-t3
+Darcy Ribeiro	w-pool	c2-t2
+Dark Passion Play	w-pool	c3-t2
+Darwinismo	w-pool	c1-t1
+Darío Conca	w-pool	c2-t2
+Dave Grohl	w-test	c2-t1
+David Beckham	w-test	c2-t2
+David Ben-Gurion	w-pool	c3-t3
+David Bowie	w-pool	c2-t3
+David Guetta	w-test	c2-t2
+David Hume	w-test	c2-t3
+David Nasser	w-pool	c2-t1
+David Neeleman	w-pool	c2-t1
+Davy Jones	w-pool	c2-t1
+Death Note	w-pool	c2-t3
+Deborah Secco	w-test	c2-t2
+Decibel	w-pool	c1-t2
+Declaração Universal dos Direitos Humanos	w-pool	c4+-t1
+Declaração da Maioridade	w-pool	c2-t2
+Declaração de Independência da Lituânia	w-pool	c3-t2
+Declínio das populações de anfíbios	w-pool	c3-t2
+Dedé Santana	w-pool	c2-t2
+Deep Purple	w-pool	c2-t3
+Deficiência	w-pool	c1-t1
+Deivid de Souza	w-pool	c2-t1
+Dejan Petković	w-pool	c2-t3
+Delfim Moreira	w-pool	c2-t2
+Delfim Netto	w-pool	c2-t1
+Deli	w-pool	c1-t3
+Delichon urbicum	w-test	c2-t2
+Delmiro Gouveia	w-pool	c2-t1
+Demi Lovato	w-test	c2-t3
+Demian Maia	w-pool	c2-t2
+Democracia	w-pool	c1-t3
+Demografia do Brasil	w-pool	c2-t3
+Demócrito	w-pool	c1-t1
+Dengue	w-pool	c1-t3
+Denis Diderot	w-test	c2-t3
+Denotação	w-pool	c1-t1
+Densidade	w-test	c1-t1
+Densidade populacional	w-pool	c2-t1
+Deodoro da Fonseca	w-test	c2-t3
+Dependência psicológica	w-pool	c2-t1
+Depressão tropical Dez	w-pool	c3-t1
+Derby Paulista	w-pool	c2-t3
+Dercy Gonçalves	w-pool	c2-t2
+Deriva continental	w-pool	c2-t1
+Desastre natural	w-pool	c2-t1
+Descoberta do Brasil	w-test	c2-t2
+Descolonização de África	w-pool	c2-t1
+Desempenho	w-pool	c1-t1
+Desenho	w-val	c1-t2
+Desenvolvimento social	w-pool	c2-t1
+Desenvolvimento sustentável	w-pool	c2-t2
+Desertificação	w-pool	c1-t1
+Deserto	w-pool	c1-t2
+Deserto do Saara	w-val	c2-t1
+Desflorestação	w-pool	c1-t3
+Design	w-pool	c1-t1
+Deslocamento	w-pool	c1-t1
+Desnutrição	w-pool	c1-t1
+Desporto	w-pool	c1-t1
+Desvio padrão	w-pool	c2-t3
+Determinante	w-pool	c1-t3
+Detrito espacial	w-test	c2-t2
+Deus	w-pool	c1-t3
+Dexter (série de televisão)	w-pool	c3-t1
+Dez Mandamentos	w-pool	c2-t1
+Di Cavalcanti	w-pool	c2-t1
+Dia	w-test	c1-t2
+Dia Nacional de Zumbi e da Consciência Negra	w-pool	c4+-t1
+Diabetes mellitus	w-pool	c2-t3
+Diabo	w-test	c1-t2
+Diacrítico	w-pool	c1-t1
+Diadema	w-pool	c1-t3
+Diagrama de Venn	w-pool	c2-t2
+Diagrama de fase	w-pool	c2-t1
+Dialeto	w-pool	c1-t1
+Dialética	w-pool	c1-t1
+Diamante	w-pool	c1-t2
+Diana, Princesa de Gales	w-pool	c3-t3
+Dianna Agron	w-pool	c2-t2
+Dias Gomes	w-pool	c2-t1
+Dicionário	w-pool	c1-t1
+Dicionário Aurélio	w-test	c2-t2
+Dida (futebolista)	w-pool	c2-t1
+Didier Drogba	w-pool	c2-t2
+Diego Forlán	w-pool	c2-t2
+Diego Lugano	w-test	c2-t1
+Diego Maradona	w-pool	c2-t3
+Diego Ribas	w-pool	c2-t2
+Diego Tardelli	w-pool	c2-t2
+Diego Velázquez	w-pool	c2-t1
+Difamação	w-test	c1-t1
+Difração	w-pool	c1-t3
+Digestão	w-pool	c1-t1
+Digimon Xros Wars	w-test	c3-t1
+Dilatação térmica	w-pool	c2-t2
+Dilatação volumétrica	w-pool	c2-t1
+Dilma Rousseff	w-pool	c2-t3
+Diluição	w-pool	c1-t1
+Dinamarca	w-pool	c1-t3
+Dinastia Han	w-pool	c2-t1
+Dinastia Ming	w-pool	c2-t3
+Dinastia Qing	w-pool	c2-t3
+Dinastia Tang	w-pool	c2-t1
+Dinastia abássida	w-pool	c2-t1
+Dinheiro	w-pool	c1-t3
+Dinossauros	w-test	c1-t3
+Dinâmica	w-pool	c1-t1
+Dinâmica musical	w-pool	c2-t1
+Dinâmica populacional	w-pool	c2-t2
+Diocese de Macau	w-pool	c2-t3
+Diodo semicondutor	w-pool	c2-t2
+Diogo Antônio Feijó	w-pool	c3-t3
+Diogo Mainardi	w-pool	c2-t1
+Diplomacia	w-test	c1-t2
+Dipolo	w-pool	c1-t1
+Direito	w-pool	c1-t3
+Direitos humanos	w-pool	c2-t2
+Direitos humanos no Brasil	w-pool	c3-t2
+Diretas Já	w-test	c1-t1
+Dirt	w-test	c1-t1
+Disco Blu-ray	w-pool	c3-t2
+Dislexia	w-test	c1-t2
+Dispersão (óptica)	w-pool	c2-t1
+Disprósio	w-pool	c1-t1
+Distribuição de frequências	w-pool	c2-t1
+Distribuição de renda	w-pool	c2-t3
+Distrito Federal (Brasil)	w-pool	c3-t3
+Ditadura	w-pool	c1-t1
+Ditadura militar	w-pool	c2-t1
+Ditadura militar brasileira	w-pool	c3-t3
+Diversidade	w-pool	c1-t1
+Diversidade cultural	w-pool	c2-t1
+Diversidade sexual no Brasil	w-pool	c3-t2
+Divinópolis	w-test	c1-t2
+Divisão internacional do trabalho	w-pool	c3-t1
+Diáspora africana	w-pool	c2-t2
+Diógenes de Sinope	w-pool	c2-t1
+Dióxido de carbono	w-pool	c2-t2
+Djanira	w-pool	c1-t2
+Djibuti	w-pool	c1-t2
+Dmitri Mendeleiev	w-pool	c2-t3
+Do Contrato Social	w-pool	c2-t2
+Doença	w-pool	c1-t1
+Doença arterial coronariana	w-pool	c3-t2
+Doença de Alzheimer	w-pool	c2-t3
+Doença de Chagas	w-test	c2-t3
+Dogma	w-test	c1-t1
+Dois Homens e Meio	w-pool	c3-t2
+Dom Casmurro	w-pool	c2-t3
+Dom Quixote	w-pool	c2-t3
+Domesticação	w-pool	c1-t3
+Domingos Jorge Velho	w-pool	c3-t1
+Dominica	w-test	c1-t2
+Domínio (matemática)	w-pool	c2-t1
+Don Geiss, America and Hope	w-pool	c4+-t2
+Don't Hold Your Breath	w-pool	c4+-t2
+Dona Flor e Seus Dois Maridos	w-pool	c4+-t1
+Donkey Kong (jogo eletrônico)	w-pool	c4+-t2
+Dorival Caymmi	w-test	c2-t1
+Dourados	w-pool	c1-t3
+Doutor	w-test	c1-t3
+Doutor Severiano	w-pool	c2-t2
+Doutrina católica sobre os Dez Mandamentos	w-pool	c4+-t3
+Doutrina da Igreja Católica	w-pool	c3-t3
+Doutrina do destino manifesto	w-pool	c3-t3
+Dracena	w-pool	c1-t2
+Dragon Ball	w-pool	c2-t3
+Dragon Ball Z	w-pool	c3-t2
+Dragão	w-pool	c1-t2
+Dragão-de-komodo	w-test	c2-t3
+Drama	w-pool	c1-t1
+Dream Theater	w-pool	c2-t2
+Droga	w-pool	c1-t1
+Duas Caras	w-test	c2-t1
+Dubai	w-pool	c1-t3
+Duda Mendonça	w-pool	c2-t1
+Dudu Cearense	w-pool	c2-t2
+Dunga	w-test	c1-t2
+Dungeons & Dragons (série animada)	w-test	c4+-t2
+Duração (música)	w-pool	c2-t1
+Dustin Hoffman	w-test	c2-t1
+Dwayne Johnson	w-pool	c2-t3
+Década de 1960	w-test	c2-t2
+Década de 1970	w-test	c2-t2
+Década de 1980	w-pool	c2-t2
+Década de 1990	w-pool	c2-t3
+Décio de Almeida Prado	w-pool	c3-t1
+Déjà vu	w-pool	c2-t1
+Dólar dos Estados Unidos	w-pool	c3-t3
+Dúvida	w-pool	c1-t1
+E-mail	w-pool	c1-t2
+Ebulioscopia	w-pool	c1-t1
+Echinodermata	w-pool	c1-t2
+Ecologia	w-val	c1-t3
+Economia	w-test	c1-t3
+Economia da Bahia	w-pool	c2-t3
+Economia da China	w-pool	c2-t3
+Economia da Região Nordeste do Brasil	w-pool	c4+-t3
+Economia da Região Norte do Brasil	w-pool	c4+-t2
+Economia da Índia	w-pool	c2-t3
+Economia do Brasil	w-pool	c2-t3
+Economia do Paraná	w-pool	c2-t2
+Economia dos Estados Unidos	w-pool	c3-t3
+Ecossistema	w-test	c1-t3
+Edgar Allan Poe	w-pool	c3-t2
+Edgard Leuenroth	w-test	c2-t3
+Edir Macedo	w-test	c2-t3
+Edmund Husserl	w-pool	c2-t2
+Edson & Hudson	w-pool	c2-t1
+Eduardo Gomes	w-pool	c2-t1
+Educação	w-pool	c1-t2
+Educação a distância	w-pool	c2-t2
+Educação física	w-test	c2-t2
+Educação no Brasil	w-pool	c2-t2
+Edward Scissorhands	w-pool	c2-t3
+Efeito Doppler	w-test	c2-t1
+Efeito estufa	w-test	c2-t2
+Efeito fotoelétrico	w-pool	c2-t2
+Efeitos da cannabis à saúde	w-pool	c3-t2
+Egito	w-pool	c1-t3
+Eike Batista	w-test	c2-t2
+Eirunepé	w-pool	c1-t3
+Ejaculação	w-val	c1-t1
+Ejaculação feminina	w-test	c2-t2
+El Chavo del Ocho	w-pool	c4+-t3
+El Greco	w-test	c2-t3
+El Niño	w-test	c2-t3
+Elefante	w-test	c1-t3
+Elegia	w-val	c1-t1
+Eleição da cidade-sede dos Jogos Olímpicos de Verão de 2008	w-pool	c4+-t1
+Eleição da cidade-sede dos Jogos Olímpicos de Verão de 2012	w-pool	c4+-t1
+Eleição da cidade-sede dos Jogos Olímpicos de Verão de 2016	w-pool	c4+-t1
+Eleições no Brasil	w-test	c2-t2
+Elemento (química)	w-test	c2-t3
+Eletricidade	w-pool	c1-t3
+Eletricidade estática	w-test	c2-t1
+Eletromagnetismo	w-pool	c1-t2
+Eletronegatividade	w-pool	c1-t2
+Eletroquímica	w-pool	c1-t2
+Eletrólise	w-pool	c1-t2
+Eletrólise da água	w-pool	c2-t1
+Eletrólito	w-pool	c1-t1
+Eletrônica	w-pool	c1-t2
+Elias Mendes Trindade	w-pool	c3-t2
+Elie Horn	w-pool	c2-t1
+Elis Regina	w-test	c2-t3
+Elizeth Cardoso	w-pool	c2-t1
+Elon Lages Lima	w-test	c3-t1
+Elvis Presley	w-pool	c2-t3
+Elza Soares	w-pool	c2-t3
+Emanuel Lasker	w-pool	c2-t3
+Embraer	w-pool	c1-t2
+Emerson Fittipaldi	w-val	c2-t2
+Emerson Leão	w-test	c2-t2
+Emicida	w-pool	c1-t3
+Eminem	w-pool	c1-t3
+Emirados Árabes Unidos	w-pool	c3-t3
+Emissor	w-test	c1-t1
+Emma Goldman	w-pool	c2-t3
+Emma Smith	w-pool	c2-t2
+Emma Watson	w-pool	c2-t3
+Emoticon	w-pool	c1-t1
+Emoção	w-test	c1-t2
+Empatia	w-pool	c1-t2
+Empire State Building	w-pool	c3-t1
+Empirismo	w-pool	c1-t3
+Empreendedorismo	w-pool	c1-t2
+Empresa	w-pool	c1-t1
+Emílio Garrastazu Médici	w-pool	c3-t2
+Emílio Mallet	w-pool	c2-t3
+Emílio Ribas	w-val	c2-t1
+Emílio Santiago	w-pool	c2-t1
+Encanto	w-test	c1-t1
+Encefalite	w-pool	c1-t1
+Enciclopédia	w-pool	c1-t2
+Encyclopædia Britannica	w-pool	c2-t3
+Encéfalo	w-test	c1-t2
+Endergónica	w-pool	c1-t1
+Energia	w-test	c1-t3
+Energia cinética	w-pool	c2-t3
+Energia de ativação	w-pool	c2-t1
+Energia elétrica	w-pool	c2-t1
+Energia eólica	w-pool	c2-t2
+Energia nuclear	w-pool	c2-t3
+Energia potencial	w-test	c2-t2
+Energia potencial elástica	w-pool	c3-t1
+Energia potencial elétrica	w-test	c3-t1
+Energia potencial gravitacional	w-pool	c3-t1
+Energia renovável	w-test	c2-t2
+Energia solar	w-pool	c2-t3
+Enfarte agudo do miocárdio	w-pool	c3-t2
+Engenharia	w-pool	c1-t3
+Engenharia de produção	w-test	c2-t2
+Engenheiros do Hawaii	w-pool	c2-t3
+Enrico Fermi	w-pool	c2-t3
+Ensaio	w-pool	c1-t1
+Entalpia	w-pool	c1-t3
+Entradas e Bandeiras	w-pool	c2-t1
+Entropia	w-pool	c1-t2
+Enxofre	w-pool	c1-t1
+Enzima	w-pool	c1-t3
+Enzo Francescoli	w-test	c2-t3
+Epaminondas	w-test	c1-t2
+Epicurismo	w-pool	c1-t2
+Epicuro de Samos	w-pool	c2-t1
+Epilepsia	w-pool	c1-t3
+Epistasia	w-pool	c1-t2
+Epistemologia	w-pool	c1-t2
+Epitalâmio	w-pool	c1-t1
+Epitácio Pessoa	w-pool	c2-t2
+Epitélio	w-test	c1-t2
+Epopeia de Gilgamés	w-pool	c2-t2
+Equador	w-pool	c1-t2
+Equação	w-pool	c1-t2
+Equação de Arrhenius	w-pool	c2-t1
+Equação diferencial	w-pool	c2-t3
+Equação linear	w-pool	c2-t2
+Equação polinomial	w-pool	c2-t1
+Equação quadrática	w-pool	c2-t2
+Equilíbrio mecânico	w-pool	c2-t1
+Equilíbrio químico	w-pool	c2-t2
+Era Vargas	w-pool	c2-t3
+Era de prata das histórias em quadrinhos americanas	w-pool	c4+-t2
+Era dos Descobrimentos	w-pool	c2-t3
+Era pré-colombiana	w-pool	c3-t1
+Erasmo Braga	w-pool	c2-t2
+Erasmo Carlos	w-test	c2-t2
+Erasmo de Roterdão	w-pool	c2-t3
+Erechim	w-pool	c1-t3
+Eritreia	w-pool	c1-t3
+Ernest Rutherford	w-test	c2-t2
+Ernesto Geisel	w-pool	c2-t2
+Erosão	w-test	c1-t3
+Erotismo	w-pool	c1-t1
+Erwin Schrödinger	w-pool	c2-t2
+Esaú e Jacó	w-pool	c2-t1
+Escherichia coli	w-pool	c2-t2
+Esclerose lateral amiotrófica	w-pool	c3-t1
+Esclerose múltipla	w-pool	c2-t3
+Escola	w-pool	c1-t1
+Escola da Borgonha	w-pool	c2-t1
+Escola de Engenharia de São Carlos da Universidade de São Paulo	w-pool	c4+-t2
+Escola de Frankfurt	w-test	c2-t3
+Escola do Rio Hudson	w-pool	c3-t3
+Escola literária	w-pool	c2-t2
+Escola sofística	w-pool	c2-t2
+Escoliose	w-pool	c1-t2
+Escolástica	w-pool	c1-t2
+Escorpião	w-test	c1-t2
+Escravatura	w-pool	c1-t2
+Escravidão em África	w-pool	c2-t3
+Escravidão no Brasil	w-pool	c2-t3
+Escrita	w-pool	c1-t2
+Escrito nas Estrelas (telenovela)	w-pool	c3-t2
+Escultura	w-pool	c1-t2
+Escultura da Grécia Antiga	w-pool	c3-t3
+Escultura da Grécia arcaica	w-pool	c3-t3
+Escultura da Roma Antiga	w-pool	c3-t3
+Escultura do Brasil	w-pool	c2-t3
+Escultura do Classicismo grego	w-val	c3-t3
+Escultura do Renascimento italiano	w-test	c3-t3
+Escultura do gótico	w-test	c2-t3
+Escultura dos Sete Povos das Missões	w-pool	c4+-t3
+Escultura etrusca	w-pool	c2-t3
+Escultura helenística	w-pool	c2-t3
+Escândio	w-test	c1-t1
+Esfera	w-pool	c1-t3
+Espada	w-pool	c1-t2
+Espanha	w-pool	c1-t3
+Esparta	w-test	c1-t2
+Espaço amostral	w-pool	c2-t1
+Espaço geográfico	w-pool	c2-t1
+Especiação	w-pool	c1-t2
+Espelho	w-pool	c1-t2
+Espelho esférico	w-test	c2-t1
+Espelhos planos	w-pool	c2-t1
+Esperanto	w-pool	c1-t3
+Espiritismo	w-pool	c1-t3
+Esporte Clube Bahia	w-pool	c3-t3
+Esporte Clube Juventude	w-pool	c3-t3
+Esporte Clube Vitória	w-pool	c3-t2
+Esporte no Brasil	w-pool	c2-t3
+Espumas Flutuantes	w-pool	c2-t1
+Espécie	w-pool	c1-t2
+Espécie ameaçada	w-pool	c2-t1
+Espécie invasora	w-pool	c2-t2
+Espírito Santo	w-pool	c2-t2
+Espírito Santo (estado)	w-pool	c3-t3
+Esqueleto	w-pool	c1-t1
+Esqueleto humano	w-test	c2-t1
+Esquistossomose	w-pool	c1-t3
+Esquizofrenia	w-val	c1-t3
+Essuatíni	w-pool	c1-t2
+Estado	w-test	c1-t3
+Estado Novo (Brasil)	w-test	c3-t3
+Estado de bem-estar social	w-pool	c4+-t1
+Estado de direito	w-pool	c2-t3
+Estado físico da matéria	w-pool	c3-t2
+Estado secular	w-pool	c2-t2
+Estados Unidos	w-pool	c2-t3
+Estados dos Estados Unidos	w-pool	c3-t1
+Estanho	w-pool	c1-t1
+Estatuto da Criança e do Adolescente	w-pool	c3-t2
+Estatuto da Terra	w-pool	c2-t1
+Estatuto social	w-val	c2-t1
+Estatística	w-test	c1-t1
+Estatística descritiva	w-test	c2-t1
+Estação Primeira de Mangueira	w-pool	c3-t3
+Estação do ano	w-test	c2-t1
+Estequiometria	w-pool	c1-t1
+Esterificação	w-pool	c1-t1
+Esteroide anabolizante	w-pool	c2-t3
+Estilo Severo	w-pool	c2-t3
+Estilo de Machado de Assis	w-pool	c3-t1
+Estoicismo	w-pool	c1-t3
+Estratégia	w-pool	c1-t1
+Estrela	w-test	c1-t3
+Estrôncio	w-pool	c1-t1
+Estudo (música)	w-pool	c2-t1
+Estádio Jornalista Mário Filho	w-pool	c4+-t3
+Estádio Olímpico Nilton Santos	w-pool	c4+-t3
+Estádio Palestra Italia	w-pool	c3-t2
+Estádio Vasco da Gama	w-test	c3-t2
+Estádio do Morumbi	w-pool	c2-t3
+Estátua da Liberdade	w-pool	c2-t3
+Estética	w-pool	c1-t3
+Estónia	w-pool	c1-t3
+Etanol	w-pool	c1-t2
+Etanol como combustível no Brasil	w-test	c3-t2
+Ethos	w-test	c1-t1
+Etimologia dos nomes dos países	w-test	c3-t3
+Etiqueta	w-pool	c1-t1
+Etiópia	w-pool	c1-t3
+Etnicidade	w-pool	c1-t1
+Etnocentrismo	w-pool	c1-t1
+Etnometodologia	w-pool	c1-t1
+Eu (Augusto dos Anjos)	w-test	c2-t1
+Euclides	w-pool	c1-t2
+Euclides da Cunha	w-test	c2-t2
+Eufemismo	w-pool	c1-t1
+Eugênia Álvaro Moreyra	w-pool	c3-t1
+Euphoria (linguagem de programação)	w-pool	c3-t2
+Eurico Gaspar Dutra	w-test	c3-t2
+Euro	w-pool	c1-t1
+Europa	w-pool	c1-t3
+Euryclides de Jesus Zerbini	w-pool	c3-t2
+Európio	w-pool	c1-t1
+Eutanásia	w-pool	c1-t2
+Eva Wilma	w-pool	c2-t2
+Evandro Lins e Silva	w-test	c3-t1
+Evanescence	w-pool	c1-t2
+Evaristo da Veiga	w-test	c2-t2
+Evento (teoria das probabilidades)	w-pool	c3-t1
+Everybody Hates Chris	w-pool	c3-t2
+Evidências da evolução	w-pool	c2-t2
+Evolução	w-pool	c1-t3
+Evolução humana	w-pool	c2-t3
+Evolução territorial do Brasil	w-pool	c3-t2
+Exclusão social	w-pool	c2-t1
+Exergónica	w-pool	c1-t1
+Existencialismo	w-test	c1-t3
+Expedição polar de S. A. Andrée	w-pool	c4+-t3
+Exploração de Júpiter	w-pool	c2-t2
+Explosivo	w-pool	c1-t1
+Exponenciação	w-pool	c1-t2
+Expressionismo	w-pool	c1-t3
+Extreme Championship Wrestling	w-pool	c3-t2
+Extremoz	w-pool	c1-t2
+Exu (orixá)	w-pool	c2-t2
+Exu de umbanda	w-test	c2-t1
+Exército Brasileiro	w-test	c2-t3
+Eça de Queiroz	w-pool	c2-t2
+FC Bayern München	w-pool	c3-t3
+Facebook	w-test	c1-t3
+Fadinha-esplêndida	w-pool	c2-t2
+Fairy Tail	w-pool	c2-t2
+Falha do Enem de 2010	w-pool	c3-t2
+Falácia	w-pool	c1-t3
+Família	w-pool	c1-t3
+Família Gracie	w-val	c2-t1
+Farmacêutico	w-pool	c1-t2
+Farsa	w-pool	c1-t1
+Fascismo	w-pool	c1-t3
+Fato social	w-test	c2-t1
+Fauna do Brasil	w-test	c2-t2
+Fauno	w-pool	c1-t2
+Fause Haten	w-pool	c2-t1
+Faustão	w-pool	c1-t2
+Fauvismo	w-pool	c1-t1
+Fearless (álbum de Taylor Swift)	w-test	c4+-t3
+Febre	w-pool	c1-t1
+Febre amarela	w-pool	c2-t2
+Federação Internacional de Ginástica	w-pool	c3-t2
+Federação Pernambucana de Futebol	w-test	c3-t1
+Federico Fellini	w-pool	c2-t1
+Feira de Santana	w-pool	c2-t3
+Felipão (treinador de futebol)	w-pool	c3-t3
+Feminismo	w-pool	c1-t3
+Feminismo no Brasil	w-test	c2-t2
+Femme Fatale (álbum)	w-pool	c3-t2
+Fenol	w-pool	c1-t1
+Fenomenologia	w-val	c1-t2
+Fenícia	w-pool	c1-t2
+Fenômeno social	w-test	c2-t1
+Fenômeno óptico	w-pool	c2-t1
+Fergie	w-pool	c1-t2
+Feriados no Brasil	w-pool	c2-t1
+Fermentação	w-test	c1-t2
+Fernanda Montenegro	w-pool	c2-t2
+Fernandinho Beira-Mar	w-pool	c3-t1
+Fernando Collor	w-pool	c2-t3
+Fernando Henrique Cardoso	w-pool	c3-t3
+Fernando Meirelles	w-test	c2-t1
+Fernando Pessoa	w-pool	c2-t3
+Fernando Sabino	w-pool	c2-t1
+Fernando Torres	w-pool	c2-t2
+Fernando de Noronha	w-pool	c2-t3
+Fernandão (futebolista, 1987)	w-test	c3-t1
+Fernão Dias Pais Leme	w-pool	c4+-t3
+Fernão de Magalhães	w-test	c2-t3
+Ferris Bueller's Day Off	w-pool	c4+-t3
+Ferro	w-pool	c1-t2
+Ferroviário Esporte Clube (Serra Talhada)	w-pool	c4+-t1
+Festa junina	w-pool	c2-t2
+Feudalismo	w-test	c1-t3
+Ficção	w-pool	c1-t2
+Fidel Castro	w-test	c2-t3
+Figueirense Futebol Clube	w-pool	c3-t3
+Figura de linguagem	w-test	c2-t1
+Filaríase	w-pool	c1-t1
+Filipinas	w-pool	c1-t3
+Filme	w-pool	c1-t3
+Filme pornográfico	w-pool	c2-t1
+Filosofia	w-pool	c1-t3
+Filosofia analítica	w-pool	c2-t1
+Filosofia antiga	w-pool	c2-t1
+Filosofia contemporânea	w-pool	c2-t1
+Filosofia do Renascimento	w-pool	c2-t1
+Filosofia egípcia antiga	w-test	c3-t1
+Filosofia medieval	w-test	c2-t1
+Filosofia moderna	w-pool	c2-t1
+Filosofia no século XIX	w-test	c3-t1
+Filosofia oriental	w-pool	c2-t1
+Fina Estampa	w-pool	c2-t1
+Finlândia	w-pool	c1-t3
+Firefox	w-pool	c1-t2
+Firework	w-pool	c1-t2
+Fisiologia vegetal	w-pool	c2-t1
+Fisioterapia	w-pool	c1-t2
+Fissão nuclear	w-pool	c2-t3
+Fiódor Dostoiévski	w-pool	c2-t3
+Fiódor Emelianenko	w-pool	c2-t1
+Flagelo	w-pool	c1-t1
+Flamenco	w-pool	c1-t2
+Flauta	w-pool	c1-t1
+Flor	w-pool	c1-t1
+Floresta Nacional de Shoshone	w-pool	c3-t2
+Floresta húmida	w-test	c2-t1
+Floresta ombrófila mista	w-pool	c3-t2
+Florestan Fernandes	w-pool	c2-t2
+Florestas da Península Ibérica	w-pool	c3-t2
+Floriano Peixoto	w-pool	c2-t2
+Florianópolis	w-test	c1-t3
+Fluido incompressível	w-pool	c2-t1
+Fluminense Football Club	w-test	c3-t3
+Fluoxetina	w-pool	c1-t1
+Fluxo invíscido	w-pool	c2-t1
+Flyleaf	w-pool	c1-t2
+Flávia Alessandra	w-pool	c2-t1
+Flórida	w-pool	c1-t3
+Flúor	w-pool	c1-t1
+Fogo	w-pool	c1-t3
+Folclore	w-test	c1-t1
+Folclore brasileiro	w-val	c2-t3
+Fonema	w-test	c1-t2
+Fonologia	w-pool	c1-t1
+Fonética	w-pool	c1-t2
+Foo Fighters	w-test	c2-t2
+Football Club Internazionale Milano	w-pool	c4+-t2
+For the Man Who Has Everything	w-pool	c4+-t2
+Fordismo	w-pool	c1-t2
+Forever and a Day (canção de Kelly Rowland)	w-test	c4+-t1
+Forma de governo	w-test	c2-t1
+Forma musical	w-test	c2-t2
+Forma sonata	w-pool	c2-t1
+Formatinho	w-pool	c1-t2
+Formiga	w-pool	c1-t3
+Forrest Griffin	w-pool	c2-t1
+Forró	w-pool	c1-t2
+Fortaleza	w-pool	c1-t3
+Fortaleza Esporte Clube	w-test	c3-t2
+Fortaleza de Yedikule	w-pool	c2-t1
+Força	w-pool	c1-t3
+Força Aérea Brasileira	w-pool	c3-t2
+Força Expedicionária Brasileira	w-pool	c3-t2
+Força de Van der Waals	w-pool	c4+-t1
+Força forte	w-pool	c2-t1
+Força intermolecular	w-test	c2-t1
+Força normal	w-test	c2-t1
+Fosforilação oxidativa	w-pool	c2-t3
+Fotografia	w-pool	c1-t3
+Fotossíntese	w-pool	c1-t3
+Foz do Iguaçu	w-pool	c2-t2
+Franca	w-pool	c1-t3
+Francesco Matarazzo	w-test	c2-t2
+Francis Bacon	w-test	c2-t3
+Francisca Júlia da Silva	w-pool	c3-t1
+Francisco Beltrão	w-pool	c2-t2
+Francisco Iglésias	w-test	c2-t1
+Francisco José Furtado	w-pool	c3-t1
+Francisco Sabino	w-pool	c2-t1
+Francisco Stockinger	w-pool	c2-t2
+Francisco de Assis	w-pool	c2-t3
+Francisco de Goya	w-pool	c2-t2
+Francisco de Lima e Silva	w-pool	c3-t1
+Francisco de Paula Brochado da Rocha	w-pool	c4+-t1
+Francisco de Paula Sousa e Melo	w-pool	c4+-t1
+Franco Montoro	w-test	c2-t1
+Frank Lloyd Wright	w-pool	c3-t2
+Frank Mir	w-pool	c2-t2
+Frank Zappa	w-pool	c2-t3
+Franklin D. Roosevelt	w-pool	c3-t3
+Franklin Távora	w-test	c2-t1
+Franz Kafka	w-pool	c2-t3
+Franz Schubert	w-test	c2-t3
+Franz Weissmann	w-pool	c2-t1
+França	w-pool	c1-t3
+França Júnior	w-pool	c2-t1
+Frase (música)	w-pool	c2-t1
+Fração	w-test	c1-t3
+Fração do Exército Vermelho	w-pool	c3-t3
+Freddie Mercury	w-pool	c2-t3
+Freddy Krueger	w-pool	c2-t2
+Frederick Taylor	w-test	c2-t2
+Frei Caneca	w-pool	c2-t2
+Frei Galvão	w-pool	c2-t2
+Frente Ocidental (Primeira Guerra Mundial)	w-pool	c4+-t3
+Frequência	w-pool	c1-t2
+Fresno (banda)	w-val	c2-t2
+Frevo	w-pool	c1-t2
+Frida Kahlo	w-test	c2-t3
+Friedrich Nietzsche	w-pool	c2-t3
+Friends	w-test	c1-t3
+Fronteira interna alemã	w-test	c3-t3
+Fruto	w-pool	c1-t2
+Frâncio	w-val	c1-t1
+Frédéric Chopin	w-test	c2-t3
+Fuga	w-pool	c1-t3
+Fuga do Planeta dos Macacos	w-pool	c3-t1
+Fullmetal Alchemist	w-pool	c2-t3
+Funcionalismo (ciências sociais)	w-test	c3-t1
+Fundamentalismo	w-pool	c1-t1
+Fundação de Roma	w-pool	c2-t2
+Fundo Monetário Internacional	w-pool	c3-t3
+Fungi	w-pool	c1-t3
+Funk	w-val	c1-t2
+Função	w-pool	c1-t1
+Função bijectiva	w-pool	c2-t1
+Função convexa	w-pool	c2-t1
+Função exponencial	w-pool	c2-t2
+Função injectiva	w-val	c2-t2
+Função linear	w-pool	c2-t1
+Função polinomial	w-test	c2-t1
+Função quadrática	w-pool	c2-t2
+Função química	w-pool	c2-t1
+Função sobrejectiva	w-pool	c2-t2
+Função trigonométrica	w-pool	c2-t3
+Funções da linguagem	w-pool	c2-t1
+Furacão John (2006)	w-pool	c3-t2
+Fuso horário	w-test	c2-t3
+Futbol Club Barcelona	w-pool	c3-t3
+Futebol	w-pool	c1-t3
+Futebol Clube do Porto	w-pool	c3-t3
+Futebol americano	w-pool	c2-t3
+Futebol de salão	w-test	c2-t1
+Futebol do Brasil	w-pool	c2-t3
+Futurismo	w-pool	c1-t1
+Fábio Barreto	w-pool	c2-t1
+Fábula	w-pool	c1-t1
+Fénix	w-test	c1-t2
+Fídias	w-pool	c1-t3
+Fígado	w-pool	c1-t1
+Física	w-pool	c1-t3
+Físico-química	w-pool	c2-t1
+Fósforo	w-pool	c1-t2
+Fóssil	w-pool	c1-t2
+G-22	w-pool	c2-t1
+Gabriel García Márquez	w-pool	c3-t1
+Gabriela, Cravo e Canela	w-pool	c3-t1
+Gabão	w-pool	c1-t2
+Gadolínio	w-test	c1-t1
+Gal Costa	w-pool	c2-t2
+Galileu Galilei	w-test	c2-t3
+Galinha	w-pool	c1-t2
+Galáxia	w-test	c1-t3
+Gamão	w-val	c1-t2
+Gana	w-pool	c1-t2
+Ganesha	w-val	c1-t3
+Gantz	w-pool	c1-t2
+Garrincha	w-pool	c1-t3
+Garry Kasparov	w-pool	c2-t2
+Gato	w-pool	c1-t3
+Gavial	w-pool	c1-t2
+Gaúcho	w-pool	c1-t1
+Gene	w-pool	c1-t2
+Gengis Khan	w-pool	c2-t2
+Genji Monogatari	w-pool	c2-t2
+Genética	w-pool	c1-t2
+Genética mendeliana	w-pool	c2-t2
+Genética molecular	w-pool	c2-t1
+Genótipo	w-pool	c1-t1
+Geocentrismo	w-pool	c1-t1
+Geoffrey Chaucer	w-val	c2-t1
+Geoffrey Rush	w-test	c2-t1
+Geografia	w-test	c1-t3
+Geografia de Coronel Fabriciano	w-pool	c3-t2
+Geografia de Paulínia	w-test	c2-t2
+Geografia do Brasil	w-pool	c2-t3
+Geologia	w-val	c1-t3
+Geologia do Brasil	w-pool	c2-t2
+Geometria	w-pool	c1-t2
+Geometria analítica	w-pool	c2-t2
+Geometria diferencial	w-pool	c2-t1
+Geometria euclidiana	w-pool	c2-t2
+Geometria molecular	w-pool	c2-t1
+Geopolítica	w-pool	c1-t2
+Georg Friedrich Händel	w-pool	c3-t3
+Georg Simmel	w-pool	c2-t2
+Georg Wilhelm Friedrich Hegel	w-pool	c4+-t3
+George Boole	w-test	c2-t1
+George Harrison	w-pool	c2-t3
+George Washington	w-test	c2-t3
+Georges St. Pierre	w-test	c3-t2
+Gerador elétrico	w-pool	c2-t1
+Geração X	w-test	c2-t1
+Geração Y	w-pool	c2-t2
+Geração Z	w-val	c2-t1
+Germânio	w-pool	c1-t1
+Gestualismo (pintura)	w-pool	c2-t1
+Gestão da cadeia logística	w-pool	c3-t3
+Getúlio Vargas	w-val	c2-t3
+Giacomo Puccini	w-pool	c2-t2
+Gil Vicente	w-pool	c2-t2
+Gilberto Freire	w-pool	c2-t1
+Gilberto Gil	w-pool	c2-t3
+Gino Meneghetti	w-pool	c2-t2
+Ginástica	w-val	c1-t3
+Ginástica artística	w-pool	c2-t3
+Ginástica rítmica	w-pool	c2-t3
+Giovanna Antonelli	w-pool	c2-t2
+Girlfriend (canção de Avril Lavigne)	w-pool	c4+-t2
+Gisele Bündchen	w-pool	c2-t3
+Giselle Itié	w-pool	c2-t1
+Giuseppe Garibaldi	w-test	c2-t3
+Giuseppe Verdi	w-pool	c2-t3
+Glaci Zancan	w-pool	c2-t1
+Glauber Rocha	w-test	c2-t2
+Glaucoma	w-pool	c1-t2
+Glee	w-pool	c1-t3
+Globalização	w-pool	c1-t3
+Glória Maria	w-pool	c2-t1
+Glória Pires	w-pool	c2-t2
+Gnosticismo	w-pool	c1-t2
+Go	w-pool	c1-t2
+Goal!	w-test	c1-t1
+God of War	w-pool	c3-t3
+God of War III	w-pool	c4+-t2
+Goiana	w-pool	c1-t3
+Goiás	w-pool	c1-t3
+Goiás Esporte Clube	w-pool	c3-t3
+Goiânia	w-pool	c1-t3
+Gol Linhas Aéreas Inteligentes	w-pool	c4+-t2
+Golbery do Couto e Silva	w-pool	c3-t2
+Golfe	w-pool	c1-t2
+Golpe de Estado no Brasil em 1964	w-pool	c4+-t3
+Gone (canção de Nelly)	w-pool	c3-t1
+Gonorreia	w-pool	c1-t2
+Gonçalves Dias	w-pool	c2-t2
+Gonçalves de Magalhães	w-pool	c2-t1
+Goodbye Lullaby	w-pool	c2-t3
+Google	w-pool	c1-t3
+Gossip Girl (telessérie)	w-pool	c3-t3
+Gottfried Leibniz	w-pool	c2-t3
+Governador Valadares	w-pool	c2-t3
+Governo	w-test	c1-t2
+Governo Collor	w-pool	c2-t2
+Governo Fernando Henrique Cardoso	w-pool	c4+-t2
+Governo Itamar Franco	w-test	c3-t1
+Governo Lula	w-pool	c2-t1
+Governo Sarney	w-pool	c2-t1
+Graciliano Ramos	w-pool	c2-t2
+Grafito	w-pool	c1-t3
+Gramática	w-test	c1-t1
+Granada (país)	w-pool	c2-t1
+Grand Chase	w-pool	c2-t2
+Grand Theft Auto IV	w-pool	c4+-t3
+Grand Theft Auto: San Andreas	w-pool	c4+-t3
+Grande Barreira de Coral	w-pool	c3-t1
+Grande Depressão	w-pool	c2-t3
+Grande Muralha da China	w-pool	c3-t1
+Grande Otelo	w-pool	c2-t2
+Grande Prêmio de San Marino de 1994	w-pool	c4+-t2
+Grande Sertão: Veredas	w-pool	c3-t2
+Grande fome de 1845–1849 na Irlanda	w-pool	c4+-t3
+Grande potência	w-pool	c2-t1
+Grandes Lagos da América do Norte	w-test	c4+-t1
+Grandeza escalar	w-pool	c2-t1
+Granizo	w-pool	c1-t2
+Grau Celsius	w-test	c2-t1
+Grau Fahrenheit	w-pool	c2-t1
+Gravataí	w-pool	c1-t3
+Gravidade	w-test	c1-t3
+Gravidez	w-pool	c1-t3
+Gravidez na adolescência	w-test	c2-t2
+Graziela Barroso	w-pool	c2-t1
+Graça Aranha	w-pool	c2-t1
+Green Day	w-pool	c2-t3
+Greenzo	w-pool	c1-t3
+Gregório de Matos	w-pool	c2-t1
+Gregório de Nazianzo	w-pool	c2-t2
+Grenal	w-pool	c1-t3
+Gretchen	w-pool	c1-t2
+Grey's Anatomy	w-pool	c3-t3
+Gripe	w-test	c1-t3
+Gronelândia	w-pool	c1-t3
+Grunge	w-pool	c1-t2
+Grupo (sociologia)	w-test	c2-t1
+Grupo Grimm	w-pool	c2-t1
+Grupo Santa Helena	w-pool	c3-t1
+Grupo sanguíneo	w-val	c2-t1
+Gráfico	w-pool	c1-t1
+Grécia	w-pool	c1-t3
+Grécia Antiga	w-pool	c2-t3
+Grêmio Foot-Ball Porto Alegrense	w-pool	c4+-t3
+Guarani Futebol Clube	w-pool	c3-t2
+Guarapuava	w-pool	c1-t3
+Guaratinguetá	w-test	c1-t3
+Guarda	w-pool	c1-t3
+Guarulhos	w-pool	c1-t2
+Guerra	w-pool	c1-t3
+Guerra Anglo–Zanzibari	w-pool	c3-t2
+Guerra Boshin	w-pool	c2-t2
+Guerra Civil Americana	w-test	c3-t3
+Guerra Civil Espanhola	w-pool	c3-t3
+Guerra Civil Finlandesa	w-val	c3-t3
+Guerra Civil Inglesa	w-pool	c3-t2
+Guerra Fria	w-pool	c2-t3
+Guerra Italiana de 1521–1526	w-pool	c4+-t3
+Guerra civil	w-pool	c2-t1
+Guerra da Coreia	w-pool	c2-t3
+Guerra da Independência de Moçambique	w-pool	c3-t3
+Guerra das Malvinas	w-test	c2-t3
+Guerra de Granada	w-pool	c2-t3
+Guerra de Independência dos Estados Unidos	w-pool	c4+-t3
+Guerra de Troia	w-pool	c2-t2
+Guerra do Contestado	w-pool	c2-t2
+Guerra do Iraque	w-pool	c2-t3
+Guerra do Paraguai	w-pool	c2-t3
+Guerra do Vietnã	w-pool	c2-t3
+Guerra dos Cem Anos	w-pool	c3-t3
+Guerra dos Emboabas	w-pool	c2-t2
+Guerra dos Farrapos	w-pool	c2-t3
+Guerra dos Trinta Anos	w-pool	c3-t3
+Guerras de independência na América espanhola	w-pool	c4+-t2
+Gugu Liberato	w-test	c2-t2
+Guiana	w-pool	c1-t3
+Guiana Francesa	w-pool	c2-t2
+Guilherme Paraense	w-pool	c2-t1
+Guillermo Barros Schelotto	w-pool	c3-t3
+Guimarães Rosa	w-pool	c2-t1
+Guiné	w-pool	c1-t2
+Guiné Equatorial	w-test	c2-t2
+Guiné-Bissau	w-pool	c2-t3
+Guitarra	w-pool	c1-t2
+Guns N' Roses	w-pool	c3-t3
+Gustav Mahler	w-pool	c2-t2
+Gustavo Borges	w-pool	c2-t2
+Gustavo Kuerten	w-pool	c2-t3
+Gwyneth Paltrow	w-pool	c2-t1
+Gymnospermae	w-test	c1-t2
+Gyromitra esculenta	w-pool	c2-t2
+Gálio	w-pool	c1-t1
+Gás	w-pool	c1-t2
+Gás ideal	w-test	c2-t1
+Gás natural	w-test	c2-t2
+Gás nobre	w-pool	c2-t2
+Gâmbia	w-pool	c1-t2
+Gênero literário	w-pool	c2-t1
+Gênero musical	w-test	c2-t2
+Gênesis	w-pool	c1-t3
+HTML	w-pool	c1-t1
+HTTP	w-pool	c1-t2
+Habitat	w-pool	c1-t2
+Habitus	w-pool	c1-t1
+Hades	w-test	c1-t3
+Hafez	w-pool	c1-t1
+Hair (canção)	w-test	c2-t2
+Haiti	w-test	c1-t3
+Hale-Bopp	w-pool	c2-t2
+Halogênio	w-test	c1-t1
+Hamlet	w-test	c1-t3
+Hangul	w-test	c1-t2
+Hannah Montana	w-pool	c2-t2
+Hans Christian Andersen	w-test	c3-t2
+Hans Stern	w-pool	c2-t1
+Hard (canção)	w-pool	c2-t2
+Hardware	w-pool	c1-t1
+Harmonia (música)	w-pool	c2-t1
+Harry Potter	w-pool	c2-t3
+Harry Potter (personagem)	w-pool	c3-t2
+Harry Potter and the Deathly Hallows – Part 2	w-pool	c4+-t2
+Harvey Milk	w-pool	c2-t3
+Heath Ledger	w-pool	c2-t2
+Heavy metal	w-pool	c2-t3
+Hebe Camargo	w-pool	c2-t3
+Hebreus	w-pool	c1-t3
+Heinrich Lehmann-Willenbrock	w-test	c3-t2
+Heitor Villa-Lobos	w-pool	c3-t2
+Helena Blavatsky	w-pool	c2-t3
+Helena Bonham Carter	w-test	c3-t2
+Heleno de Freitas	w-test	c2-t2
+Helicobacter pylori	w-pool	c2-t2
+Heliocentrismo	w-pool	c1-t1
+Hely Lopes Meirelles	w-pool	c3-t1
+Hemograma	w-test	c1-t2
+Hemorroida	w-pool	c1-t1
+Hemácia	w-pool	c1-t1
+Henri Louis Le Châtelier	w-test	c4+-t1
+Henri Matisse	w-pool	c2-t1
+Henri Poincaré	w-pool	c2-t2
+Henrique VIII de Inglaterra	w-pool	c3-t3
+Henry Ford	w-pool	c2-t3
+Hepatite	w-pool	c1-t2
+Herança ligada ao sexo	w-pool	c3-t1
+Herança quantitativa	w-test	c2-t2
+Herbert Marcuse	w-test	c2-t1
+Herbert Vianna	w-pool	c2-t1
+Here We Go Again (álbum)	w-pool	c4+-t2
+Hermes	w-pool	c1-t3
+Hermes Lima	w-pool	c2-t1
+Hermes da Fonseca	w-pool	c2-t2
+Hernán Cortés	w-pool	c2-t3
+Herpes	w-test	c1-t2
+Heráclito	w-pool	c1-t2
+Hidrocarboneto	w-pool	c1-t1
+Hidrogenação	w-pool	c1-t1
+Hidrografia do Brasil	w-pool	c2-t2
+Hidrogénio	w-pool	c1-t3
+Hidróxido de sódio	w-pool	c2-t2
+Hierarquia militar do Brasil	w-test	c3-t1
+Hilary Duff	w-pool	c2-t3
+Hilda Hilst	w-pool	c2-t2
+Hildegarda de Bingen	w-pool	c2-t3
+Himalaias	w-pool	c1-t2
+Hinduísmo	w-pool	c1-t2
+Hino Nacional Brasileiro	w-pool	c3-t2
+Hino da Independência do Brasil	w-pool	c3-t1
+Hip-hop	w-test	c2-t2
+Hipermídia	w-pool	c1-t1
+Hipertensão arterial	w-pool	c2-t3
+Hipertexto	w-val	c1-t2
+Hipoglicemia	w-pool	c1-t2
+Hipopótamo-pigmeu	w-pool	c2-t2
+Hippie	w-pool	c1-t1
+Hirundo rustica	w-val	c2-t3
+Histologia	w-pool	c1-t2
+Histologia vegetal	w-pool	c2-t1
+Historiografia	w-pool	c1-t3
+Historiografia eclesiástica medieval	w-pool	c3-t2
+História	w-pool	c1-t3
+História da Argentina	w-pool	c2-t3
+História da Espanha	w-test	c2-t3
+História da Europa	w-pool	c2-t3
+História da Grécia	w-pool	c2-t3
+História da Igreja Católica	w-test	c3-t3
+História da Inglaterra	w-pool	c2-t3
+História da Internet	w-pool	c2-t2
+História da TV Globo	w-pool	c3-t3
+História da Terra	w-test	c2-t3
+História da União Europeia	w-pool	c3-t2
+História da União Soviética	w-pool	c3-t3
+História da astronomia	w-pool	c2-t3
+História da aviação	w-test	c2-t3
+História da cidade de São Paulo	w-pool	c4+-t3
+História da ciência	w-test	c2-t3
+História da colonização da Ásia e da Oceania	w-pool	c4+-t1
+História da colonização de África	w-pool	c3-t1
+História da música	w-pool	c2-t2
+História da música erudita em Porto Alegre	w-pool	c4+-t3
+História da química	w-pool	c2-t2
+História da sociologia	w-test	c2-t3
+História da tabela periódica	w-pool	c3-t2
+História da África	w-val	c2-t3
+História das mulheres	w-pool	c2-t1
+História de Action Comics	w-test	c3-t3
+História de Andrelândia	w-test	c2-t3
+História de Brasília	w-test	c2-t3
+História de Caxias do Sul	w-pool	c3-t3
+História de Coronel Fabriciano	w-pool	c3-t3
+História de Israel	w-pool	c2-t3
+História de Pamplona	w-pool	c2-t3
+História de Plasencia	w-pool	c2-t2
+História de Roma	w-pool	c2-t3
+História de Sacavém	w-pool	c2-t3
+História do Amazonas	w-pool	c2-t2
+História do Brasil	w-test	c2-t3
+História do Chile	w-test	c2-t3
+História do Egito	w-pool	c2-t3
+História do Império do Brasil	w-test	c3-t3
+História do Paraná	w-pool	c2-t3
+História do Rio Grande do Sul	w-pool	c4+-t3
+História do São Paulo Futebol Clube	w-test	c4+-t3
+História do cristianismo	w-val	c2-t3
+História do eletromagnetismo	w-pool	c2-t1
+História do futebol do Brasil	w-pool	c3-t3
+História do pensamento evolutivo	w-test	c3-t3
+História do pensamento geográfico	w-test	c3-t2
+História do xadrez	w-test	c2-t2
+História dos Estados Unidos	w-pool	c3-t3
+História econômica do Brasil	w-pool	c3-t3
+História em quadrinhos no Brasil	w-pool	c3-t3
+História meteorológica do furacão Katrina	w-test	c4+-t2
+História mundial	w-pool	c2-t1
+História política dos Jogos Olímpicos de 1936	w-pool	c4+-t1
+História pré-cabralina do Brasil	w-test	c4+-t3
+Holandês Voador	w-val	c2-t2
+Holocausto	w-pool	c1-t3
+Holodomor	w-test	c1-t3
+Homem	w-pool	c1-t1
+Homem Vitruviano (desenho de Leonardo da Vinci)	w-test	c4+-t1
+Homem de Ferro	w-test	c2-t3
+Homem-Aranha	w-pool	c2-t3
+Homeopatia	w-pool	c1-t2
+Homer's Phobia	w-pool	c3-t2
+Homero	w-pool	c1-t1
+Homofobia	w-pool	c1-t2
+Homossexualidade	w-pool	c1-t3
+Homónimo	w-val	c1-t1
+Hong Kong	w-pool	c2-t3
+Honoré de Balzac	w-pool	c2-t3
+Honório Hermeto Carneiro Leão	w-pool	c4+-t3
+Hopi Hari	w-test	c2-t2
+Hormona	w-val	c1-t1
+Hormônio do crescimento	w-val	c2-t2
+Hortaliça	w-pool	c1-t1
+Horto (Auta de Souza)	w-pool	c3-t1
+Hortência Marcari	w-pool	c2-t1
+Horácio Lafer	w-pool	c2-t1
+Horácio de Matos	w-pool	c2-t2
+House, M.D.	w-pool	c3-t2
+Hugin e Munin	w-test	c2-t2
+Hugo Hoyama	w-pool	c2-t1
+Hulk	w-test	c1-t3
+Hulk (futebolista)	w-pool	c2-t2
+Humanismo	w-pool	c1-t2
+Humano	w-test	c1-t3
+Humberto Castelo Branco	w-pool	c3-t3
+Hungria	w-pool	c1-t3
+Háfnio	w-pool	c1-t1
+Héctor Babenco	w-pool	c2-t1
+Hélder Câmara	w-pool	c2-t2
+Hélio	w-pool	c1-t1
+Hélio Castroneves	w-pool	c2-t1
+Hélio Gracie	w-test	c2-t2
+Hélio Jaguaribe	w-pool	c2-t1
+Hélio Oiticica	w-pool	c2-t2
+Hélio Pellegrino	w-pool	c2-t1
+Hólmio	w-pool	c1-t1
+I Am... Sasha Fierce	w-pool	c4+-t3
+ICarly	w-test	c1-t2
+IK Pegasi	w-val	c2-t2
+IPhone	w-test	c1-t2
+IPod	w-test	c1-t3
+ISO 9000	w-pool	c2-t2
+Iara	w-pool	c1-t2
+Iberê Camargo	w-pool	c2-t2
+Ibne Batuta	w-pool	c2-t3
+Ibne Caldune	w-pool	c2-t3
+Idade Antiga	w-test	c2-t3
+Idade Contemporânea	w-test	c2-t1
+Idade Moderna	w-pool	c2-t3
+Idade Média	w-pool	c2-t3
+Idade da Pedra	w-val	c2-t2
+Idade do Bronze	w-test	c2-t2
+Idade do Cobre	w-pool	c2-t1
+Idade do Ferro	w-pool	c2-t1
+Idade dos Metais	w-pool	c2-t3
+Idealismo	w-pool	c1-t2
+Idealismo alemão	w-pool	c2-t2
+Identidade de gênero	w-pool	c2-t1
+Identidade nacional	w-test	c2-t2
+Identidade social	w-pool	c2-t1
+Identidades logarítmicas	w-test	c2-t2
+Identificação por radiofrequência	w-pool	c2-t3
+Ideologia	w-test	c1-t1
+Iene	w-pool	c1-t2
+If It's Over	w-pool	c4+-t1
+Igreja Adventista do Sétimo Dia	w-pool	c4+-t1
+Igreja Católica	w-pool	c2-t3
+Igreja Católica na Mongólia	w-pool	c3-t1
+Igreja Católica no Afeganistão	w-pool	c3-t2
+Igreja Universal do Reino de Deus	w-test	c4+-t3
+Igreja de Nossa Senhora do Rosário e São Benedito (Cuiabá)	w-pool	c4+-t2
+Igreja de Vilar de Frades	w-test	c3-t3
+Igrejinha	w-pool	c1-t3
+Ilha Caroline	w-test	c2-t2
+Ilha de calor	w-pool	c2-t2
+Ilhas Marshall	w-test	c2-t1
+Ilhas Salomão	w-pool	c2-t1
+Ilhéus	w-val	c1-t3
+Illuminati	w-test	c1-t1
+Iluminismo	w-pool	c1-t3
+Ilíada	w-pool	c1-t3
+Imaginação	w-test	c1-t1
+Imigração alemã no Brasil	w-pool	c3-t3
+Imigração italiana no Brasil	w-test	c3-t3
+Imigração japonesa no Brasil	w-val	c3-t3
+Imigração no Brasil	w-val	c2-t3
+Imigração portuguesa no Brasil	w-pool	c3-t3
+Immanuel Kant	w-pool	c2-t3
+Imperatriz (Maranhão)	w-pool	c2-t3
+Imperialismo	w-test	c1-t3
+Implantação da República Portuguesa	w-pool	c3-t3
+Imposto	w-test	c1-t2
+Impressionismo	w-pool	c1-t2
+Impressão	w-test	c1-t2
+Improvisação (música)	w-pool	c2-t1
+Impulso	w-pool	c1-t1
+Impulsão	w-pool	c1-t1
+Império Bizantino	w-pool	c2-t3
+Império Britânico	w-pool	c2-t2
+Império Espanhol	w-pool	c2-t3
+Império Gupta	w-test	c2-t1
+Império Inca	w-pool	c2-t3
+Império Mongol	w-pool	c2-t3
+Império Otomano	w-pool	c2-t3
+Império Português	w-pool	c2-t3
+Império Romano	w-test	c2-t3
+Império Romano do Ocidente	w-pool	c3-t3
+Império do Brasil	w-pool	c2-t3
+Imre Simon	w-pool	c2-t1
+In Utero	w-pool	c2-t3
+Inclusão social	w-pool	c2-t1
+Inconfidência Mineira	w-pool	c2-t2
+Incêndio de Copenhague de 1728	w-pool	c3-t2
+Independência do Brasil	w-val	c2-t2
+Index.html	w-pool	c2-t1
+Indianismo	w-pool	c1-t1
+Individualismo	w-pool	c1-t1
+Indivíduo	w-val	c1-t1
+Indonésia	w-pool	c1-t3
+Indulgência	w-pool	c1-t2
+Industrialização	w-pool	c1-t1
+Indutor	w-pool	c1-t1
+Indução eletromagnética	w-pool	c2-t1
+Indústria	w-pool	c1-t2
+Indústria cultural	w-pool	c2-t2
+Indústria no Brasil	w-pool	c2-t3
+Inequação	w-pool	c1-t1
+Infeção sexualmente transmissível	w-val	c3-t1
+Infinito	w-pool	c1-t3
+Inflação	w-test	c1-t2
+Influência social	w-pool	c2-t1
+Informação	w-pool	c1-t2
+Inglaterra	w-pool	c1-t3
+Ingmar Bergman	w-pool	c2-t2
+Ingo Hoffmann	w-test	c2-t1
+Inocência (romance)	w-pool	c2-t2
+Inquilinismo	w-pool	c1-t1
+Inquisição	w-val	c1-t2
+Insensato Coração	w-test	c2-t2
+Insetos	w-test	c1-t3
+Instalação (arte)	w-pool	c2-t1
+Instituições, associações e comunidades religiosas católicas em Macau	w-pool	c4+-t2
+Instituto Tecnológico de Aeronáutica	w-test	c3-t2
+Instrumento de cordas	w-test	c2-t2
+Instrumento de percussão	w-pool	c2-t1
+Instrumento de sopro	w-pool	c2-t1
+Instrumento musical	w-pool	c2-t3
+Instrumento óptico	w-test	c2-t1
+Insulina	w-pool	c1-t2
+Inteligência artificial	w-val	c2-t3
+Intensidade (acústica)	w-pool	c2-t1
+Interacionismo simbólico	w-pool	c2-t1
+Interação fraca	w-pool	c2-t2
+Interação social	w-pool	c2-t1
+Interculturalismo	w-test	c1-t2
+Interferência	w-pool	c1-t2
+Interlocutor	w-pool	c1-t1
+Internacionalização (informática)	w-pool	c2-t1
+Internet	w-pool	c1-t3
+Intertextualidade	w-pool	c1-t1
+Intervalo (matemática)	w-pool	c2-t1
+Intestino delgado	w-pool	c2-t2
+Intestino grosso	w-test	c2-t1
+Intolerância religiosa	w-test	c2-t2
+Intuição	w-pool	c1-t1
+InuYasha	w-test	c1-t2
+Inundação	w-pool	c1-t1
+Invasão da Polônia	w-pool	c2-t3
+Invasões holandesas no Brasil	w-pool	c3-t2
+Inversão térmica	w-pool	c2-t1
+Iodo	w-pool	c1-t1
+Ioga	w-pool	c1-t2
+Ipatinga	w-pool	c1-t3
+Iracema	w-pool	c1-t1
+Iraque	w-pool	c1-t3
+Irineu Evangelista de Sousa	w-test	c3-t3
+Irlanda	w-pool	c1-t3
+Irmandade Pré-Rafaelita	w-pool	c3-t1
+Irmã Dulce	w-pool	c2-t2
+Iron Maiden	w-pool	c2-t3
+Ironia	w-pool	c1-t1
+Irradiação térmica	w-pool	c2-t2
+Irrigação	w-val	c1-t3
+Irã	w-pool	c1-t3
+Irídio	w-pool	c1-t1
+Isaac Asimov	w-pool	c2-t2
+Isaac Newton	w-pool	c2-t3
+Isabel I de Inglaterra	w-val	c3-t3
+Isabel II do Reino Unido	w-pool	c4+-t3
+Isabel, Princesa Imperial do Brasil	w-pool	c4+-t3
+Islândia	w-pool	c1-t3
+Isolante elétrico	w-pool	c2-t1
+Isolante térmico	w-pool	c2-t2
+Isomerismo	w-pool	c1-t1
+Israel	w-val	c1-t3
+Istambul	w-val	c1-t3
+Itacoatiara	w-pool	c1-t3
+Itaguaí	w-pool	c1-t2
+Itajaí	w-test	c1-t2
+Itajubá	w-pool	c1-t2
+Itamar Franco	w-pool	c2-t2
+Itapetininga	w-pool	c1-t2
+Itumbiara	w-pool	c1-t3
+Itália	w-pool	c1-t3
+Itérbio	w-test	c1-t1
+Iuri Gagarin	w-test	c2-t3
+Ivan Lins	w-pool	c2-t1
+Ivete Sangalo	w-pool	c2-t3
+Ivo Pitanguy	w-test	c2-t1
+Iémen	w-pool	c1-t2
+J	w-pool	c1-t1
+J. K. Rowling	w-pool	c3-t3
+J. R. R. Tolkien	w-pool	c4+-t3
+J.R. Duran	w-pool	c3-t1
+Jacarta	w-pool	c1-t2
+Jack Meets Dennis	w-pool	c3-t2
+Jack the Writer	w-pool	c3-t3
+Jack-Tor	w-test	c2-t3
+Jackie Chan	w-pool	c2-t1
+Jackson do Pandeiro	w-test	c2-t1
+Jacques Cartier	w-pool	c2-t3
+Jacques Derrida	w-pool	c2-t1
+Jainismo	w-pool	c1-t2
+Jair Bolsonaro	w-test	c2-t3
+Jair Rodrigues	w-test	c2-t1
+Jake Gyllenhaal	w-pool	c2-t2
+Jamaica	w-pool	c1-t2
+Jamelão	w-pool	c1-t1
+Jamelão (cantor)	w-pool	c2-t1
+James Bond	w-test	c2-t1
+James Clerk Maxwell	w-pool	c3-t3
+James Cook	w-pool	c2-t3
+James Franco	w-pool	c2-t2
+James Joyce	w-test	c2-t2
+James Prescott Joule	w-pool	c3-t2
+James Watt	w-pool	c2-t3
+Japão	w-pool	c1-t3
+Jason Statham	w-pool	c2-t1
+Jaspion	w-pool	c1-t3
+Java (linguagem de programação)	w-test	c3-t2
+Jawaharlal Nehru	w-pool	c2-t1
+Jay-Z	w-test	c2-t2
+Jayme Tiomno	w-pool	c2-t1
+Jazz	w-val	c1-t2
+Jean Baptiste Joseph Fourier	w-pool	c4+-t1
+Jean-Auguste Dominique Ingres	w-test	c4+-t3
+Jean-Baptiste Debret	w-test	c3-t2
+Jean-Jacques Rousseau	w-pool	c3-t3
+Jean-Paul Sartre	w-pool	c3-t3
+Jennifer Aniston	w-pool	c2-t2
+Jennifer Lopez	w-pool	c2-t3
+Jequié	w-pool	c1-t2
+Jeremy Bentham	w-pool	c2-t3
+Jerusalém	w-test	c1-t3
+Jessie J	w-pool	c2-t2
+Jesus	w-pool	c1-t3
+Jet Li	w-pool	c2-t1
+Ji-Paraná	w-pool	c2-t3
+Jim Carrey	w-pool	c2-t2
+Jim Parsons	w-pool	c2-t1
+Jimi Hendrix	w-pool	c2-t3
+Jiu-jítsu	w-pool	c2-t2
+Jiu-jítsu brasileiro	w-pool	c3-t3
+Joana d'Arc	w-test	c3-t3
+Joaquim Cruz	w-pool	c2-t1
+Joaquim Francisco de Assis Brasil	w-pool	c4+-t2
+Joaquim José Rodrigues Torres	w-test	c4+-t1
+Joaquim Manuel de Macedo	w-pool	c3-t1
+Joaquim Marques Lisboa	w-test	c3-t3
+Joaquim Nabuco	w-pool	c2-t2
+Jogo	w-pool	c1-t2
+Jogo de azar	w-pool	c2-t2
+Jogo eletrônico de furtividade	w-pool	c3-t1
+Jogos Olímpicos	w-test	c2-t3
+Jogos Olímpicos de Inverno	w-pool	c3-t3
+Jogos Olímpicos de Inverno de 2002	w-pool	c4+-t1
+Jogos Olímpicos de Inverno de 2010	w-pool	c4+-t2
+Jogos Olímpicos de Verão de 1896	w-pool	c4+-t2
+Jogos Olímpicos de Verão de 1996	w-pool	c4+-t3
+Jogos Olímpicos de Verão de 2004	w-pool	c4+-t2
+Jogos Olímpicos de Verão de 2008	w-pool	c4+-t2
+Jogos Olímpicos de Verão de 2012	w-val	c4+-t2
+Jogos Olímpicos de Verão de 2016	w-test	c4+-t3
+Jogos Pan-Americanos	w-pool	c3-t1
+Jogos Pan-Americanos de 2007	w-pool	c4+-t3
+Jogos Pan-Americanos de 2011	w-pool	c4+-t2
+Jogos Paraolímpicos	w-pool	c2-t3
+Jogos inaugurais do Coliseu	w-pool	c3-t2
+Johan Cruijff	w-pool	c2-t3
+Johann Sebastian Bach	w-val	c3-t3
+Johann Wolfgang von Goethe	w-pool	c4+-t3
+Johanna Döbereiner	w-test	c2-t1
+Johannes Brahms	w-test	c2-t2
+Johannes Gutenberg	w-pool	c2-t2
+Johannes Kepler	w-pool	c2-t3
+John Cena	w-test	c2-t3
+John F. Kennedy	w-pool	c3-t3
+John Forbes Nash	w-test	c3-t2
+John Frederic Daniell	w-test	c3-t1
+John Frusciante	w-pool	c2-t2
+John Lennon	w-pool	c2-t3
+John Locke	w-test	c2-t3
+John Maynard Keynes	w-pool	c3-t3
+John Napier	w-pool	c2-t1
+John Stuart Mill	w-pool	c3-t2
+John von Neumann	w-pool	c3-t3
+Johnny Cash	w-pool	c2-t3
+Johnny Depp	w-pool	c2-t3
+Joinville	w-test	c1-t2
+Joker (DC Comics)	w-pool	c3-t3
+Jon Cryer	w-pool	c2-t1
+Jon Jones	w-pool	c2-t2
+Jorge Amado	w-pool	c2-t2
+Jorge Ben Jor	w-pool	c3-t2
+Jorge Gerdau	w-pool	c2-t1
+Jorge Luis Borges	w-pool	c3-t2
+Jorge Paulo Lemann	w-pool	c3-t1
+Jorge Valdivia	w-test	c2-t3
+Jornal	w-pool	c1-t1
+Jornalismo	w-pool	c1-t3
+Josef Stalin	w-pool	c2-t3
+Joseph Fouché	w-pool	c2-t3
+Joseph Henry Blackburne	w-test	c3-t2
+Joseph Priestley	w-pool	c2-t3
+Joseph Safra	w-pool	c2-t1
+José Aldo	w-test	c2-t1
+José Antônio Pimenta Bueno	w-val	c4+-t1
+José Antônio Saraiva	w-pool	c3-t1
+José Bonifácio de Andrada e Silva	w-pool	c4+-t3
+José Carlos Pereira de Almeida Torres	w-pool	c4+-t1
+José Dirceu	w-val	c2-t3
+José Ermírio de Moraes	w-pool	c3-t1
+José Goldemberg	w-pool	c2-t1
+José Leite Lopes	w-pool	c3-t1
+José Linhares	w-val	c2-t1
+José Lins do Rego	w-test	c3-t2
+José Manuel Riveros Nigra	w-pool	c4+-t1
+José Manuel da Conceição	w-test	c3-t1
+José Maria da Silva Paranhos	w-pool	c4+-t3
+José Maria da Silva Paranhos Júnior	w-pool	c4+-t2
+José Maurício Nunes Garcia	w-pool	c4+-t3
+José Mindlin	w-pool	c2-t1
+José Mojica Marins	w-pool	c3-t2
+José Saramago	w-pool	c2-t2
+José Sarney	w-pool	c2-t3
+José Simão	w-pool	c2-t1
+José da Costa Carvalho	w-test	c3-t1
+José de Alencar	w-pool	c2-t3
+José do Patrocínio	w-pool	c2-t2
+Joule	w-pool	c1-t2
+Jovem Guarda	w-pool	c2-t1
+João Alfredo Correia de Oliveira	w-pool	c4+-t1
+João Bráulio Muniz	w-test	c3-t1
+João Cabral de Melo Neto	w-pool	c4+-t1
+João Calvino	w-pool	c2-t3
+João Figueiredo	w-pool	c2-t2
+João Gilberto	w-pool	c2-t3
+João Goulart	w-pool	c2-t3
+João Havelange	w-pool	c2-t2
+João Lins Vieira Cansanção de Sinimbu	w-pool	c4+-t1
+João Lustosa da Cunha Paranaguá	w-pool	c4+-t1
+João Mangabeira	w-test	c2-t1
+João Maurício Wanderley	w-test	c3-t1
+João Maurício de Nassau	w-pool	c3-t2
+João Monlevade	w-pool	c2-t3
+João Neves da Fontoura	w-pool	c3-t2
+João Pessoa	w-pool	c2-t3
+João Ubaldo Ribeiro	w-pool	c3-t2
+João VI de Portugal	w-test	c3-t3
+João do Pulo	w-pool	c2-t1
+Joãosinho Trinta	w-pool	c2-t1
+Juarez Távora	w-test	c2-t1
+Juazeiro (Bahia)	w-pool	c2-t1
+Juazeiro do Norte	w-pool	c2-t3
+Juca Chaves	w-pool	c2-t1
+Judas Priest	w-pool	c2-t3
+Judaísmo	w-pool	c1-t3
+Judeus	w-pool	c1-t3
+Judo	w-pool	c1-t2
+Judy Greer	w-pool	c2-t1
+Juiz de Fora	w-pool	c2-t2
+Jules Bonnot	w-val	c2-t2
+Julia Lemmertz	w-pool	c2-t1
+Julia Roberts	w-pool	c2-t1
+Juliana Knust	w-test	c2-t1
+Juliana Lohmann	w-pool	c2-t1
+Julianne Trevisol	w-pool	c2-t1
+Julián Viáfara	w-pool	c2-t2
+Jundiaí	w-test	c1-t3
+Juninho Pernambucano	w-pool	c2-t3
+Junior Cigano	w-pool	c2-t1
+Juro	w-test	c1-t2
+Juscelino Kubitschek	w-pool	c2-t3
+Justin Bieber	w-pool	c2-t3
+Justin Fashanu	w-test	c2-t1
+Justin Timberlake	w-pool	c2-t3
+Jutsu (Naruto)	w-pool	c2-t1
+Juventude	w-test	c1-t1
+Juventus Football Club	w-pool	c3-t3
+Jânio Quadros	w-pool	c2-t3
+Jô Soares	w-pool	c2-t1
+Jöns Jacob Berzelius	w-pool	c3-t2
+Júlio César	w-pool	c2-t3
+Júlio Prestes	w-val	c2-t2
+Júlio de Mesquita	w-pool	c2-t1
+Júnior (futebolista, 1954)	w-test	c3-t2
+Júpiter (planeta)	w-pool	c2-t3
+Jürgen Habermas	w-test	c2-t2
+Kaká	w-pool	c1-t3
+Kaley Cuoco	w-pool	c2-t1
+Kanye West	w-pool	c2-t3
+Karl Marx	w-test	c2-t3
+Katsushika Hokusai	w-pool	c2-t1
+Katy Perry	w-pool	c2-t3
+Kazushi Sakuraba	w-pool	c2-t1
+Keira Knightley	w-pool	c2-t2
+Keith Richards	w-pool	c2-t1
+Kelly Key	w-pool	c2-t3
+Kelvin	w-pool	c1-t1
+Kendo	w-pool	c1-t3
+Kerli	w-test	c1-t2
+Kesha	w-pool	c1-t3
+Kid Abelha	w-pool	c2-t2
+Kid Bengala	w-test	c2-t1
+Kim Kardashian	w-pool	c2-t2
+Kiss	w-pool	c1-t3
+Klaxon	w-pool	c1-t1
+Kléber Gladiador	w-pool	c2-t2
+Korn	w-pool	c1-t2
+Kratos (God of War)	w-pool	c4+-t3
+Krav magá	w-pool	c2-t2
+Krazy Kat	w-pool	c2-t2
+Krill	w-pool	c1-t2
+Ku Klux Klan	w-pool	c3-t2
+Kurt Cobain	w-pool	c2-t3
+Kwame Nkrumah	w-pool	c2-t2
+LATAM Airlines Brasil	w-pool	c3-t2
+LSD	w-pool	c1-t2
+La La Land	w-pool	c3-t1
+La Niña	w-pool	c2-t1
+La Planète des singes	w-pool	c4+-t1
+La usurpadora	w-test	c2-t2
+Lactarius alnicola	w-pool	c2-t1
+Lactarius argillaceifolius	w-test	c2-t1
+Lactarius blennius	w-pool	c2-t1
+Lactarius deceptivus	w-pool	c2-t1
+Lactarius fallax	w-pool	c2-t1
+Lactarius repraesentaneus	w-pool	c2-t1
+Lactarius torminosus	w-pool	c2-t2
+Lactarius vietus	w-pool	c2-t1
+Lactarius volemus	w-pool	c2-t2
+Lacticínios	w-pool	c1-t3
+Lady Gaga	w-pool	c2-t3
+Lafayette Rodrigues Pereira	w-pool	c3-t1
+Lages	w-pool	c1-t2
+Lago Baical	w-pool	c2-t1
+Lago Tanganica	w-pool	c2-t1
+Lago Vitória	w-pool	c2-t1
+Lagos (Nigéria)	w-pool	c2-t2
+Laika	w-pool	c1-t2
+Lamarckismo	w-val	c1-t1
+Lampião (cangaceiro)	w-val	c2-t3
+Land Art	w-pool	c2-t1
+Lanterna Verde	w-test	c2-t3
+Lantânido	w-pool	c1-t1
+Lantânio	w-pool	c1-t1
+Lao Zi	w-pool	c2-t2
+Laos	w-pool	c1-t2
+Lars Grael	w-pool	c2-t1
+Las Vegas	w-test	c2-t2
+Lasar Segall	w-pool	c2-t1
+Latim	w-test	c1-t2
+Laura Pausini	w-pool	c2-t2
+Lauro Müller	w-pool	c2-t1
+Lauro Sodré	w-test	c2-t1
+Laços de Família	w-pool	c2-t2
+Le Corbusier	w-pool	c2-t3
+Lea Michele	w-pool	c2-t2
+Leandro Damião	w-test	c2-t2
+Led Zeppelin	w-pool	c2-t3
+Legião Urbana	w-pool	c2-t3
+Lei	w-test	c1-t1
+Lei Maria da Penha	w-test	c3-t1
+Lei da conservação da energia	w-pool	c3-t2
+Lei da gravitação universal	w-pool	c3-t2
+Lei das proporções múltiplas	w-test	c3-t1
+Lei de Avogadro	w-pool	c2-t1
+Lei de Boyle-Mariotte	w-test	c3-t1
+Lei de Charles	w-pool	c2-t1
+Lei de Coulomb	w-pool	c2-t2
+Lei de Dalton	w-pool	c2-t1
+Lei de Diretrizes e Bases da Educação Nacional	w-pool	c4+-t2
+Lei de Faraday da eletrólise	w-pool	c3-t1
+Lei de Faraday-Neumann-Lenz	w-test	c4+-t2
+Lei de Gauss	w-test	c2-t2
+Lei de Gay-Lussac	w-pool	c3-t1
+Lei de Hess	w-pool	c2-t1
+Lei de Hooke	w-pool	c2-t1
+Lei de Lenz	w-pool	c2-t1
+Lei de Ohm	w-pool	c2-t2
+Lei de Proust	w-pool	c2-t1
+Lei de Snell	w-pool	c2-t2
+Lei dos Crimes Hediondos	w-pool	c3-t2
+Lei dos cossenos	w-pool	c2-t1
+Lei dos gases ideais	w-pool	c3-t3
+Lei dos senos	w-pool	c2-t1
+Lei zero da termodinâmica	w-pool	c3-t1
+Lei Áurea	w-pool	c2-t3
+Leis de Kepler	w-test	c2-t2
+Leis de Newton	w-pool	c2-t3
+Leishmaniose	w-pool	c1-t3
+Leite	w-pool	c1-t3
+Lenda	w-test	c1-t1
+Lenda da vitória-régia	w-pool	c3-t1
+Lenin	w-pool	c1-t3
+Leninismo	w-pool	c1-t3
+Lente oftálmica	w-pool	c2-t1
+Leonardo DiCaprio	w-pool	c2-t2
+Leonardo Fibonacci	w-pool	c2-t2
+Leonardo da Vinci	w-pool	c2-t3
+Leonel Brizola	w-val	c2-t3
+Leonhard Euler	w-test	c2-t3
+Lepra	w-pool	c1-t2
+Les Schtroumpfs	w-test	c2-t2
+Lesoto	w-pool	c1-t1
+Leste Europeu	w-pool	c2-t2
+Let Go	w-pool	c2-t3
+Letónia	w-pool	c1-t2
+Leucemia	w-pool	c1-t2
+Leucemia mieloide aguda	w-pool	c3-t2
+Leucócito	w-pool	c1-t1
+Lev Vygotsky	w-test	c2-t3
+Leviatã (livro)	w-pool	c2-t2
+Leão	w-pool	c1-t3
+Li Bai	w-test	c2-t1
+Liberalismo	w-test	c1-t2
+Liberdade	w-val	c1-t2
+Libéria	w-val	c1-t2
+Liderança	w-pool	c1-t3
+Liechtenstein	w-test	c1-t3
+Liev Tolstói	w-pool	c2-t2
+Liga Nobiliária	w-test	c2-t1
+Liga da Justiça	w-pool	c2-t3
+Liga da Justiça (desenho animado)	w-test	c4+-t1
+Liga da Justiça Elite	w-test	c3-t1
+Liga dos Campeões da UEFA	w-pool	c3-t3
+Liga Árabe	w-pool	c2-t1
+Ligação covalente	w-pool	c2-t1
+Ligação covalente dativa	w-pool	c3-t1
+Ligação de hidrogênio	w-pool	c2-t1
+Ligação iônica	w-pool	c2-t1
+Ligação metálica	w-pool	c2-t1
+Ligação química	w-pool	c2-t2
+Lil Wayne	w-pool	c2-t2
+Lima Barreto	w-pool	c2-t1
+Lima Duarte	w-pool	c2-t1
+Lima Duarte (Minas Gerais)	w-test	c4+-t2
+Limeira	w-test	c1-t2
+Limão	w-pool	c1-t1
+Lina Bo Bardi	w-pool	c3-t1
+Lineu	w-pool	c1-t3
+Linfoma	w-pool	c1-t2
+Linguagem	w-test	c1-t3
+Linguagem de programação	w-test	c2-t2
+Linguagem visual	w-pool	c2-t1
+Linguística	w-pool	c1-t2
+Linha de força	w-pool	c2-t1
+Linkin Park	w-test	c2-t3
+Linus Pauling	w-test	c2-t3
+Linux	w-pool	c1-t3
+Lionel Messi	w-test	c2-t3
+Lira dos Vinte Anos	w-test	c3-t1
+Lisa Gherardini	w-val	c2-t1
+Lisboa	w-test	c1-t3
+Lisossomo	w-pool	c1-t2
+Literatura	w-pool	c1-t1
+Literatura barroca	w-pool	c2-t1
+Literatura barroca no Brasil	w-pool	c3-t1
+Literatura de cordel	w-pool	c2-t2
+Literatura do Brasil	w-pool	c2-t2
+Litro	w-pool	c1-t1
+Liverpool Football Club	w-pool	c3-t3
+Livre-arbítrio	w-pool	c2-t2
+Livro	w-val	c1-t2
+Lobisomem	w-test	c1-t3
+Lobo-da-tasmânia	w-pool	c2-t3
+Lobo-guará	w-pool	c2-t3
+Logaritmo	w-pool	c1-t3
+Logística	w-pool	c1-t2
+Loki	w-pool	c1-t2
+Londres	w-pool	c1-t3
+Londrina	w-test	c1-t2
+Lorde Byron	w-test	c2-t2
+Los Angeles	w-pool	c2-t3
+Los Hermanos	w-pool	c2-t2
+Lost (série de televisão)	w-pool	c3-t3
+Louis Armstrong	w-pool	c2-t2
+Louis Joseph Gay-Lussac	w-pool	c4+-t1
+Louis Pasteur	w-pool	c2-t3
+Louise Michel	w-pool	c2-t2
+Love the Way You Lie (Part II)	w-pool	c4+-t1
+Love. Angel. Music. Baby.	w-pool	c4+-t2
+Lua	w-pool	c1-t3
+Luan Santana	w-pool	c2-t2
+Lubrificação	w-pool	c1-t1
+Lucas Moura	w-pool	c2-t2
+Lucas Nogueira Garcez	w-val	c3-t1
+Lucrécia Bórgia	w-pool	c2-t2
+Lucy Lawless	w-val	c2-t1
+Ludwig Wittgenstein	w-pool	c2-t3
+Ludwig van Beethoven	w-test	c3-t2
+Lugar (geografia)	w-pool	c2-t1
+Luis Fernando Verissimo	w-test	c3-t2
+Luiz Antônio Fleury Filho	w-val	c4+-t1
+Luiz Gonzaga	w-pool	c2-t2
+Luiz Inácio Lula da Silva	w-pool	c4+-t3
+Luma de Oliveira	w-pool	c2-t1
+Lupicínio Rodrigues	w-pool	c2-t1
+Luta	w-pool	c1-t2
+Lutécio	w-pool	c1-t1
+Luxemburgo	w-pool	c1-t3
+Luz	w-pool	c1-t3
+Luz del Fuego	w-test	c3-t3
+Luís Alves de Lima e Silva	w-pool	c4+-t3
+Luís Augusto de Saxe-Coburgo-Gota	w-pool	c4+-t2
+Luís Carlos Prestes	w-pool	c3-t2
+Luís Dumont Villares	w-pool	c3-t2
+Luís Fabiano	w-test	c2-t2
+Luís XIV de França	w-pool	c3-t3
+Luís de Camões	w-pool	c2-t3
+Luísa de Meclemburgo-Strelitz	w-test	c3-t2
+Lya Luft	w-pool	c2-t1
+Lygia Clark	w-pool	c2-t2
+Lygia Fagundes Telles	w-pool	c3-t3
+Lyoto Machida	w-pool	c2-t2
+Léo Batista	w-pool	c2-t1
+Líbano	w-pool	c1-t3
+Líbia	w-test	c1-t3
+Lília Cabral	w-pool	c2-t1
+Língua alemã	w-test	c2-t2
+Língua bengali	w-pool	c2-t3
+Língua castelhana	w-pool	c2-t3
+Língua chinesa	w-pool	c2-t2
+Língua francesa	w-pool	c2-t1
+Língua grega	w-pool	c2-t1
+Língua hebraica	w-pool	c2-t2
+Língua hindustâni	w-pool	c2-t1
+Língua inglesa	w-test	c2-t2
+Língua japonesa	w-pool	c2-t3
+Língua natural	w-pool	c2-t1
+Língua persa	w-pool	c2-t3
+Língua portuguesa	w-test	c2-t3
+Língua russa	w-pool	c2-t3
+Língua suaíli	w-pool	c2-t2
+Língua turca	w-test	c2-t2
+Língua árabe	w-pool	c2-t2
+Línguas maias	w-test	c2-t3
+Lípido	w-pool	c1-t2
+Líquido	w-pool	c1-t3
+Lítio	w-pool	c1-t2
+Lógica	w-pool	c1-t2
+Lúcio Costa	w-test	c2-t2
+Lúpus eritematoso disseminado	w-pool	c3-t2
+MPB	w-pool	c1-t1
+MTV Brasil	w-pool	c2-t3
+MTV Video Music Awards	w-test	c4+-t3
+MV Bill	w-pool	c2-t2
+Macapá	w-pool	c1-t3
+Macau	w-pool	c1-t3
+Macedónia do Norte	w-test	c2-t3
+Maceió	w-pool	c1-t3
+Machado de Assis	w-test	c2-t3
+Machu Picchu	w-pool	c2-t3
+Macroeconomia	w-test	c1-t3
+Macunaíma	w-pool	c1-t3
+Mad Season	w-pool	c2-t1
+Madeira	w-test	c1-t2
+Madonna	w-pool	c1-t3
+Madre Teresa de Calcutá	w-pool	c3-t2
+Madrid	w-pool	c1-t3
+Madrigal	w-pool	c1-t1
+Magalhães Pinto	w-pool	c2-t1
+Magic Paula	w-test	c2-t1
+Magnificent	w-test	c1-t1
+Magnésio	w-pool	c1-t1
+Mahabharata	w-pool	c1-t3
+Mahatma Gandhi	w-pool	c2-t3
+Majestoso	w-pool	c1-t3
+Major Sales	w-pool	c2-t2
+Malawi	w-pool	c1-t2
+Maldivas	w-test	c1-t2
+Malhação	w-test	c1-t3
+Malhação (1.ª temporada)	w-pool	c4+-t2
+Malhação (14.ª temporada)	w-pool	c4+-t1
+Malhação (16ª temporada)	w-pool	c3-t1
+Malhação 2010	w-pool	c2-t1
+Malhação ID	w-pool	c2-t1
+Mali	w-pool	c1-t2
+Malta	w-pool	c1-t2
+Malvino Salvador	w-pool	c2-t1
+Malária	w-test	c1-t3
+Mama	w-pool	c1-t2
+Mamonas Assassinas	w-pool	c2-t3
+Mamíferos	w-pool	c1-t3
+Man Down	w-pool	c2-t2
+Manacapuru	w-test	c1-t3
+Manaus	w-pool	c1-t3
+Manchester City Football Club	w-pool	c4+-t3
+Manchester United Football Club	w-pool	c4+-t3
+Mandioca	w-pool	c1-t2
+Maneirismo	w-pool	c1-t3
+Manganês	w-test	c1-t2
+Manguezal	w-pool	c1-t1
+Mangá	w-pool	c1-t3
+Manhattan	w-test	c1-t2
+Manifestações contra o encontro da OMC em Seattle	w-pool	c4+-t2
+Manifesto Surrealista	w-pool	c2-t1
+Manifesto da Poesia Pau-Brasil	w-test	c4+-t1
+Manuel Alves Branco	w-pool	c3-t1
+Manuel Antônio de Almeida	w-pool	c3-t1
+Manuel Bandeira	w-pool	c2-t2
+Manuel Ernesto da Conceição	w-val	c3-t1
+Manuel II de Portugal	w-pool	c3-t3
+Manuel de Araújo Porto-Alegre	w-pool	c4+-t3
+Mao Tsé-Tung	w-pool	c3-t3
+Maomé	w-pool	c1-t3
+Mar	w-pool	c1-t3
+Mar Báltico	w-pool	c2-t1
+Mar Cáspio	w-pool	c2-t3
+Mar Mediterrâneo	w-pool	c2-t1
+Mar Morto	w-pool	c2-t1
+Mar Negro	w-pool	c2-t1
+Mar de Aral	w-pool	c2-t2
+Mar do Caribe	w-test	c2-t2
+Mar do Norte	w-pool	c2-t1
+Marabá	w-pool	c1-t3
+Maranhão	w-pool	c1-t3
+Marcel Proust	w-pool	c2-t3
+Marcelino Vieira	w-pool	c2-t2
+Marcello Damy	w-pool	c2-t1
+Marcelo D2	w-test	c2-t2
+Marcelo Gleiser	w-pool	c2-t1
+Marcelo Rossi	w-pool	c2-t2
+Marcha sobre Roma	w-pool	c2-t1
+Marco Luque	w-pool	c2-t1
+Marco Pigossi	w-pool	c2-t1
+Marco Polo	w-pool	c2-t3
+Marcos Pontes	w-pool	c2-t2
+Marginalização	w-pool	c1-t1
+Maria (mãe de Jesus)	w-pool	c3-t3
+Maria Amélia de Bragança	w-pool	c3-t2
+Maria Antonieta	w-pool	c2-t3
+Maria Bethânia	w-pool	c2-t2
+Maria Bonita	w-test	c2-t1
+Maria Esther Bueno	w-pool	c3-t2
+Maria Firmina dos Reis	w-test	c3-t1
+Maria Lenk	w-pool	c2-t1
+Maria Nikolaevna da Rússia	w-pool	c3-t3
+Maria Teresa da Áustria	w-test	c3-t3
+Maria da Conceição Tavares	w-pool	c3-t3
+Mariah Carey	w-test	c2-t3
+Marie Curie	w-pool	c2-t3
+Marilena Chaui	w-test	c2-t2
+Marilyn Manson	w-test	c2-t2
+Marilyn Monroe	w-test	c2-t3
+Marina Ruy Barbosa	w-pool	c3-t3
+Marina Silva	w-pool	c2-t3
+Maringá	w-pool	c1-t2
+Marinha do Brasil	w-pool	c2-t3
+Mario Götze	w-pool	c2-t3
+Mario Kart DS	w-pool	c3-t2
+Marjorie Estiano	w-pool	c2-t1
+Mark Twain	w-pool	c2-t3
+Mark Zuckerberg	w-val	c2-t2
+Marketing	w-pool	c1-t3
+Marlene Dietrich	w-pool	c2-t3
+Marlon Brando	w-test	c2-t3
+Maroon 5	w-pool	c2-t2
+Marrocos	w-pool	c1-t3
+Marry the Night	w-pool	c3-t3
+Marte (planeta)	w-test	c2-t3
+Martin Heidegger	w-pool	c2-t3
+Martin Luther King Jr.	w-pool	c4+-t3
+Martinho Lutero	w-test	c2-t3
+Martinho Álvares da Silva Campos	w-val	c4+-t1
+Martins Pena	w-test	c2-t1
+Marxismo	w-test	c1-t3
+Marília	w-test	c1-t3
+Marília Pêra	w-pool	c2-t1
+Marília de Dirceu	w-pool	c2-t1
+Masashi Hamauzu	w-test	c2-t1
+Mascarenhas de Morais	w-pool	c2-t2
+Massa	w-pool	c1-t3
+Massa crítica (sociologia)	w-pool	c3-t1
+Massa molar	w-pool	c2-t1
+Massachusetts	w-pool	c1-t3
+Massacre da Praça da Paz Celestial em 1989	w-pool	c4+-t3
+Masturbação	w-pool	c1-t1
+Mata Atlântica	w-test	c2-t3
+Matemática	w-pool	c1-t3
+Matemática financeira	w-pool	c2-t1
+Materialismo	w-pool	c1-t2
+Materialismo dialético	w-pool	c2-t1
+Mato Grosso	w-test	c2-t3
+Mato Grosso do Sul	w-pool	c3-t3
+Matriz (matemática)	w-pool	c2-t3
+Matsuo Bashō	w-pool	c2-t1
+Matteo Ricci	w-pool	c2-t3
+Matéria	w-pool	c1-t3
+Mauricio de Sousa	w-test	c2-t2
+Maurren Maggi	w-val	c2-t2
+Maurícia	w-test	c1-t3
+Maurício Rua	w-pool	c2-t2
+Max Horkheimer	w-test	c2-t1
+Max Planck	w-test	c2-t3
+Max Weber	w-pool	c2-t3
+Mazinho	w-pool	c1-t1
+Mazzaropi	w-pool	c1-t3
+Maçonaria	w-pool	c1-t3
+Maçã	w-test	c1-t2
+McDonald's	w-test	c2-t2
+Mean	w-test	c1-t2
+Meca	w-test	c1-t3
+Mecânica clássica	w-pool	c2-t1
+Mecânica dos fluidos	w-test	c2-t2
+Mecânica quântica	w-pool	c2-t3
+Mediana (estatística)	w-test	c2-t3
+Medicamento	w-pool	c1-t1
+Medicina	w-pool	c1-t2
+Medicina veterinária	w-pool	c2-t2
+Medição	w-pool	c1-t2
+Medusa	w-pool	c1-t1
+Megadeth	w-val	c1-t3
+Megalópole	w-val	c1-t1
+Megan Fox	w-pool	c2-t1
+Meio ambiente	w-pool	c2-t3
+Meios de comunicação	w-pool	c2-t2
+Meiose	w-pool	c1-t1
+Mel	w-pool	c1-t2
+Melhor Jogador do Mundo pela FIFA	w-pool	c4+-t1
+Melhoramento genético	w-pool	c2-t2
+Melito de Cantuária	w-pool	c2-t2
+Melodia	w-pool	c1-t1
+Melro-preto	w-pool	c2-t3
+Melvin Calvin	w-pool	c2-t1
+Membrana plasmática	w-pool	c2-t2
+Meme	w-pool	c1-t2
+Memória de acesso aleatório	w-pool	c3-t2
+Memórias Póstumas de Brás Cubas	w-pool	c4+-t3
+Memórias de um Sargento de Milícias	w-pool	c3-t1
+Meningite	w-pool	c1-t3
+Mensagem	w-test	c1-t1
+Menstruação	w-pool	c1-t2
+Mente	w-pool	c1-t2
+Mercado Comum do Sul	w-pool	c3-t2
+Mercantilismo	w-test	c1-t3
+Mercúrio (elemento químico)	w-pool	c3-t2
+Mercúrio (planeta)	w-pool	c2-t3
+Mero	w-pool	c1-t1
+Meryl Streep	w-pool	c2-t3
+Mesolítico	w-test	c1-t1
+Mesopotâmia	w-val	c1-t2
+Mestre Ataíde	w-pool	c2-t3
+Metabolismo	w-test	c1-t3
+Metafísica	w-pool	c1-t2
+Metal	w-pool	c1-t1
+Metal Gear Solid	w-pool	c3-t3
+Metal Gear Solid 3: Snake Eater	w-pool	c4+-t3
+Metal alcalino	w-test	c2-t1
+Metal alcalinoterroso	w-pool	c2-t1
+Metal de sacrifício	w-pool	c2-t1
+Metal de transição	w-pool	c2-t1
+Metallica	w-pool	c1-t3
+Metalurgia	w-pool	c1-t2
+Metamorfoses	w-pool	c1-t3
+Meteorologia	w-pool	c1-t3
+Metonímia	w-test	c1-t1
+Metralhadora	w-pool	c1-t1
+Metro	w-pool	c1-t1
+Metropolitano de Londres	w-pool	c2-t3
+Metropolitano de São Paulo	w-test	c3-t3
+Metrópole	w-test	c1-t1
+Metáfora	w-test	c1-t1
+Meu Pé de Laranja Lima	w-pool	c4+-t1
+Miami	w-pool	c1-t3
+Michael Faraday	w-pool	c2-t3
+Michael Jackson	w-pool	c2-t3
+Michel Foucault	w-pool	c2-t2
+Michel Teló	w-val	c2-t2
+Michel de Montaigne	w-pool	c2-t2
+Michelangelo	w-pool	c1-t3
+Mickey Rourke	w-pool	c2-t1
+Mico-leão-de-cara-dourada	w-pool	c4+-t1
+Microeconomia	w-pool	c1-t2
+Microsoft	w-pool	c1-t2
+Migração	w-test	c1-t1
+Migrações dos povos bárbaros	w-pool	c3-t3
+Miguel (arcanjo)	w-pool	c2-t2
+Miguel Arraes	w-pool	c2-t2
+Miguel de Cervantes	w-pool	c2-t2
+Milagre econômico brasileiro	w-pool	c3-t2
+Miley Cyrus	w-pool	c2-t3
+Milho	w-test	c1-t3
+Militar	w-pool	c1-t3
+Millôr Fernandes	w-pool	c2-t3
+Milton Campos	w-pool	c2-t1
+Milton Nascimento	w-pool	c2-t2
+Milton Santos	w-pool	c2-t2
+Milão	w-test	c1-t3
+Mina-S	w-pool	c2-t2
+Minas Gerais	w-pool	c2-t3
+Mineral	w-pool	c1-t3
+Mineração	w-pool	c1-t2
+Mineração no Brasil	w-pool	c2-t3
+Minimalismo	w-pool	c1-t2
+Minotauro	w-pool	c1-t1
+Miragem	w-pool	c1-t1
+Miranda Cosgrove	w-pool	c2-t2
+Mirko Filipović	w-pool	c2-t1
+Miss Universo 2011	w-pool	c3-t1
+MissingNo.	w-pool	c1-t1
+Missão Artística Francesa	w-test	c3-t3
+Missão gregoriana	w-pool	c2-t3
+Missões jesuíticas na América	w-pool	c3-t3
+Mistura	w-pool	c1-t1
+Mito	w-pool	c1-t1
+Mitocôndria	w-test	c1-t2
+Mitologia	w-pool	c1-t1
+Mitologia chinesa	w-pool	c2-t2
+Mitologia grega	w-pool	c2-t3
+Mitologia nórdica	w-pool	c2-t3
+Mitose	w-pool	c1-t2
+Mitsuyo Maeda	w-pool	c2-t2
+Mix TV	w-val	c2-t2
+Moacyr Scliar	w-pool	c2-t1
+Moda	w-test	c1-t2
+Moda (estatística)	w-pool	c2-t2
+Modelo atômico	w-pool	c2-t2
+Modelo atômico de Rutherford	w-pool	c3-t1
+Modelo atômico de Thomson	w-pool	c3-t1
+Modern Family	w-pool	c2-t2
+Modernismo	w-pool	c1-t2
+Modernismo no Brasil	w-val	c2-t2
+Modo	w-test	c1-t1
+Modo narrativo	w-test	c2-t2
+Modo verbal	w-pool	c2-t1
+Modos gregorianos	w-pool	c2-t1
+Modulação (música)	w-pool	c2-t1
+Moeda	w-pool	c1-t2
+Mogi das Cruzes	w-pool	c2-t2
+Moisés	w-pool	c1-t3
+Mol	w-pool	c1-t2
+Molaridade	w-test	c1-t1
+Molibdênio	w-pool	c1-t2
+Molière	w-pool	c1-t2
+Moluscos	w-test	c1-t1
+Molécula	w-pool	c1-t2
+Momento angular	w-pool	c2-t1
+Momento linear	w-pool	c2-t2
+Mona Lisa	w-pool	c2-t3
+Monarquia	w-pool	c1-t2
+Monoteísmo	w-pool	c1-t2
+Montanha	w-pool	c1-t1
+Montanhas Rochosas	w-pool	c2-t1
+Monte Evereste	w-pool	c2-t3
+Monteiro Lobato	w-pool	c2-t3
+Montes Claros	w-test	c2-t3
+Montesquieu	w-pool	c1-t2
+Montreal	w-test	c1-t3
+Monumento da Liberdade de Riga	w-test	c3-t2
+Moral	w-pool	c1-t2
+Morcego	w-test	c1-t2
+Morde & Assopra	w-pool	c2-t2
+Morfologia (linguística)	w-pool	c2-t1
+Morfossintaxe	w-val	c1-t1
+Mortal Kombat	w-pool	c2-t3
+Mortal Kombat: Rebirth	w-pool	c3-t1
+Morte	w-pool	c1-t3
+Morte de Clara Nunes	w-pool	c3-t2
+Morte de Edgar Allan Poe	w-pool	c4+-t2
+Morte e Vida Severina	w-test	c3-t1
+Moscovo	w-pool	c1-t3
+Mossoró	w-pool	c1-t3
+Motivation (canção de Kelly Rowland)	w-test	c4+-t1
+Motor a vapor	w-pool	c2-t2
+Motor de combustão interna	w-pool	c3-t2
+Motor de jogo	w-test	c2-t1
+Motor elétrico	w-val	c2-t3
+Movimento	w-val	c1-t2
+Movimento Internacional da Cruz Vermelha e do Crescente Vermelho	w-pool	c4+-t2
+Movimento antropofágico	w-pool	c2-t1
+Movimento circular	w-test	c2-t1
+Movimento dos Trabalhadores Rurais sem Terra	w-pool	c4+-t3
+Movimento operário	w-pool	c2-t2
+Movimento retilíneo	w-pool	c2-t1
+Movimento social	w-pool	c2-t2
+Movimentos LGBT	w-pool	c2-t1
+Moçambique	w-test	c1-t3
+Muammar Gaddafi	w-pool	c2-t3
+Muay thai	w-pool	c2-t3
+Mula sem cabeça	w-test	c2-t1
+Mulher	w-test	c1-t1
+Mulheres Apaixonadas	w-pool	c2-t3
+Mulheres de Areia	w-pool	c2-t1
+Mulheres de Areia (1993)	w-pool	c3-t3
+Mulheres na filosofia	w-pool	c2-t1
+Mulheres na política	w-val	c2-t1
+Multiculturalismo	w-pool	c1-t1
+Multimédia	w-test	c1-t1
+Multishow ao Vivo: Ivete Sangalo no Madison Square Garden	w-pool	c4+-t3
+Mundo islâmico	w-pool	c2-t1
+Município	w-pool	c1-t3
+Muralismo	w-test	c1-t1
+Muricy Ramalho	w-test	c2-t3
+Muro de Berlim	w-test	c2-t3
+Museu Nacional de Belas Artes (Cuba)	w-test	c4+-t3
+Museu Nacional de Belas-Artes (Chile)	w-test	c4+-t2
+Museu de Arte de São Paulo	w-pool	c4+-t3
+Mustafa Kemal Atatürk	w-test	c3-t3
+Mutação	w-pool	c1-t2
+Mutualismo (biologia)	w-pool	c2-t2
+My Wife and Kids	w-test	c4+-t1
+My Winter Storm	w-pool	c3-t1
+Myanmar	w-pool	c1-t3
+Málaga Club de Fútbol	w-pool	c3-t1
+Máquina	w-pool	c1-t1
+Máquina térmica	w-pool	c2-t2
+Márcio de Sousa Melo	w-pool	c3-t1
+Mário Covas	w-pool	c2-t2
+Mário Filho	w-test	c2-t1
+Mário Henrique Simonsen	w-pool	c3-t2
+Mário Juruna	w-pool	c2-t1
+Mário Quintana	w-pool	c2-t1
+Mário Schenberg	w-test	c2-t1
+Mário de Andrade	w-pool	c2-t2
+Máximo, o Confessor	w-pool	c2-t2
+Mãe Menininha do Gantois	w-pool	c3-t1
+Mécia Lopes de Haro	w-pool	c3-t2
+Média	w-test	c1-t2
+Média aritmética	w-test	c2-t1
+Média harmônica	w-pool	c2-t2
+Médio Oriente	w-pool	c2-t2
+Método científico	w-pool	c2-t3
+Método dedutivo	w-pool	c2-t3
+Método indutivo	w-pool	c2-t1
+México	w-pool	c1-t3
+Mónaco	w-pool	c1-t2
+Músculo	w-pool	c1-t1
+Música	w-pool	c1-t3
+Música atonal	w-pool	c2-t1
+Música barroca	w-pool	c2-t2
+Música clássica	w-pool	c2-t3
+Música da Antiguidade	w-pool	c2-t1
+Música da Grécia Antiga	w-pool	c3-t2
+Música da Roma Antiga	w-pool	c3-t1
+Música de vanguarda	w-pool	c2-t1
+Música do Brasil	w-pool	c2-t3
+Música dos Estados Unidos	w-pool	c3-t3
+Música eletrônica	w-pool	c2-t3
+Música indígena brasileira	w-test	c3-t2
+Música medieval	w-pool	c2-t1
+Música modal	w-pool	c2-t1
+Música moderna	w-test	c2-t1
+Música pop	w-test	c2-t1
+Música popular	w-pool	c2-t2
+Música renascentista	w-pool	c2-t1
+Música sacra	w-pool	c2-t1
+Música sertaneja	w-pool	c2-t1
+Música tonal	w-val	c2-t2
+Músico	w-pool	c1-t1
+NCIS	w-test	c1-t3
+Nacionalismo	w-pool	c1-t2
+Nadia Comăneci	w-pool	c2-t3
+Naguib Mahfouz	w-test	c2-t1
+Nairóbi	w-pool	c1-t2
+Nana Caymmi	w-test	c2-t2
+Nanotecnologia	w-pool	c1-t2
+Napoleão Bonaparte	w-test	c2-t3
+Nara Leão	w-pool	c2-t2
+Narciso Doval	w-val	c2-t3
+Narguilé	w-test	c1-t1
+Nariz	w-pool	c1-t1
+Naruto	w-pool	c1-t3
+Nastia Liukin	w-pool	c2-t2
+Natal (Rio Grande do Norte)	w-pool	c4+-t3
+Natalie Portman	w-pool	c2-t1
+Natalya (lutadora)	w-test	c2-t3
+National Lampoon's Animal House	w-test	c4+-t1
+Nativo digital	w-pool	c2-t1
+Naturalismo	w-pool	c1-t1
+Naturally	w-pool	c1-t1
+Natureza	w-pool	c1-t3
+Natureza humana	w-pool	c2-t3
+Nauru	w-pool	c1-t2
+Navio	w-pool	c1-t1
+Nazismo	w-pool	c1-t3
+Nação	w-pool	c1-t2
+Nebulosa do Caranguejo	w-pool	c2-t2
+Necrópole de Gizé	w-pool	c2-t2
+Negrinho do Pastoreio	w-pool	c2-t1
+Neil Armstrong	w-pool	c2-t3
+Nelson Mandela	w-pool	c2-t3
+Nelson Pereira dos Santos	w-pool	c3-t2
+Nelson Piquet	w-pool	c2-t3
+Nelson Rodrigues	w-pool	c2-t2
+Nematoda	w-pool	c1-t2
+Neoclassicismo	w-pool	c1-t2
+Neodímio	w-pool	c1-t1
+Neoliberalismo	w-pool	c1-t3
+Neolítico	w-pool	c1-t2
+Neoplatonismo	w-pool	c1-t1
+Nepal	w-pool	c1-t2
+Nereu Ramos	w-test	c2-t2
+Nero	w-pool	c1-t3
+Netuno	w-pool	c1-t3
+Neve	w-pool	c1-t2
+NeverShoutNever!	w-pool	c1-t1
+New Super Mario Bros.	w-pool	c4+-t2
+Ney Matogrosso	w-pool	c2-t2
+Neymar	w-pool	c1-t3
+Nicarágua	w-test	c1-t2
+Nicho ecológico	w-test	c2-t1
+Nick Drake	w-pool	c2-t3
+Nicki Minaj	w-pool	c2-t3
+Nicolas Cage	w-pool	c2-t1
+Nicolau Copérnico	w-pool	c2-t3
+Nicolau II da Rússia	w-test	c3-t3
+Nicolau Maquiavel	w-pool	c2-t3
+Nicole Scherzinger	w-pool	c2-t3
+Nicotina	w-pool	c1-t3
+Niels Bohr	w-pool	c2-t2
+Nightwish	w-pool	c1-t3
+Nigéria	w-pool	c1-t3
+Niilismo	w-pool	c1-t1
+Niklas Luhmann	w-pool	c2-t2
+Nikola Tesla	w-pool	c2-t3
+Nilmar	w-pool	c1-t1
+Nilo Peçanha	w-pool	c2-t2
+Nimesulida	w-test	c1-t2
+Nine Inch Nails	w-pool	c3-t3
+Nintendo DS	w-test	c2-t3
+Nirvana (banda)	w-pool	c2-t3
+Niterói	w-pool	c1-t3
+Nióbio	w-pool	c1-t3
+Noam Chomsky	w-pool	c2-t3
+Noel Rosa	w-pool	c2-t2
+Noite das Facas Longas	w-pool	c3-t2
+Noite na Taverna	w-pool	c2-t2
+Norbert Elias	w-test	c2-t1
+Norberto Odebrecht	w-pool	c2-t1
+Norma Regulamentadora	w-test	c2-t2
+Norma-padrão	w-pool	c2-t1
+Noruega	w-pool	c1-t3
+Nossa Senhora Aparecida	w-pool	c3-t2
+Nostalgia	w-pool	c1-t2
+Not Myself Tonight	w-test	c3-t2
+Notação científica	w-val	c2-t2
+Nova Andradina	w-pool	c2-t3
+Nova Friburgo	w-pool	c2-t2
+Nova Iguaçu	w-pool	c2-t3
+Nova Iorque	w-pool	c2-t3
+Nova Iorque (estado)	w-pool	c3-t3
+Nova Ordem Mundial (teoria conspiratória)	w-pool	c4+-t3
+Nova República	w-test	c2-t2
+Nova Zelândia	w-test	c2-t3
+Novas sete maravilhas do mundo	w-pool	c4+-t1
+Novela	w-pool	c1-t1
+Novo Testamento	w-pool	c2-t3
+Noz	w-test	c1-t1
+Nucléolo	w-pool	c1-t1
+Numeração romana	w-test	c2-t2
+Nuvem	w-pool	c1-t2
+Néon	w-pool	c1-t2
+Níger	w-val	c1-t2
+Níquel	w-pool	c1-t1
+Nísia Floresta (escritora)	w-pool	c3-t2
+Nível trófico	w-pool	c2-t2
+Núcleo celular	w-pool	c2-t3
+Número	w-pool	c1-t2
+Número complexo	w-pool	c2-t2
+Número primo	w-pool	c2-t3
+O Astro (1977)	w-pool	c2-t1
+O Astro (2011)	w-pool	c2-t1
+O Ateneu	w-val	c1-t1
+O Clone	w-pool	c1-t2
+O Cortiço	w-pool	c1-t1
+O Diabo Veste Prada (filme)	w-pool	c4+-t3
+O Mulato	w-pool	c1-t1
+O Quinze	w-pool	c1-t1
+O Rei Leão	w-pool	c2-t3
+O Senhor dos Anéis	w-pool	c2-t3
+O Sonho da Câmara Vermelha	w-pool	c3-t3
+O Tempo e o Vento	w-pool	c2-t3
+O Turco	w-test	c1-t3
+Oasis	w-pool	c1-t3
+Obesidade	w-pool	c1-t3
+Obscurantismo	w-pool	c1-t1
+Oceano	w-test	c1-t3
+Oceano Antártico	w-pool	c2-t1
+Oceano Atlântico	w-pool	c2-t3
+Oceano Pacífico	w-pool	c2-t3
+Oceano Ártico	w-pool	c2-t1
+Oceano Índico	w-pool	c2-t3
+Oceânia	w-test	c1-t2
+Ocidentalismo	w-pool	c1-t1
+Odisseia	w-pool	c1-t3
+Odontologia	w-pool	c1-t2
+Oficina G3	w-test	c2-t2
+Ohmímetro	w-pool	c1-t1
+Olaria	w-test	c1-t1
+Olavo Bilac	w-pool	c2-t1
+Olavo Setúbal	w-pool	c2-t2
+Olga Benário Prestes	w-pool	c3-t2
+Olho	w-test	c1-t1
+Olho (ciclone)	w-pool	c2-t2
+Olinda	w-pool	c1-t2
+Olmecas	w-pool	c1-t2
+Omar	w-pool	c1-t1
+Omã	w-test	c1-t2
+Once (álbum)	w-pool	c2-t1
+Onda	w-pool	c1-t2
+Onda mecânica	w-test	c2-t1
+One Piece	w-pool	c2-t2
+One Tree Hill	w-pool	c3-t3
+Oops!... I Did It Again (canção)	w-pool	c4+-t2
+Opera	w-pool	c1-t2
+Oralidade	w-test	c1-t1
+Oratório (música)	w-test	c2-t2
+Oração subordinada	w-pool	c2-t1
+Orca	w-pool	c1-t3
+Ordem DeMolay	w-val	c2-t1
+Ordem da Jarreteira	w-pool	c2-t3
+Ordem de magnitude	w-pool	c2-t1
+Ordem do Banho	w-pool	c2-t2
+Ordem dos Templários	w-pool	c2-t2
+Ordem mundial	w-val	c2-t1
+Orelha	w-pool	c1-t2
+Orestes Quércia	w-pool	c2-t2
+Organelo	w-pool	c1-t1
+Organismo	w-pool	c1-t2
+Organização Mundial da Saúde	w-pool	c3-t3
+Organização Mundial do Comércio	w-test	c3-t2
+Organização das Nações Unidas	w-pool	c3-t3
+Organização das Nações Unidas para a Educação, a Ciência e a Cultura	w-pool	c4+-t2
+Organização do Estado brasileiro	w-pool	c3-t1
+Organização do Tratado do Atlântico Norte	w-test	c4+-t3
+Organização dos Países Exportadores de Petróleo	w-pool	c4+-t3
+Organização internacional	w-pool	c2-t3
+Organização política	w-pool	c2-t1
+Organização social	w-val	c2-t1
+Orgasmo	w-test	c1-t2
+Orgulho e Preconceito	w-test	c2-t3
+Orixá	w-val	c1-t1
+Orkut	w-test	c1-t2
+Orlando Bloom	w-test	c2-t1
+Ormulum	w-test	c1-t2
+Ornitorrinco	w-pool	c1-t2
+Orquídea	w-pool	c1-t3
+Ortografia	w-pool	c1-t1
+Orígenes Lessa	w-test	c2-t1
+Os Cavaleiros do Zodíaco	w-pool	c2-t3
+Os Escravos	w-pool	c1-t1
+Os Feiticeiros de Waverly Place	w-pool	c3-t2
+Os Lusíadas	w-pool	c1-t3
+Os Mercenários	w-pool	c1-t2
+Os Simpsons	w-pool	c1-t3
+Os Trapalhões	w-pool	c1-t3
+Os Três Mosqueteiros	w-pool	c2-t2
+Osama bin Laden	w-pool	c3-t3
+Osasco	w-pool	c1-t3
+Oscar Niemeyer	w-test	c2-t3
+Oscar Sala	w-pool	c2-t1
+Oscar Schmidt	w-pool	c2-t2
+Oscar de melhor filme	w-test	c3-t1
+Oscarito	w-pool	c1-t1
+Osso	w-pool	c1-t1
+Oswald de Andrade	w-val	c2-t2
+Oswaldo Aranha	w-pool	c2-t2
+Oswaldo Arthur Bratke	w-pool	c3-t1
+Oswaldo Cruz	w-pool	c2-t2
+Osório Duque-Estrada	w-pool	c3-t1
+Otto Hahn	w-pool	c2-t1
+Otto Lara Resende	w-pool	c3-t1
+Otto von Bismarck	w-pool	c3-t3
+Otávio Gouveia de Bulhões	w-test	c3-t1
+Ourinhos	w-pool	c1-t3
+Ouro	w-pool	c1-t2
+Ouro Preto	w-test	c2-t2
+Outlook.com	w-pool	c1-t2
+Ovis aries	w-pool	c2-t1
+Ovídio	w-pool	c1-t1
+Oxigénio	w-pool	c1-t3
+Oxirredução	w-pool	c1-t1
+Ozires Silva	w-pool	c2-t1
+Ozonosfera	w-pool	c1-t2
+Ozzy Osbourne	w-pool	c2-t2
+PSR J1719-1438	w-test	c3-t1
+Pablo Picasso	w-val	c2-t3
+Padre Cícero	w-pool	c2-t2
+Paganismo	w-test	c1-t2
+Pagode (estilo musical)	w-test	c3-t1
+Pagu	w-pool	c1-t2
+Pai-nosso	w-pool	c2-t3
+Painel publicitário	w-test	c2-t1
+Palau	w-pool	c1-t2
+Palavra	w-pool	c1-t1
+Paleolítico	w-pool	c1-t1
+Palladianismo	w-test	c1-t3
+Palmas	w-pool	c1-t2
+Palácio de Versalhes	w-pool	c2-t3
+Palácio do Príncipe de Mônaco	w-pool	c3-t3
+Paládio	w-test	c1-t1
+Pampa	w-pool	c1-t2
+Pamplona	w-val	c1-t3
+Panamá	w-pool	c1-t3
+Panda-vermelho	w-pool	c2-t2
+Pandemia	w-pool	c1-t3
+Panicats	w-pool	c1-t1
+Pantanal	w-pool	c1-t2
+Panthera onca	w-pool	c2-t3
+Papa	w-pool	c1-t3
+Papa Bento XVI	w-pool	c3-t3
+Papa Don't Preach	w-pool	c4+-t3
+Papa João Paulo II	w-pool	c4+-t3
+Papa João XXIII	w-pool	c3-t3
+Papagaio-verdadeiro	w-test	c2-t1
+Papel	w-pool	c1-t1
+Papel social	w-pool	c2-t1
+Papel social de gênero	w-pool	c3-t1
+Paquistão	w-pool	c1-t3
+Paracetamol	w-pool	c1-t3
+Paradigma	w-pool	c1-t1
+Paradoxo (figura de estilo)	w-pool	c3-t1
+Parafuso	w-pool	c1-t2
+Paraguai	w-pool	c1-t3
+Paralisia do sono	w-pool	c2-t1
+Paramore	w-pool	c1-t3
+Paranaguá	w-pool	c1-t2
+Paraná	w-test	c1-t3
+Paraná Clube	w-pool	c2-t3
+Parasitismo	w-pool	c1-t3
+Parauapebas	w-pool	c1-t2
+Paraíba	w-val	c1-t3
+Paraíso Tropical	w-pool	c2-t2
+Parede celular	w-pool	c2-t1
+Parintins	w-val	c1-t2
+Paris	w-pool	c1-t3
+Paris Saint-Germain Football Club	w-test	c4+-t3
+Parnamirim (Rio Grande do Norte)	w-pool	c4+-t3
+Parnasianismo	w-pool	c1-t1
+Parotidite epidémica	w-pool	c2-t1
+Parque Nacional Serra da Capivara	w-pool	c4+-t1
+Parque Nacional da Chapada dos Veadeiros	w-pool	c4+-t2
+Parque Nacional das Emas	w-test	c3-t2
+Parque Nacional de Yosemite	w-val	c3-t2
+Parque Nacional do Iguaçu	w-pool	c3-t1
+Parque Nacional do Jaú	w-pool	c3-t1
+Parque Nacional do Pantanal Matogrossense	w-pool	c4+-t1
+Parque de ciência e tecnologia	w-pool	c3-t1
+Parte real	w-pool	c2-t1
+Partenon	w-pool	c1-t2
+Partido Comunista do Brasil	w-test	c3-t2
+Partido dos Trabalhadores	w-pool	c2-t3
+Partido político	w-pool	c2-t1
+Partidos políticos no Brasil	w-pool	c3-t3
+Pará	w-pool	c1-t3
+Paráfrase	w-pool	c1-t1
+Paródia	w-pool	c1-t1
+Passione	w-pool	c1-t3
+Patologia	w-pool	c1-t1
+Pau dos Ferros	w-pool	c2-t3
+Pau-Brasil (livro)	w-pool	c3-t1
+Paul McCartney	w-pool	c2-t3
+Paula Fernandes	w-test	c2-t2
+Paulinho da Viola	w-pool	c2-t1
+Paulino de Iorque	w-pool	c2-t1
+Paulista (Pernambuco)	w-pool	c2-t1
+Paulo Autran	w-pool	c2-t2
+Paulo Coelho	w-pool	c2-t2
+Paulo Francis	w-val	c2-t2
+Paulo Freire	w-pool	c2-t3
+Paulo Henrique Ganso	w-pool	c3-t3
+Paulo Machado de Carvalho	w-pool	c3-t1
+Paulo Maluf	w-pool	c2-t3
+Paulo Mendes Campos	w-pool	c3-t1
+Paulo Roberto Falcão	w-val	c3-t2
+Paulo Thiago (lutador)	w-test	c3-t1
+Paulo Vanzolini	w-pool	c2-t2
+Paulo de Tarso	w-test	c2-t3
+Paulínia	w-pool	c1-t3
+Paysandu Sport Club	w-pool	c3-t3
+Paz	w-pool	c1-t1
+País desenvolvido	w-pool	c2-t1
+País em desenvolvimento	w-test	c2-t1
+Países Baixos	w-test	c2-t3
+Países recentemente industrializados	w-pool	c3-t1
+Pearl Jam	w-pool	c2-t3
+Pecado capital	w-pool	c2-t1
+Pecuária	w-pool	c1-t1
+Pedagogia	w-test	c1-t3
+Pedofilia	w-pool	c1-t2
+Pedro (apóstolo)	w-pool	c2-t2
+Pedro Aleixo	w-pool	c2-t1
+Pedro Almodóvar	w-test	c2-t2
+Pedro Augusto de Saxe-Coburgo e Bragança	w-pool	c4+-t2
+Pedro I da Rússia	w-pool	c3-t3
+Pedro I do Brasil	w-test	c3-t3
+Pedro II do Brasil	w-pool	c3-t3
+Pedro Lessa	w-pool	c2-t1
+Pedro de Araújo Lima	w-test	c3-t2
+Pedro Álvares Cabral	w-pool	c3-t3
+Peixe	w-pool	c1-t3
+Peixe-boi	w-pool	c2-t2
+Pele	w-val	c1-t2
+Pelotas	w-pool	c1-t2
+Pelé	w-test	c1-t3
+Pena de morte	w-pool	c2-t2
+Penicilina	w-pool	c1-t2
+Pensamento	w-test	c1-t3
+Pensamento crítico	w-pool	c2-t2
+Pentecostalismo	w-test	c1-t3
+Penélope Cruz	w-pool	c2-t2
+Pepê & Neném	w-pool	c2-t1
+Pequim	w-test	c1-t3
+Percepção	w-val	c1-t1
+Percy Jackson & the Olympians	w-pool	c4+-t3
+Perda auditiva	w-pool	c2-t2
+Perda de visão	w-pool	c2-t3
+Permutação	w-pool	c1-t1
+Pernambuco	w-pool	c1-t3
+Perseguição de Diocleciano	w-pool	c2-t3
+Personalidade	w-test	c1-t2
+Peru	w-test	c1-t3
+Período (física)	w-pool	c2-t1
+Período Clássico (música)	w-pool	c3-t2
+Período Populista	w-test	c2-t1
+Período entreguerras	w-pool	c2-t2
+Período helenístico	w-pool	c2-t2
+Período regencial (Brasil)	w-val	c3-t3
+Pesca	w-pool	c1-t2
+Peso	w-test	c1-t1
+Pesquisa	w-test	c1-t1
+Pesquisa de opinião	w-pool	c2-t2
+Peste Negra	w-pool	c2-t3
+Peter Paul Rubens	w-val	c3-t2
+Petra	w-pool	c1-t1
+Petrobras	w-pool	c1-t3
+Petróleo	w-pool	c1-t3
+Peyton Manning	w-pool	c2-t3
+Phineas e Ferb	w-test	c2-t2
+Pi	w-pool	c1-t3
+Piano	w-pool	c1-t1
+Piauí	w-pool	c1-t3
+Pichação	w-pool	c1-t2
+Pierre Bourdieu	w-test	c2-t2
+Pierre Le Gros, o Jovem	w-pool	c4+-t3
+Pierre Lévy	w-pool	c2-t3
+Pilha de Daniell	w-pool	c2-t1
+Pilha de Volta	w-pool	c2-t1
+Pilot (30 Rock)	w-pool	c3-t3
+Pinguim-imperador	w-pool	c2-t2
+Pink	w-pool	c1-t3
+Pink Floyd	w-pool	c2-t3
+Pintura	w-test	c1-t1
+Pintura da Roma Antiga	w-pool	c3-t3
+Pintura do Rococó	w-pool	c2-t3
+Pintura do Romantismo brasileiro	w-test	c3-t3
+Pintura no Brasil	w-pool	c2-t3
+Piolin	w-pool	c1-t1
+Piotr Ilitch Tchaikovski	w-pool	c3-t3
+Piracicaba	w-pool	c1-t3
+Pirata	w-pool	c1-t3
+Pirates of the Caribbean (série de filmes)	w-pool	c4+-t2
+Pirates of the Caribbean: At World's End	w-pool	c4+-t1
+Pirates of the Caribbean: Dead Man's Chest	w-pool	c4+-t2
+Pirates of the Caribbean: On Stranger Tides	w-pool	c4+-t2
+Pirates of the Caribbean: The Curse of the Black Pearl	w-pool	c4+-t2
+Pirro de Élis	w-test	c2-t1
+Pirâmide	w-test	c1-t1
+Pirâmide (arquitetura)	w-test	c2-t1
+Pitty	w-test	c1-t3
+Pitágoras	w-pool	c1-t3
+Pixinguinha	w-pool	c1-t3
+Pião	w-pool	c1-t2
+Planejamento estratégico	w-pool	c2-t2
+Planet of the Apes (1968)	w-pool	c4+-t1
+Planeta	w-pool	c1-t3
+Planeta dos Macacos (2001)	w-pool	c3-t1
+Planeta dos Macacos: A Origem	w-pool	c3-t1
+Plano Marshall	w-test	c2-t1
+Plano Piloto de Brasília	w-pool	c3-t3
+Plano Real	w-pool	c2-t2
+Plano complexo	w-pool	c2-t1
+Planta medicinal	w-pool	c2-t1
+Plantae	w-pool	c1-t2
+Plasencia	w-pool	c1-t3
+Plasma	w-pool	c1-t2
+Platina	w-pool	c1-t2
+Platyhelminthes	w-pool	c1-t3
+Platão	w-pool	c1-t3
+PlayStation 2	w-pool	c2-t2
+PlayStation 3	w-pool	c2-t3
+Playboy (Brasil)	w-test	c2-t2
+Pleiotropia	w-pool	c1-t1
+Pleonasmo	w-test	c1-t1
+Plotino	w-test	c1-t2
+Plutão	w-pool	c1-t3
+Plácido de Castro (político)	w-pool	c3-t1
+Plástico	w-pool	c1-t2
+Plínio Barreto	w-pool	c2-t1
+Plínio Salgado	w-pool	c2-t2
+Pneumonia	w-pool	c1-t2
+Pobreza	w-test	c1-t2
+Pocahontas	w-pool	c1-t2
+Poder	w-pool	c1-t1
+Poder Executivo do Brasil	w-test	c3-t1
+Poder Judiciário do Brasil	w-pool	c3-t3
+Poder Legislativo do Brasil	w-pool	c3-t2
+Poder político	w-pool	c2-t1
+Poder social	w-test	c2-t1
+Poemas sinfónicos (Liszt)	w-pool	c3-t3
+Poesia	w-pool	c1-t1
+Poesia épica	w-pool	c2-t1
+Pokémon	w-test	c1-t3
+Polaridade (química)	w-val	c2-t1
+Policleto	w-test	c1-t3
+Polifonia	w-test	c1-t1
+Poliomielite	w-pool	c1-t3
+Polissemia	w-pool	c1-t1
+Politeísmo	w-pool	c1-t1
+Polo Norte	w-pool	c2-t3
+Polo Sul	w-pool	c2-t2
+Poluição	w-test	c1-t2
+Poluição atmosférica	w-pool	c2-t3
+Poluição da água	w-pool	c2-t1
+Poluição sonora	w-pool	c2-t1
+Polígono	w-test	c1-t1
+Polígono regular	w-pool	c2-t1
+Política	w-pool	c1-t1
+Política de apaziguamento	w-pool	c2-t1
+Política do café com leite	w-pool	c3-t2
+Polónia	w-pool	c1-t3
+Polônio	w-pool	c1-t1
+Ponta Grossa	w-test	c2-t3
+Ponte	w-pool	c1-t2
+Ponte do Lago Pontchartrain	w-pool	c3-t1
+Ponte salina	w-pool	c2-t1
+Pontes de Miranda	w-pool	c2-t1
+Ponto (matemática)	w-pool	c2-t1
+Ponto cardeal	w-pool	c2-t1
+Ponto de interrogação	w-pool	c2-t1
+Pontuação	w-test	c1-t1
+Pop art	w-pool	c2-t1
+População	w-test	c1-t1
+Popó	w-test	c1-t1
+Porcentagem	w-pool	c1-t1
+Porco doméstico	w-pool	c2-t1
+Porifera	w-pool	c1-t2
+Porto	w-test	c1-t3
+Porto Alegre	w-pool	c2-t3
+Porto Rico	w-pool	c2-t3
+Porto Velho	w-pool	c2-t2
+Portugal	w-pool	c1-t3
+Português brasileiro	w-pool	c2-t3
+Positivismo	w-pool	c1-t2
+Posição	w-pool	c1-t1
+Posição social	w-pool	c2-t1
+Potencial de hidrogénio	w-pool	c2-t1
+Potencial de redução	w-pool	c2-t1
+Potencial elétrico	w-pool	c2-t2
+Potássio	w-pool	c1-t1
+Potência	w-pool	c1-t1
+Potência elétrica	w-pool	c2-t1
+Potência regional	w-pool	c2-t2
+Pouso Alegre	w-test	c2-t1
+Povo	w-pool	c1-t1
+Povos indígenas do Brasil	w-test	c3-t3
+Power Rangers	w-pool	c2-t2
+Poá	w-test	c1-t3
+Poços de Caldas	w-pool	c2-t2
+Pragmatismo	w-pool	c1-t1
+Praia Grande (São Paulo)	w-test	c4+-t2
+Praseodímio	w-test	c1-t1
+Prata	w-pool	c1-t1
+Praça André de Albuquerque	w-test	c3-t2
+Praça São Francisco	w-pool	c3-t1
+Preconceito linguístico	w-test	c2-t1
+Predação	w-pool	c1-t1
+Premier League	w-test	c2-t3
+Preposição	w-test	c1-t1
+Preservativo	w-pool	c1-t3
+Presidente Prudente	w-pool	c2-t3
+Presidente do Brasil	w-test	c2-t2
+Pretty Little Liars (série literária)	w-pool	c4+-t1
+Primatas	w-pool	c1-t3
+Primavera Árabe	w-pool	c2-t1
+Primeira Guerra Mundial	w-pool	c3-t3
+Primeira República Brasileira	w-pool	c3-t3
+Primeira lei da termodinâmica	w-pool	c3-t2
+Primeiro Império Francês	w-pool	c3-t2
+Primeiro reinado	w-pool	c2-t3
+Primeiros socorros	w-pool	c2-t1
+Prince of Persia: The Two Thrones	w-pool	c4+-t2
+Princípio de Aufbau	w-pool	c2-t1
+Princípio de Bernoulli	w-pool	c2-t2
+Princípio de Le Châtelier	w-pool	c3-t2
+Princípio de Pascal	w-pool	c2-t1
+Princípio fundamental da contagem	w-pool	c3-t1
+Prisma	w-pool	c1-t1
+Prisma (óptica)	w-test	c2-t1
+Prison Break	w-pool	c2-t2
+Pro Evolution Soccer 2011	w-pool	c3-t1
+Pro Evolution Soccer 2012	w-test	c3-t1
+Probabilidade	w-test	c1-t2
+Problemas sociais do Brasil	w-pool	c3-t3
+Proclamação da República do Brasil	w-pool	c3-t2
+Produto cartesiano	w-test	c2-t1
+Produto de matrizes	w-pool	c2-t2
+Produto interno bruto	w-test	c3-t3
+Programa Saúde da Família	w-pool	c3-t1
+Programa Shuttle-Mir	w-pool	c3-t3
+Programa do Ratinho	w-pool	c2-t3
+Progresso social	w-pool	c2-t1
+Progressão aritmética	w-pool	c2-t2
+Progressão geométrica	w-val	c2-t2
+Projeto A119	w-test	c2-t1
+Projeto Genoma	w-test	c2-t1
+Projeção cartográfica	w-pool	c2-t1
+Proletariado	w-test	c1-t1
+Promécio	w-pool	c1-t1
+Pronome	w-pool	c1-t1
+Pronome de tratamento	w-pool	c2-t2
+Propaganda	w-pool	c1-t3
+Propagação térmica	w-pool	c2-t3
+Proporcionalidade	w-pool	c1-t1
+Proporção áurea	w-test	c2-t2
+Propriedades físico-químicas da água	w-pool	c4+-t3
+Propriedades periódicas	w-pool	c2-t1
+Prosa	w-test	c1-t1
+Prosopopeia	w-pool	c1-t1
+Protestantismo	w-pool	c1-t3
+Proteus anguinus	w-pool	c2-t2
+Proteína	w-pool	c1-t3
+Protista	w-pool	c1-t3
+Protocolo de Quioto	w-pool	c2-t2
+Prova matemática	w-pool	c2-t1
+Prudente de Morais	w-pool	c2-t3
+Pré-história	w-pool	c2-t2
+Pré-história do Norte da África	w-pool	c4+-t1
+Pré-modernismo	w-pool	c2-t1
+Pré-socráticos	w-pool	c2-t2
+Prêmio Nobel	w-pool	c2-t3
+Psicanálise	w-pool	c1-t3
+Psicologia	w-pool	c1-t3
+Psicologia social	w-pool	c2-t3
+Psicopatia	w-pool	c1-t2
+Psoríase	w-pool	c1-t3
+Pteridophyta	w-pool	c1-t1
+Ptolemeu	w-test	c1-t1
+Puberdade	w-pool	c1-t1
+Publicidade	w-pool	c1-t3
+Pulmão	w-pool	c1-t1
+Pulp Fiction	w-test	c2-t3
+Punk rock	w-pool	c2-t3
+Putsch da Cervejaria	w-pool	c2-t3
+Páginas da Vida	w-pool	c2-t2
+Pâncreas	w-test	c1-t1
+Pânico financeiro de 1907	w-pool	c3-t3
+Pânico na TV	w-pool	c2-t3
+Pão	w-pool	c1-t2
+Péricles	w-pool	c1-t3
+Pérola Byington	w-pool	c2-t1
+Pênis	w-pool	c1-t2
+Pólis	w-pool	c1-t2
+Pólvora	w-pool	c1-t3
+Pós-impressionismo	w-pool	c2-t1
+Pós-modernidade	w-pool	c2-t3
+Pınarbaşı (sítio arqueológico)	w-val	c3-t1
+Qin Shihuang	w-test	c2-t2
+Quarta Internacional	w-pool	c2-t3
+Quebec	w-pool	c1-t3
+Queda do Império Romano do Ocidente	w-pool	c4+-t2
+Queen	w-val	c1-t3
+Queijo	w-pool	c1-t3
+Quentin Tarantino	w-test	c2-t1
+Quilimanjaro	w-pool	c1-t3
+Quilograma	w-test	c1-t2
+Quilombo	w-pool	c1-t2
+Quilombo dos Palmares	w-pool	c2-t2
+Quimiossíntese	w-test	c1-t1
+Quincas Borba	w-pool	c2-t1
+Quinhentismo	w-pool	c1-t1
+Quinta-Feira Negra	w-pool	c3-t1
+Quintino Bocaiuva	w-pool	c2-t1
+Quinton Jackson	w-pool	c2-t3
+Quinxassa	w-pool	c1-t2
+Quirguistão	w-pool	c1-t2
+Quénia	w-pool	c1-t2
+Química	w-pool	c1-t3
+Química inorgânica	w-pool	c2-t2
+Química orgânica	w-val	c2-t2
+RMS Titanic	w-pool	c2-t3
+RSS	w-pool	c1-t1
+Rabindranath Tagore	w-test	c2-t2
+Rachel de Queiroz	w-pool	c2-t3
+Raciocínio lógico	w-pool	c2-t1
+Racionais MC's	w-pool	c3-t1
+Racionalismo	w-test	c1-t1
+Racismo	w-pool	c1-t3
+Radiação eletromagnética	w-test	c2-t3
+Radiação infravermelha	w-pool	c2-t3
+Radiação ultravioleta	w-pool	c2-t3
+Radiciação	w-pool	c1-t1
+Radioatividade	w-pool	c1-t3
+Rafael	w-pool	c1-t2
+Rafael Fernandes	w-test	c2-t2
+Rafinha Bastos	w-pool	c2-t2
+Rage Against the Machine	w-pool	c4+-t2
+Ragnarök	w-test	c1-t3
+Raimundos	w-pool	c1-t2
+Raining Men (canção)	w-pool	c3-t1
+Raiva (doença)	w-pool	c2-t2
+Raiz	w-pool	c1-t2
+Raiz quadrada	w-test	c2-t2
+Ralf Dahrendorf	w-pool	c2-t1
+Ramones	w-test	c1-t3
+Ramón Valdés	w-pool	c2-t2
+Randy Couture	w-pool	c2-t2
+Ranieri Mazzilli	w-pool	c2-t1
+Ranking Mundial de Clubes da IFFHS	w-test	c4+-t1
+Ranking da CBF	w-pool	c2-t1
+Raoni Metuktire	w-pool	c2-t2
+Rated R (álbum de Rihanna)	w-test	c4+-t3
+Raul Gil	w-test	c2-t1
+Raul Pompeia	w-pool	c2-t2
+Raul Seixas	w-pool	c2-t3
+Raymond Aron	w-pool	c2-t2
+Razão	w-test	c1-t1
+Razão (matemática)	w-pool	c2-t1
+Raça (categorização humana)	w-pool	c3-t3
+Ready to Die	w-pool	c2-t1
+Real	w-pool	c1-t1
+Real Madrid Club de Fútbol	w-val	c4+-t3
+Realidade	w-test	c1-t2
+Realismo	w-pool	c1-t3
+Realismo no Brasil	w-pool	c2-t1
+Reação endotérmica	w-pool	c2-t1
+Reação exotérmica	w-test	c2-t1
+Reação química	w-pool	c2-t2
+Rebelde (telenovela brasileira)	w-pool	c3-t2
+Rebelde (telenovela)	w-pool	c2-t3
+Receptor (comunicação)	w-pool	c2-t1
+Reciclagem	w-pool	c1-t1
+Recife	w-val	c1-t3
+Reciário	w-pool	c1-t2
+Record (rede de televisão)	w-pool	c3-t2
+Recuo dos glaciares desde 1850	w-pool	c3-t3
+Recurso natural	w-test	c2-t2
+Red Bull Bragantino	w-test	c3-t2
+Red Hot Chili Peppers	w-test	c4+-t3
+Rede de computadores	w-test	c2-t3
+Rede social	w-pool	c2-t1
+RedeTV!	w-pool	c1-t3
+Redemocratização do Brasil	w-pool	c2-t2
+Referencial	w-pool	c1-t1
+Reflexão (física)	w-pool	c2-t2
+Reforma Protestante	w-pool	c2-t3
+Reforma agrária	w-pool	c2-t3
+Refração	w-pool	c1-t2
+Reggae	w-pool	c1-t1
+Regina Casé	w-pool	c2-t3
+Regina Duarte	w-test	c2-t2
+Registro (São Paulo)	w-pool	c3-t3
+Região	w-pool	c1-t1
+Região Centro-Oeste do Brasil	w-pool	c4+-t3
+Região Nordeste do Brasil	w-pool	c3-t3
+Região Norte do Brasil	w-pool	c3-t3
+Região Sudeste do Brasil	w-pool	c3-t3
+Região Sul do Brasil	w-test	c3-t3
+Região geoeconômica Nordeste do Brasil	w-pool	c4+-t3
+Região polar	w-pool	c2-t1
+Regiões do Brasil	w-pool	c2-t1
+Regra de Cramer	w-pool	c2-t1
+Regra de Sarrus	w-pool	c2-t1
+Regra de três	w-pool	c2-t1
+Regra de três composta	w-pool	c3-t1
+Regra de três simples	w-pool	c3-t1
+Regra do octeto	w-pool	c2-t1
+Regência (linguística)	w-pool	c2-t1
+Rei (xadrez)	w-pool	c2-t1
+Reino Ptolemaico	w-test	c2-t3
+Reino Unido	w-pool	c2-t3
+Reino Unido de Portugal, Brasil e Algarves	w-test	c4+-t3
+Reino de Roma	w-pool	c2-t3
+Relatividade geral	w-test	c2-t3
+Relatividade restrita	w-test	c2-t2
+Relatório Brundtland	w-pool	c2-t1
+Relação de poder	w-pool	c2-t2
+Relação de trabalho	w-pool	c2-t1
+Relação ecológica	w-pool	c2-t2
+Relação social	w-pool	c2-t1
+Relevo	w-pool	c1-t2
+Relevo do Brasil	w-val	c2-t2
+Religião	w-pool	c1-t3
+Religião no Brasil	w-test	c2-t3
+Religiões afro-brasileiras	w-test	c3-t2
+Rembrandt	w-test	c1-t2
+Renascimento	w-pool	c1-t3
+Renata Sorrah	w-test	c2-t2
+Renato Aragão	w-pool	c2-t2
+Renato Russo	w-pool	c2-t2
+René Descartes	w-pool	c2-t3
+Represa Alta de Assuão	w-pool	c3-t1
+Reprodução	w-pool	c1-t2
+República	w-pool	c1-t3
+República Centro-Africana	w-pool	c3-t2
+República Democrática do Congo	w-pool	c3-t3
+República Dominicana	w-test	c2-t3
+República Romana	w-pool	c2-t3
+República da Espada	w-pool	c2-t2
+Resende (Rio de Janeiro)	w-pool	c3-t2
+Resenha	w-test	c1-t1
+Reservas de Mata Atlântica da Costa do Descobrimento	w-pool	c4+-t1
+Reservas de Mata Atlântica do Sudeste	w-pool	c4+-t1
+Resident Evil	w-test	c2-t3
+Resident Evil 4	w-test	c3-t3
+Resistor	w-pool	c1-t1
+Respiração	w-pool	c1-t2
+Respiração celular	w-pool	c2-t2
+Ressonância	w-pool	c1-t2
+Ressurreição de Cristo (Rafael)	w-test	c3-t2
+Restart	w-test	c1-t1
+Restauração Meiji	w-pool	c2-t3
+Resíduo sólido	w-pool	c2-t2
+Reta	w-pool	c1-t2
+Retrato	w-pool	c1-t1
+Retículo endoplasmático	w-pool	c2-t1
+Retórica	w-pool	c1-t2
+Revolta da Chibata	w-pool	c2-t3
+Revolta da Vacina	w-val	c2-t3
+Revolta de Vila Rica	w-test	c3-t2
+Revolução	w-test	c1-t2
+Revolução Chinesa	w-pool	c2-t2
+Revolução Constitucionalista de 1932	w-pool	c3-t3
+Revolução Cubana	w-pool	c2-t3
+Revolução Cultural Chinesa	w-pool	c3-t3
+Revolução Francesa	w-pool	c2-t3
+Revolução Industrial	w-pool	c2-t3
+Revolução Russa de 1917	w-pool	c3-t3
+Revolução de 1930	w-pool	c2-t3
+Revolução de Zanzibar	w-pool	c2-t2
+Revoluções de 1830	w-pool	c2-t1
+Revoluções de 1848	w-pool	c2-t1
+Revoluções de 1989	w-test	c2-t3
+Rey Mysterio	w-pool	c2-t3
+Reynaldo Gianecchini	w-pool	c2-t1
+Rhinella marina	w-pool	c2-t2
+Ribeirão Preto	w-pool	c2-t3
+Ribossoma	w-test	c1-t1
+Ricardo Flores Magón	w-pool	c3-t3
+Ricardo Gomes	w-pool	c2-t1
+Richard Wagner	w-pool	c2-t3
+Rickson Gracie	w-pool	c2-t2
+Ricky Martin	w-pool	c2-t3
+Rihanna	w-pool	c1-t3
+Rinoceronte-de-java	w-pool	c2-t2
+Rinoceronte-de-sumatra	w-pool	c2-t3
+Rio	w-pool	c1-t3
+Rio (desambiguação)	w-test	c2-t1
+Rio Amarelo	w-pool	c2-t1
+Rio Amazonas	w-pool	c2-t2
+Rio Branco	w-test	c2-t2
+Rio Claro (São Paulo)	w-test	c4+-t2
+Rio Congo	w-pool	c2-t1
+Rio Danúbio	w-pool	c2-t1
+Rio Ganges	w-pool	c2-t1
+Rio Grande	w-pool	c2-t1
+Rio Grande do Norte	w-val	c3-t3
+Rio Grande do Sul	w-pool	c3-t3
+Rio Indo	w-pool	c2-t1
+Rio Mississippi	w-pool	c2-t2
+Rio Nilo	w-pool	c2-t3
+Rio Níger	w-pool	c2-t2
+Rio Reno	w-val	c2-t1
+Rio São Francisco	w-pool	c3-t2
+Rio Tietê	w-pool	c2-t2
+Rio Volga	w-test	c2-t1
+Rio Yangtzé	w-pool	c2-t1
+Rio de Janeiro	w-pool	c2-t3
+Rio+10	w-pool	c2-t1
+Risorgimento	w-pool	c1-t2
+Rita Cadillac	w-test	c2-t1
+Rita Lee	w-pool	c2-t3
+Ritmo	w-test	c1-t1
+Rito de passagem	w-pool	c2-t1
+Rivaldo	w-pool	c1-t2
+Roald Amundsen	w-pool	c2-t2
+Robert Merton	w-pool	c2-t1
+Robert Pattinson	w-pool	c2-t3
+Robert Scheidt	w-pool	c2-t1
+Roberto Burle Marx	w-pool	c3-t1
+Roberto Cardoso de Oliveira	w-pool	c3-t2
+Roberto Carlos	w-pool	c2-t3
+Roberto Carlos (futebolista)	w-pool	c3-t2
+Roberto Dinamite	w-pool	c2-t2
+Roberto Gomes Pedrosa	w-pool	c3-t1
+Roberto Gómez Bolaños	w-pool	c3-t3
+Roberto Justus	w-pool	c2-t1
+Roberto Leal	w-pool	c2-t1
+Roberto Marinho	w-pool	c2-t2
+Roberto Simonsen	w-pool	c2-t2
+Robin Williams	w-pool	c2-t3
+Robinho	w-test	c1-t3
+Robô	w-pool	c1-t2
+Rocha	w-pool	c1-t1
+Rock	w-pool	c1-t3
+Rock and roll	w-pool	c3-t2
+Rock in Rio	w-val	c3-t2
+Rock no Brasil	w-pool	c2-t3
+Rococó	w-pool	c1-t2
+Roda	w-test	c1-t3
+Rodrigues Alves	w-pool	c2-t3
+Roedores	w-pool	c1-t1
+Roger Federer	w-pool	c2-t3
+Rogério Ceni	w-pool	c2-t3
+Rogério Minotouro	w-pool	c2-t1
+Role-playing game	w-pool	c3-t3
+Rolim Amaro	w-pool	c2-t1
+Rolim de Moura	w-pool	c2-t1
+Roma	w-pool	c1-t3
+Roma Antiga	w-pool	c2-t3
+Romance	w-pool	c1-t1
+Romantismo	w-test	c1-t3
+Romantismo no Brasil	w-pool	c2-t3
+Romeu e Julieta	w-pool	c2-t1
+Romário	w-pool	c1-t3
+Romênia	w-pool	c1-t3
+Ronald Golias	w-pool	c2-t1
+Ronaldinho Gaúcho	w-pool	c2-t3
+Ronaldo Nazário	w-pool	c2-t3
+Rondas Ostensivas Tobias de Aguiar	w-pool	c4+-t1
+Rondó	w-pool	c1-t1
+Rondônia	w-pool	c1-t3
+Roque Santeiro	w-pool	c2-t2
+Roquette-Pinto	w-pool	c2-t1
+Roraima	w-test	c1-t3
+Rosa Luxemburgo	w-test	c2-t2
+Rosacrucianismo	w-pool	c1-t2
+Rouge	w-test	c1-t3
+Roupa	w-pool	c1-t2
+Rousimar Palhares	w-test	c2-t1
+Royce Gracie	w-test	c2-t2
+Ruben Berta	w-pool	c2-t1
+Rubens Barrichello	w-pool	c2-t2
+Rubens Ewald Filho	w-test	c3-t1
+Rubéola	w-test	c1-t2
+Rubídio	w-pool	c1-t1
+Rugby	w-test	c1-t3
+Rui Ribeiro Franco	w-pool	c3-t1
+Rutênio	w-pool	c1-t1
+Ruy Barbosa	w-pool	c2-t2
+Ruy Ohtake	w-test	c2-t1
+Ryan Gracie	w-pool	c2-t1
+Rádio	w-pool	c1-t2
+Rádio (elemento químico)	w-pool	c3-t1
+Rádon	w-pool	c1-t1
+Rã-arborícola-de-white	w-pool	c3-t2
+Répteis	w-pool	c1-t3
+Rênio	w-test	c1-t1
+Ródio	w-pool	c1-t1
+Rússia	w-pool	c1-t3
+SBT	w-pool	c1-t3
+SP-324	w-test	c2-t1
+Saara Ocidental	w-pool	c2-t2
+Sabinada	w-pool	c1-t2
+Saci	w-pool	c1-t1
+Sacro Império Romano-Germânico	w-pool	c4+-t3
+Sagarana	w-pool	c1-t1
+Sailor Moon	w-pool	c2-t3
+Sakurajima	w-pool	c1-t1
+Sal	w-pool	c1-t1
+Saladino	w-pool	c1-t1
+Saldanha Marinho	w-test	c2-t1
+Salificação	w-pool	c1-t1
+Salto ornamental	w-test	c2-t3
+Salvador	w-pool	c1-t3
+Salvador Dalí	w-pool	c2-t2
+Salário mínimo	w-val	c2-t2
+Salão de Maio	w-test	c2-t1
+Samba	w-val	c1-t3
+Samba de roda	w-test	c2-t1
+Samoa	w-pool	c1-t3
+Samuel Eto'o	w-test	c2-t2
+Samuel Klein	w-pool	c2-t1
+Samuel Wainer	w-pool	c2-t2
+Samuel Wallace MacDowell	w-test	c3-t1
+Samário	w-pool	c1-t1
+San Marino	w-test	c2-t1
+San Tiago Dantas	w-pool	c3-t1
+Sandy	w-pool	c1-t3
+Sandy & Junior	w-pool	c2-t3
+Sangue	w-pool	c1-t2
+Santa Bárbara d'Oeste	w-pool	c4+-t3
+Santa Catarina	w-pool	c2-t3
+Santa Cruz (bairro do Rio de Janeiro)	w-test	c4+-t3
+Santa Cruz Futebol Clube	w-test	c4+-t3
+Santa Sofia	w-pool	c2-t2
+Santana do Paraíso	w-test	c2-t3
+Santarém (Pará)	w-test	c2-t3
+Santiago (Chile)	w-pool	c2-t3
+Santo André (São Paulo)	w-test	c4+-t2
+Santos	w-pool	c1-t3
+Santos Dumont	w-val	c2-t3
+Santos Futebol Clube	w-test	c3-t3
+Santuário do Bom Jesus de Matosinhos	w-pool	c4+-t3
+Saponificação	w-pool	c1-t1
+Sarah Bernhardt	w-pool	c2-t3
+Sarampo	w-pool	c1-t2
+Sarcasmo	w-pool	c1-t1
+Saturno (planeta)	w-pool	c2-t3
+Satyajit Ray	w-pool	c2-t1
+Saúde	w-pool	c1-t2
+Saúde pública	w-test	c2-t1
+Scaphyglottis	w-pool	c1-t2
+Scherzo	w-pool	c1-t1
+Sebastián Abreu	w-pool	c2-t2
+Sebastião Camargo	w-pool	c2-t1
+Sebastião Salgado	w-pool	c2-t1
+Secante (trigonometria)	w-pool	c2-t1
+Secos & Molhados (álbum de 1973)	w-test	c4+-t2
+Segunda Guerra Mundial	w-test	c3-t3
+Segunda lei da termodinâmica	w-pool	c3-t3
+Segundo	w-pool	c1-t2
+Segundo reinado	w-pool	c2-t3
+Seicheles	w-pool	c1-t2
+Selena Gomez	w-pool	c2-t3
+Seleção Brasileira de Futebol	w-pool	c3-t3
+Seleção Brasileira de Ginástica Artística Feminina	w-test	c4+-t3
+Seleção Brasileira de Voleibol Feminino	w-pool	c4+-t2
+Seleção Brasileira de Voleibol Masculino	w-pool	c4+-t2
+Seleção Italiana de Futebol	w-pool	c3-t3
+Seleção Russa de Ginástica Artística Feminina	w-pool	c4+-t2
+Seleção de Futebol dos Estados Unidos	w-pool	c4+-t3
+Seleção de Ginástica Artística Feminina dos Estados Unidos	w-val	c4+-t3
+Seleção natural	w-pool	c2-t2
+Selênio	w-pool	c1-t1
+Semana de Arte Moderna	w-pool	c3-t2
+Semelhança (geometria)	w-test	c2-t1
+Semicondutor	w-pool	c1-t2
+Semiótica	w-pool	c1-t3
+Senado Federal do Brasil	w-pool	c3-t1
+Senhora do Destino	w-val	c2-t3
+Seno	w-test	c1-t1
+Sensibilidade	w-pool	c1-t1
+Senso comum	w-pool	c2-t1
+Sensoriamento remoto	w-pool	c2-t1
+Separação de misturas	w-pool	c2-t1
+Sepultura (banda)	w-pool	c2-t3
+Sepé Tiaraju	w-test	c2-t2
+Sequência (combinatória)	w-val	c2-t1
+Sequência de Fibonacci	w-val	c2-t3
+Sergipe	w-test	c1-t3
+Serguei Eisenstein	w-pool	c2-t1
+Serpente	w-pool	c1-t2
+Serra Negra do Norte	w-pool	c3-t1
+Serra Talhada	w-pool	c2-t1
+Sertralina	w-pool	c1-t3
+Sertãozinho (São Paulo)	w-test	c3-t2
+Sete Lagoas	w-pool	c2-t2
+Sete Pecados	w-pool	c2-t2
+Sete maravilhas do mundo	w-pool	c3-t1
+Seu Jorge	w-pool	c2-t1
+Seul	w-pool	c1-t2
+Sex Pistols	w-pool	c2-t3
+Sexismo	w-pool	c1-t2
+Sexo	w-pool	c1-t2
+Sexo anal	w-pool	c2-t3
+Sexo oral	w-pool	c2-t1
+Sexualidade humana	w-pool	c2-t1
+Shakira	w-test	c1-t3
+Shannon Miller	w-pool	c2-t2
+Shaun of the Dead	w-pool	c4+-t2
+Shawn Johnson	w-pool	c2-t2
+Sherlock Holmes	w-test	c2-t3
+Shrek	w-test	c1-t3
+Sigmund Freud	w-pool	c2-t3
+Signo astrológico	w-pool	c2-t1
+Silent Hill	w-pool	c2-t2
+Silent Hill 4: The Room	w-pool	c4+-t2
+Silogismo	w-test	c1-t2
+Silvio Santos	w-pool	c2-t3
+Silício	w-pool	c1-t2
+Sima Qian	w-pool	c2-t3
+Simbiose	w-val	c1-t2
+Simbolismo	w-test	c1-t2
+Simetria	w-pool	c1-t1
+Simone de Beauvoir	w-pool	c2-t3
+Simpsons Roasting on an Open Fire	w-pool	c4+-t1
+Simón Bolívar	w-pool	c2-t3
+Sinan	w-pool	c1-t1
+Sindicalismo	w-pool	c1-t2
+Sinestesia	w-pool	c1-t2
+Sinfonia	w-test	c1-t2
+Sinfonia n.º 3 (Górecki)	w-pool	c4+-t2
+Singapura	w-pool	c1-t3
+Sinograma	w-pool	c1-t2
+Sintaxe	w-pool	c1-t1
+Sinusite	w-pool	c1-t1
+Sinônimo	w-pool	c1-t1
+Siquismo	w-pool	c1-t2
+Sismo	w-pool	c1-t3
+Sistema Internacional de Unidades	w-pool	c3-t2
+Sistema Solar	w-pool	c2-t3
+Sistema Toyota de Produção	w-pool	c3-t1
+Sistema circulatório	w-pool	c2-t2
+Sistema de coordenadas	w-test	c2-t1
+Sistema de equações lineares	w-pool	c3-t2
+Sistema de informação	w-pool	c2-t3
+Sistema de numeração binário	w-test	c3-t1
+Sistema económico	w-pool	c2-t1
+Sistema endócrino	w-pool	c2-t1
+Sistema excretor	w-pool	c2-t1
+Sistema imunitário	w-pool	c2-t3
+Sistema linfático	w-pool	c2-t2
+Sistema nervoso	w-pool	c2-t2
+Sistema nervoso central	w-pool	c3-t1
+Sistema operativo	w-pool	c2-t2
+Sistema respiratório	w-test	c2-t1
+Sistema sensorial	w-pool	c2-t2
+Sistema tegumentar	w-test	c2-t1
+Sistema Único de Saúde	w-pool	c3-t2
+Skate	w-pool	c1-t2
+Skinhead	w-test	c1-t2
+Skins	w-pool	c1-t2
+Slash	w-pool	c1-t3
+Slipknot	w-pool	c1-t3
+Smallville (telessérie)	w-pool	c2-t2
+Smart and Smarter	w-test	c3-t1
+Smile (canção de Avril Lavigne)	w-pool	c4+-t1
+Sobral (Ceará)	w-pool	c2-t2
+Sobral Pinto	w-pool	c2-t1
+Sobrenome	w-test	c1-t2
+Sociabilização	w-pool	c1-t1
+Social-democracia	w-val	c2-t3
+Socialismo	w-pool	c1-t3
+Sociedade	w-pool	c1-t2
+Sociedade Esportiva Palmeiras	w-pool	c3-t3
+Sociedade civil	w-pool	c2-t1
+Sociedade da informação	w-pool	c2-t2
+Sociedade matriarcal	w-val	c2-t1
+Sociedade pós-industrial	w-pool	c3-t1
+Socioconstrutivismo	w-pool	c1-t2
+Sociologia	w-pool	c1-t3
+Sociologia da educação	w-pool	c2-t1
+Sociologia das relações de gênero	w-pool	c3-t1
+Sofisma	w-pool	c1-t1
+Software	w-pool	c1-t1
+Soja	w-pool	c1-t2
+Sol	w-pool	c1-t3
+Solidariedade social	w-pool	c2-t2
+Solimão, o Magnífico	w-pool	c2-t3
+Solo	w-pool	c1-t2
+Solubilidade	w-test	c1-t2
+Solução	w-test	c1-t1
+Solução tampão	w-test	c2-t2
+Som	w-test	c1-t2
+Somália	w-pool	c1-t3
+Sonata	w-pool	c1-t1
+Sophie Charlotte	w-test	c2-t1
+Sorghum	w-val	c1-t1
+Sorocaba	w-pool	c1-t3
+Sousa Dantas	w-val	c2-t1
+Space Science Fiction Magazine	w-pool	c4+-t1
+Spartacus: Blood and Sand	w-test	c4+-t1
+Sport Club Corinthians Paulista	w-pool	c4+-t3
+Sport Club Internacional	w-pool	c3-t3
+Sport Club do Recife	w-pool	c3-t2
+Sport Lisboa e Benfica	w-pool	c3-t2
+Sporting Clube de Portugal	w-pool	c3-t3
+Spotlight	w-pool	c1-t1
+Sri Lanka	w-pool	c2-t2
+Stanley Kubrick	w-pool	c2-t3
+Star Wars	w-pool	c2-t3
+Station to Station	w-pool	c2-t2
+Stefan Bellof	w-test	c2-t1
+Stephen Hawking	w-test	c2-t2
+Stephen King	w-test	c2-t1
+Steve Jobs	w-test	c2-t3
+Steve Wozniak	w-pool	c2-t1
+Steven Spielberg	w-test	c2-t2
+Stone Cold Steve Austin	w-pool	c4+-t2
+Street Fighter	w-pool	c2-t2
+Subconjunto	w-pool	c1-t1
+Subcultura punk	w-pool	c2-t2
+Substantivo	w-pool	c1-t1
+Substância	w-pool	c1-t2
+Sucessão ecológica	w-pool	c2-t1
+Suco	w-test	c1-t1
+Sudão	w-pool	c1-t3
+Sufismo	w-pool	c1-t1
+Suicídio	w-pool	c1-t3
+Sumário	w-pool	c1-t1
+Suméria	w-pool	c1-t3
+Sun Yat-sen	w-pool	c3-t2
+Super Smash Bros. Brawl	w-test	c4+-t2
+Superman	w-test	c1-t3
+Superman/Batman: Inimigos Públicos	w-pool	c4+-t2
+Supernatural (5.ª temporada)	w-pool	c4+-t1
+Supernatural (série de televisão)	w-pool	c3-t3
+Superpotência	w-pool	c1-t2
+Supremo Tribunal Federal	w-pool	c3-t2
+Surfer Rosa	w-pool	c2-t2
+Suriname	w-pool	c1-t2
+Surrealismo	w-pool	c1-t2
+Susan Boyle	w-pool	c2-t2
+Susana Vieira	w-test	c2-t2
+Sustentabilidade	w-pool	c1-t2
+Suástica	w-pool	c1-t3
+Suécia	w-pool	c1-t3
+Suíte	w-pool	c1-t1
+Suíça	w-pool	c1-t3
+Svante Arrhenius	w-pool	c2-t1
+Svetlana Khorkina	w-pool	c2-t3
+Sydney	w-pool	c1-t3
+Sylvester Stallone	w-pool	c2-t2
+System of a Down	w-pool	c3-t3
+Sátira	w-pool	c1-t1
+Sânscrito	w-pool	c1-t2
+São Bernardo do Campo	w-pool	c3-t3
+São Caetano do Sul	w-test	c3-t2
+São Carlos (São Paulo)	w-pool	c4+-t3
+São Cristóvão e Neves	w-pool	c3-t1
+São Francisco (Califórnia)	w-test	c3-t3
+São Gonçalo (Rio de Janeiro)	w-pool	c4+-t2
+São José do Rio Preto	w-pool	c4+-t3
+São José dos Campos	w-pool	c3-t3
+São João del-Rei	w-pool	c4+-t3
+São Luís (Maranhão)	w-pool	c3-t3
+São Mateus (Espírito Santo)	w-pool	c4+-t2
+São Miguel	w-pool	c2-t1
+São Miguel do Oeste	w-pool	c3-t3
+São Paulo	w-pool	c2-t3
+São Paulo Futebol Clube	w-test	c4+-t3
+São Petersburgo	w-test	c2-t3
+São Vicente (São Paulo)	w-pool	c4+-t2
+São Vicente de Minas	w-pool	c3-t2
+São Vicente e Granadinas	w-test	c3-t1
+Século XX	w-pool	c2-t3
+Sérgio Buarque de Holanda	w-pool	c3-t1
+Sérgio Fleury	w-pool	c2-t1
+Sérgio Porto	w-pool	c2-t1
+Sífilis	w-pool	c1-t3
+Sílaba	w-test	c1-t2
+Síndrome da imunodeficiência adquirida	w-pool	c3-t3
+Síndrome de Asperger	w-pool	c2-t3
+Síndrome de Down	w-pool	c2-t2
+Síndrome de Tourette	w-pool	c2-t3
+Síntese evolutiva moderna	w-test	c3-t3
+Sítio Arqueológico de São Miguel Arcanjo	w-pool	c4+-t3
+Sítio do Picapau Amarelo	w-pool	c3-t2
+Sítio do Picapau Amarelo (2001)	w-pool	c4+-t1
+Sócrates	w-pool	c1-t2
+Sócrates (futebolista)	w-pool	c2-t2
+Sódio	w-pool	c1-t1
+Sófocles	w-test	c1-t1
+Sólido	w-pool	c1-t3
+Sônia Braga	w-pool	c2-t2
+Søren Kierkegaard	w-test	c2-t2
+TV Globo	w-test	c2-t3
+TVI	w-val	c1-t1
+Tabaco	w-pool	c1-t3
+Tabela periódica	w-test	c2-t2
+Tablet	w-test	c1-t1
+Tabuleiro (xadrez)	w-pool	c2-t2
+Taekwondo	w-pool	c1-t2
+Tailândia	w-pool	c1-t3
+Taiwan	w-pool	c1-t3
+Taj Mahal	w-pool	c2-t3
+Tajiquistão	w-pool	c1-t1
+Talcott Parsons	w-pool	c2-t1
+Tales de Mileto	w-pool	c2-t1
+Tamanduá-bandeira	w-pool	c2-t2
+Tamanho do pênis humano	w-pool	c3-t2
+Tamerlão	w-pool	c1-t2
+Tancredo Neves	w-pool	c2-t3
+Tangente	w-pool	c1-t1
+Tanzânia	w-pool	c1-t2
+Taoismo	w-pool	c1-t2
+Tarja Turunen	w-test	c2-t2
+Tarsila do Amaral	w-test	c2-t2
+Tartaruga-de-pente	w-pool	c2-t2
+Tatu-bola	w-pool	c2-t1
+Taubaté	w-test	c1-t3
+Tautomeria	w-pool	c1-t1
+Taxa de mortalidade	w-val	c2-t1
+Taxa de natalidade	w-pool	c2-t1
+Taxonomia	w-pool	c1-t2
+Taylor Lautner	w-test	c2-t1
+Taylor Swift	w-test	c2-t3
+Taylorismo	w-pool	c1-t2
+Tea Party (canção)	w-pool	c3-t1
+Team Fortress 2	w-test	c3-t3
+Teatro	w-pool	c1-t2
+Tecido	w-pool	c1-t1
+Tecido conjuntivo	w-pool	c2-t1
+Tecido muscular	w-pool	c2-t2
+Tecido nervoso	w-pool	c2-t2
+Tecido social	w-pool	c2-t1
+Tecido ósseo	w-pool	c2-t2
+Tecnologia	w-pool	c1-t1
+Tecnologia da informação	w-pool	c2-t2
+Tecnologia social	w-pool	c2-t2
+Tecnécio	w-pool	c1-t1
+Tectónica de placas	w-pool	c2-t3
+Teenage Dream	w-pool	c2-t3
+Teerã	w-pool	c1-t2
+Teixeira Lott	w-pool	c2-t2
+Telefone	w-pool	c1-t1
+Telefone celular	w-pool	c2-t2
+Televisão	w-pool	c1-t3
+Telê Santana	w-pool	c2-t2
+Telúrio	w-pool	c1-t2
+Tema (música)	w-test	c2-t1
+Temperatura	w-pool	c1-t3
+Tempestade tropical Erick (2007)	w-pool	c4+-t1
+Templo Expiatório da Sagrada Família	w-pool	c4+-t3
+Tempo	w-pool	c1-t3
+Tempo (meteorologia)	w-test	c2-t2
+Tempo (música)	w-pool	c2-t1
+Temática de Machado de Assis	w-pool	c3-t1
+Tenentismo	w-pool	c1-t1
+Tentativa de assassinato de Ronald Reagan	w-pool	c4+-t2
+Teníase	w-pool	c1-t2
+Teodoro Estudita	w-test	c2-t2
+Teologia da libertação	w-pool	c2-t2
+Teorema das quatro cores	w-pool	c3-t1
+Teorema de Laplace	w-pool	c2-t2
+Teorema de Pitágoras	w-pool	c2-t2
+Teorema de Stevin	w-pool	c2-t1
+Teoria celular	w-pool	c2-t1
+Teoria cinética dos gases	w-pool	c3-t1
+Teoria constitutiva do Estado	w-pool	c3-t1
+Teoria crítica	w-test	c2-t2
+Teoria da cultura	w-test	c2-t1
+Teoria da relatividade	w-pool	c2-t1
+Teoria do caos	w-pool	c2-t2
+Teoria dos conjuntos	w-pool	c2-t2
+Teoria dos números	w-test	c2-t1
+Teoria geral de sistemas	w-pool	c3-t1
+Teoria populacional malthusiana	w-pool	c3-t1
+Teoria populacional neomalthusiana	w-pool	c3-t1
+Teoria queer	w-pool	c2-t2
+Teoria social	w-test	c2-t1
+Teoria ácido-base de Lewis	w-pool	c4+-t2
+Teorias conspiratórias sobre as alunissagens do Programa Apollo	w-val	c4+-t3
+Terceira lei da termodinâmica	w-pool	c3-t1
+Terceira via	w-pool	c2-t3
+Terceiro setor	w-test	c2-t1
+Teresina	w-pool	c1-t3
+Termodinâmica	w-pool	c1-t3
+Termoquímica	w-test	c1-t1
+Termômetro	w-pool	c1-t3
+Terra	w-val	c1-t3
+Território	w-val	c1-t1
+Terrorismo	w-pool	c1-t1
+Terry Crews	w-pool	c2-t2
+Testemunhas de Jeová	w-pool	c2-t3
+Testosterona	w-pool	c1-t3
+Testículo	w-pool	c1-t1
+Texas	w-pool	c1-t3
+Texto	w-pool	c1-t1
+Textura (música)	w-pool	c2-t1
+Thaís Fersoza	w-pool	c2-t1
+The Aftermath (30 Rock)	w-pool	c4+-t2
+The Beatles	w-val	c2-t3
+The Best Damn Thing	w-pool	c4+-t2
+The Big Bang Theory	w-pool	c4+-t2
+The Chronicles of Narnia	w-pool	c4+-t3
+The City of New York vs. Homer Simpson	w-test	c4+-t2
+The Cure	w-pool	c2-t3
+The Dark Knight	w-pool	c3-t3
+The Doors	w-test	c2-t3
+The Fame	w-pool	c2-t3
+The Glee Project	w-pool	c3-t1
+The Godfather	w-pool	c2-t3
+The Last Song	w-pool	c3-t1
+The Man of Steel (revista em quadrinhos)	w-test	c4+-t3
+The Nexus	w-pool	c2-t2
+The O.C.	w-pool	c2-t3
+The Pussycat Dolls	w-pool	c3-t2
+The Remix	w-pool	c2-t1
+The Rolling Stones	w-pool	c3-t3
+The Sims	w-pool	c2-t3
+The Sims 2	w-pool	c3-t3
+The Sims 3	w-pool	c3-t2
+The Suite Life of Zack & Cody	w-test	c4+-t2
+The Sweet Escape (canção)	w-pool	c4+-t2
+The Truman Show	w-pool	c3-t2
+The Twilight Saga: Breaking Dawn – Part 1	w-pool	c4+-t2
+The Undertaker	w-pool	c2-t3
+The Vampire Diaries (série de televisão)	w-pool	c4+-t3
+The Video Collection 93:99	w-pool	c4+-t1
+The Who	w-pool	c2-t3
+Theodor W. Adorno	w-pool	c3-t2
+Thiago Alcântara	w-pool	c2-t2
+Thierry Henry	w-pool	c2-t3
+Thomas Edison	w-val	c2-t3
+Thomas Hobbes	w-pool	c2-t3
+Thomas More	w-pool	c2-t2
+Thor	w-pool	c1-t2
+Thor (Marvel Comics)	w-test	c3-t3
+Ti Ti Ti (2010)	w-pool	c1-t2
+Tibau	w-pool	c1-t2
+Tibau do Sul	w-pool	c2-t2
+Tigres asiáticos	w-test	c2-t1
+Tim Berners-Lee	w-pool	c3-t2
+Tim Burton	w-pool	c2-t2
+Tim Maia	w-test	c2-t2
+Timbre	w-test	c1-t1
+Timor-Leste	w-test	c2-t3
+Timóteo	w-pool	c1-t3
+Tina Turner	w-pool	c2-t2
+Tiradentes	w-pool	c1-t2
+Titânia (satélite)	w-val	c2-t2
+Titânio	w-pool	c1-t2
+Titãs (banda)	w-pool	c2-t3
+Tocantins	w-pool	c1-t2
+Togo	w-pool	c1-t2
+Tom Cruise	w-pool	c2-t1
+Tom Jobim	w-pool	c2-t2
+Tomate	w-pool	c1-t2
+Tomás de Aquino	w-pool	c2-t3
+Tonga	w-test	c1-t3
+Tony Ramos	w-pool	c2-t2
+Toquinho	w-pool	c1-t1
+Torben Grael	w-val	c2-t1
+Tornado	w-pool	c1-t3
+Torneio Rio-São Paulo de Futebol	w-test	c4+-t2
+Toronto	w-val	c1-t2
+Torque	w-pool	c1-t2
+Torre	w-pool	c1-t1
+Torre (xadrez)	w-val	c2-t2
+Torre Eiffel	w-val	c2-t2
+Torres (Rio Grande do Sul)	w-pool	c4+-t3
+Tosse	w-pool	c1-t1
+Totalitarismo	w-pool	c1-t3
+Touch Me I'm Sick	w-test	c4+-t1
+Toxoplasmose	w-pool	c1-t2
+Trabalho	w-pool	c1-t1
+Trabalho (economia)	w-pool	c2-t1
+Trabalho infantil	w-pool	c2-t1
+Trabalho voluntário	w-pool	c2-t1
+Trachylepis atlantica	w-pool	c2-t2
+Tracy Does Conan	w-pool	c3-t3
+Tragédia	w-pool	c1-t2
+Transexualidade	w-pool	c1-t3
+Transferência da corte portuguesa para o Brasil	w-test	c4+-t3
+Transformador	w-pool	c1-t1
+Transporte	w-test	c1-t1
+Transporte ferroviário na Índia	w-test	c3-t2
+Transportes do Brasil	w-pool	c2-t2
+Transposição (música)	w-pool	c2-t1
+Transposição do rio São Francisco	w-test	c4+-t3
+Transtorno bipolar	w-pool	c2-t3
+Transtorno de personalidade borderline	w-pool	c3-t3
+Transtorno depressivo maior	w-pool	c3-t3
+Transtorno do déficit de atenção e hiperatividade	w-pool	c4+-t3
+Transtorno do espectro autista	w-pool	c3-t3
+Transtorno mental	w-pool	c2-t2
+Transtorno obsessivo-compulsivo	w-pool	c3-t3
+Transístor	w-test	c1-t1
+Tratado	w-test	c1-t2
+Tratado Norte-Americano de Livre-Comércio	w-pool	c4+-t1
+Tratado de Ciudad Juárez	w-test	c3-t2
+Tratado de Latrão	w-pool	c2-t1
+Tratado de Tordesilhas	w-pool	c2-t2
+Tratado de Versalhes (1919)	w-pool	c3-t3
+Trava-línguas	w-pool	c2-t1
+Trem	w-pool	c1-t2
+Tribalismo	w-pool	c1-t1
+Tribo urbana	w-pool	c2-t2
+Tribunal Internacional de Justiça	w-pool	c3-t1
+Trifosfato de adenosina	w-pool	c2-t1
+Trigo	w-pool	c1-t1
+Trigonometria	w-pool	c1-t2
+Trindade e Tobago	w-pool	c2-t2
+Triângulo	w-test	c1-t2
+Triângulo das Bermudas	w-test	c2-t2
+Triângulo de Pascal	w-pool	c2-t1
+Triângulo retângulo	w-val	c2-t1
+Trompete	w-pool	c1-t2
+Tropa de Elite	w-pool	c2-t1
+Tropicália	w-pool	c1-t2
+Trovadorismo	w-pool	c1-t2
+True Blood	w-pool	c2-t2
+Trânsito	w-pool	c1-t2
+Três Lagoas	w-pool	c2-t3
+Tsunâmi	w-val	c1-t1
+Tubarão	w-pool	c1-t3
+Tubarão-branco	w-test	c2-t3
+Tuberculose	w-pool	c1-t3
+Tucanuçu	w-pool	c1-t1
+Tungstênio	w-pool	c1-t2
+Tupac Shakur	w-pool	c2-t2
+Turismo	w-pool	c1-t2
+Turismo no Brasil	w-test	c2-t2
+Turma da Mônica	w-pool	c2-t3
+Turquemenistão	w-pool	c1-t2
+Turquia	w-pool	c1-t3
+Tuvalu	w-test	c1-t2
+Twitter	w-pool	c1-t2
+Tálio	w-pool	c1-t1
+Tântalo (elemento químico)	w-pool	c3-t1
+Ténis	w-pool	c1-t2
+Térbio	w-pool	c1-t1
+Tétano	w-test	c1-t2
+Tênia	w-pool	c1-t1
+Tênis de mesa	w-pool	c2-t2
+Tóquio	w-pool	c1-t3
+Túlio	w-pool	c1-t1
+Túlio Maravilha	w-pool	c2-t2
+U-432	w-pool	c2-t2
+U2	w-pool	c1-t3
+UFC 134	w-pool	c2-t1
+UFC 135	w-pool	c2-t1
+Uberaba	w-pool	c1-t3
+Uberlândia	w-pool	c1-t3
+Ucrânia	w-test	c1-t3
+Uganda	w-pool	c1-t2
+Ultimate Fighting Championship	w-pool	c3-t3
+Ulysses (poema)	w-pool	c2-t1
+Ulysses Guimarães	w-pool	c2-t1
+Umbanda	w-pool	c1-t3
+Umm Kulthum	w-test	c2-t1
+Under My Skin (álbum de Avril Lavigne)	w-test	c4+-t2
+Unidade central de processamento	w-test	c3-t2
+Unidade de disco rígido	w-pool	c3-t3
+Unidade de massa atômica	w-test	c3-t1
+Unidade imaginária	w-test	c2-t2
+Unidades federativas do Brasil	w-test	c3-t2
+Unificação da Alemanha	w-pool	c2-t3
+Universidade Estadual de Campinas	w-pool	c3-t3
+Universidade Federal do Paraná	w-test	c3-t1
+Universidade Federal do Rio de Janeiro	w-pool	c4+-t3
+Universidade Presbiteriana Mackenzie	w-pool	c3-t2
+Universidade São Marcos	w-pool	c3-t1
+Universidade de São Paulo	w-pool	c3-t3
+Universo	w-pool	c1-t3
+União Africana	w-pool	c2-t3
+União Europeia	w-val	c2-t3
+União Soviética	w-pool	c2-t3
+União de Nações Sul-Americanas	w-pool	c4+-t2
+Up, Up and Away!	w-test	c4+-t2
+Urano (planeta)	w-pool	c2-t3
+Urbanização	w-pool	c1-t3
+Uruguai	w-test	c1-t3
+Uruguaiana	w-test	c1-t2
+Urânio	w-test	c1-t3
+Usbequistão	w-test	c1-t2
+Usina Hidrelétrica de Belo Monte	w-test	c4+-t3
+Usina Hidrelétrica de Itaipu	w-pool	c3-t2
+Usina hidrelétrica	w-pool	c2-t2
+Utilitarismo	w-pool	c1-t2
+Uva	w-pool	c1-t1
+Vacúolo	w-pool	c1-t1
+Vagina	w-pool	c1-t1
+Vale S.A.	w-test	c2-t3
+Vale Tudo	w-test	c2-t2
+Vale a Pena Ver de Novo	w-pool	c4+-t2
+Vale do Silício	w-test	c2-t2
+Vamp (telenovela)	w-pool	c2-t1
+Vampiro	w-pool	c1-t3
+Vampiro Americano	w-pool	c2-t2
+Vancouver	w-pool	c1-t3
+Vanderlei Luxemburgo	w-pool	c2-t3
+Vanessa Hudgens	w-pool	c2-t3
+Vantagem do primeiro movimento no xadrez	w-pool	c4+-t3
+Vanuatu	w-test	c1-t1
+Vanádio	w-test	c1-t1
+Variação (música)	w-pool	c2-t1
+Variação linguística	w-pool	c2-t2
+Varicela	w-pool	c1-t1
+Varig	w-pool	c1-t3
+Variável (estatística)	w-pool	c2-t1
+Variância	w-pool	c1-t2
+Varíola	w-pool	c1-t1
+Vasco da Gama	w-pool	c2-t2
+Vaticano	w-pool	c1-t3
+Vegetação do Brasil	w-pool	c2-t2
+Velocidade	w-pool	c1-t2
+Velocidade da luz	w-pool	c2-t3
+Velvet Revolver	w-pool	c2-t2
+Venceslau Brás	w-pool	c2-t1
+Veneza	w-pool	c1-t2
+Venezuela	w-test	c1-t3
+Venha-Ver	w-pool	c2-t2
+Vento	w-pool	c1-t3
+Vera Cruz Futebol Clube (Vitória de Santo Antão)	w-test	c4+-t1
+Vera Fischer	w-test	c2-t2
+Verbo	w-pool	c1-t1
+Verdade	w-pool	c1-t2
+Vermelho	w-pool	c1-t3
+Verruga genital	w-pool	c2-t1
+Vertebrados	w-pool	c1-t2
+Vetor (matemática)	w-pool	c2-t3
+Via Láctea	w-pool	c2-t3
+Victor Brecheret	w-pool	c2-t2
+Victor Civita	w-pool	c2-t1
+Victor Hugo	w-pool	c2-t2
+Victor Meirelles	w-test	c2-t3
+Vida	w-pool	c1-t3
+Vidas Secas	w-pool	c2-t3
+Vidas em Jogo (telenovela)	w-pool	c3-t2
+Vidro	w-test	c1-t1
+Viena	w-pool	c1-t2
+Vietnã	w-pool	c1-t3
+Vikings	w-pool	c1-t3
+Vilanova Artigas	w-pool	c2-t2
+Vincent van Gogh	w-pool	c3-t3
+Vincent-Marie Viénot de Vaublanc	w-pool	c4+-t3
+Vingadores	w-pool	c1-t2
+Vinho	w-pool	c1-t3
+Vinicius de Moraes	w-pool	c2-t2
+Violino	w-pool	c1-t2
+Violência	w-pool	c1-t2
+Virgílio	w-pool	c1-t1
+Viscosidade	w-pool	c1-t3
+Visão	w-pool	c1-t2
+Vital Brazil	w-test	c2-t2
+Vitamina A	w-pool	c1-t1
+Vitamina D	w-pool	c2-t3
+Vitor Belfort	w-pool	c2-t2
+Vitória (Espírito Santo)	w-test	c3-t2
+Vitória da Conquista	w-pool	c2-t2
+Vitória do Reino Unido	w-pool	c3-t3
+Viver a Vida (telenovela)	w-pool	c3-t2
+Vladimir Vysotsky	w-pool	c2-t1
+Voleibol	w-pool	c1-t3
+Volkswagen Gol	w-val	c2-t3
+Volkswagen Typ 1	w-pool	c3-t1
+Volta Redonda	w-pool	c2-t2
+Voltaire	w-val	c1-t3
+Voltímetro	w-test	c1-t1
+Vontade	w-pool	c1-t1
+Voz humana	w-pool	c2-t2
+Vulcão	w-pool	c1-t1
+Vácuo	w-pool	c1-t3
+Vénus (planeta)	w-pool	c2-t3
+Vênus de Milo	w-pool	c2-t2
+Vídeo	w-test	c1-t1
+Vírus	w-pool	c1-t3
+Vírus da imunodeficiência humana	w-pool	c3-t3
+Vírus de computador	w-test	c2-t2
+Vírus do papiloma humano	w-pool	c3-t2
+WWE NXT	w-pool	c2-t2
+Walking on Air	w-test	c3-t1
+Walt Disney	w-test	c2-t2
+Walter Benjamin	w-pool	c2-t1
+Walter Montillo	w-pool	c2-t2
+Walter Salles	w-pool	c2-t1
+Walther Moreira Salles	w-pool	c3-t1
+Wanderlei Silva	w-pool	c2-t2
+Wanessa Camargo	w-pool	c2-t3
+Washington (estado)	w-test	c2-t3
+Washington Luís	w-pool	c2-t3
+Washington Olivetto	w-val	c2-t1
+Washington, D.C.	w-pool	c3-t3
+Watt	w-pool	c1-t1
+We R Who We R	w-pool	c4+-t2
+Web design	w-pool	c2-t1
+Welinton	w-test	c1-t1
+What the Hell	w-val	c3-t2
+What's so Funny about Truth, Justice & the American Way?	w-test	c4+-t2
+Whatever Happened to the Man of Tomorrow?	w-test	c4+-t2
+Who Says	w-pool	c2-t1
+Who's Nailin' Paylin?	w-pool	c4+-t2
+Whoopi Goldberg	w-val	c2-t2
+Wi-Fi	w-pool	c2-t2
+Wicca	w-pool	c1-t3
+Wii	w-test	c1-t3
+Wiki	w-pool	c1-t2
+Wilhelm Ostwald	w-pool	c2-t1
+Will Smith	w-pool	c2-t2
+William James	w-pool	c2-t2
+William Owsley	w-pool	c2-t1
+William Shakespeare	w-pool	c2-t3
+Windows 7	w-pool	c2-t2
+Windows XP	w-pool	c2-t2
+Wing Chun	w-pool	c2-t2
+Winona Ryder	w-pool	c2-t1
+Winston Churchill	w-pool	c2-t3
+Wish You Were Here (canção de Avril Lavigne)	w-pool	c4+-t1
+Wolfgang Amadeus Mozart	w-pool	c3-t3
+Wolverine	w-pool	c1-t3
+Woody Allen	w-pool	c2-t2
+Woody Guthrie	w-val	c2-t3
+World Trade Center	w-test	c3-t1
+World Wide Web	w-pool	c3-t2
+Wushu	w-test	c1-t2
+X-Men	w-pool	c2-t3
+X-Men: First Class	w-test	c4+-t2
+Xadrez	w-test	c1-t3
+Xadrez na Arábia	w-pool	c2-t2
+Xadrez na Espanha	w-pool	c2-t2
+Xadrez na Itália	w-pool	c2-t2
+Xadrez na Pérsia	w-pool	c2-t2
+Xangai	w-pool	c1-t3
+Xaria	w-pool	c1-t3
+Xbox 360	w-pool	c2-t2
+Xena: A Princesa Guerreira	w-pool	c3-t2
+Xenofobia	w-pool	c1-t3
+Xenônio	w-pool	c1-t1
+Xiismo	w-pool	c1-t1
+Xiva	w-test	c1-t1
+Xororó	w-pool	c1-t1
+Xuxa	w-pool	c1-t3
+YHWH	w-pool	c1-t2
+Year Zero	w-pool	c2-t2
+Yesterday's Enterprise	w-pool	c3-t2
+Yoná Magalhães	w-pool	c2-t1
+Yorkshire terrier	w-pool	c2-t3
+YouTube	w-pool	c1-t3
+Yu Yu Hakusho	w-pool	c3-t3
+Yudi Tamashiro	w-pool	c2-t1
+Yushin Okami	w-pool	c2-t1
+Zacarias de Góis e Vasconcelos	w-pool	c3-t2
+Zagallo	w-pool	c1-t2
+Zeca Pagodinho	w-pool	c2-t1
+Zen	w-pool	c1-t3
+Zenão de Cítio	w-pool	c2-t1
+Zeus	w-pool	c1-t2
+Zheng He	w-pool	c2-t3
+Zhu Xi	w-test	c2-t3
+Zico	w-pool	c1-t3
+Zilda Arns	w-test	c2-t1
+Zinco	w-pool	c1-t2
+Ziraldo	w-pool	c1-t2
+Zircônio	w-pool	c1-t1
+Zoey 101	w-pool	c2-t1
+Zona temperada	w-val	c2-t1
+Zona tropical	w-pool	c2-t1
+Zona térmica	w-pool	c2-t1
+Zoroastrismo	w-test	c1-t3
+Zumbi dos Palmares	w-pool	c2-t2
+Zuzu Angel	w-pool	c2-t2
+Zâmbia	w-pool	c1-t3
+Zé do Caixão	w-pool	c2-t1
+Zélia Gattai	w-pool	c2-t1
+Ácido	w-pool	c1-t3
+Ácido acetilsalicílico	w-test	c2-t3
+Ácido carboxílico	w-pool	c2-t1
+Ácido clorídrico	w-pool	c2-t2
+Ácido desoxirribonucleico	w-pool	c2-t3
+Ácido sulfúrico	w-val	c2-t3
+África	w-pool	c1-t3
+África do Sul	w-test	c2-t3
+Ágora virtual	w-pool	c2-t1
+Água	w-pool	c1-t3
+Água Nova	w-pool	c2-t1
+Águas de São Pedro	w-pool	c3-t3
+Álcool	w-pool	c1-t1
+Álcool combustível	w-pool	c2-t1
+Álgebra	w-test	c1-t3
+Álvares de Azevedo	w-test	c2-t1
+Álvaro II de Zúñiga y Guzmán	w-pool	c4+-t2
+Álvaro de Zúñiga y Guzmán	w-test	c4+-t3
+Árabes	w-pool	c1-t1
+Área	w-pool	c1-t3
+Área de Livre-Comércio das Américas	w-pool	c4+-t1
+Árgon	w-test	c1-t1
+Árvore	w-pool	c1-t2
+Ásia	w-pool	c1-t3
+Ástato	w-pool	c1-t1
+Átomo	w-pool	c1-t3
+Átomo de Bohr	w-pool	c2-t2
+Áustria	w-pool	c1-t3
+Ângela Vieira	w-pool	c2-t2
+Ângelo Moniz da Silva Ferraz	w-pool	c4+-t1
+Ângulo	w-pool	c1-t1
+Éder Jofre	w-pool	c2-t1
+Édith Piaf	w-pool	c2-t2
+Émile Durkheim	w-pool	c2-t3
+Épica	w-pool	c1-t1
+Épica dos Reis	w-pool	c2-t1
+Érbio	w-pool	c1-t1
+Érico Veríssimo	w-pool	c2-t2
+Éster	w-pool	c1-t2
+Éter	w-pool	c1-t1
+Ética	w-pool	c1-t3
+Ígor Stravinski	w-test	c2-t3
+Íman	w-pool	c1-t3
+Índia	w-pool	c1-t3
+Índice de Desenvolvimento Humano	w-pool	c3-t1
+Índio (elemento químico)	w-val	c3-t1
+Ítrio	w-test	c1-t1
+Ópera	w-test	c1-t2
+Óptica	w-pool	c1-t3
+Óptica geométrica	w-pool	c2-t1
+Órganon	w-pool	c1-t1
+Óscar	w-pool	c1-t2
+Ósmio	w-pool	c1-t1
+Óxido	w-pool	c1-t1

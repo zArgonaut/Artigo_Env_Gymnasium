@@ -1,0 +1,21 @@
+# Demonstration corpus: the 30 synthetic articles bundled with the package (SDD 06 §13).
+# Build: uv run --env-file .env artigo-env data build configs/corpus/demo.yaml [--w-index <id>]
+# Compiles with the identity lemmatizer alone; open-tables is added when its data is installed.
+name: demo
+kind: demo
+sources: [demo_synthetic]
+shards: {}
+playability:
+  min_title_content: 1
+  max_title_content: 6
+  require_title_lemmas_in_body: all  # all | none
+  min_body_tokens: 150
+  max_body_tokens: 16384  # L_max ([LOCAL-OBS-1]); set to the value printed by data w-splits
+tokenizer_hyphen: split
+stopwords:
+  kind: game227
+lemmatizer: identity
+lemma_views: [identity]
+optional_lemma_views: [open-tables]
+w_index: null  # set to the W build id to decontaminate the demo against W (REQ-REPO-007)
+workers: 1

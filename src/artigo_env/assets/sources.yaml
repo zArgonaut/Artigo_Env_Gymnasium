@@ -1,0 +1,95 @@
+# Raw data sources of the corpus pipeline (SDD 06 §4, SDD 02 §B.8).
+#
+# Only sources in state "accepted" may enter a training build (REQ-COR-002). File paths are
+# relative to ARTIGO_DATA_ROOT/raw/<raw_dir or id>/ and every file is pinned by SHA-256 and size
+# (REQ-REPO-006). Quote every string that YAML could read as a date or a number.
+#
+# kind:   hf_parquet | jsonl_gz | wikipedia_extracts | demo
+# state:  accepted | pending | rejected | stats-only | evaluation
+# access: open | registration | request
+# options: column mapping (title, body, url, date, id) and repo, subdir, raw_dir
+
+version: 1
+
+sources:
+  - id: cc_news_pt
+    kind: hf_parquet
+    state: pending  # until the author accepts it (plan F3, "Decisões que dependem do autor")
+    priority: 10
+    url: "https://huggingface.co/datasets/eduagarcia/cc_news_pt"
+    revision: "98c2d2ab1c43c232f51da9f56ea7f03e08636286"  # refs/convert/parquet
+    files:
+      - path: "cc_news_pt/train/0003.parquet"
+        sha256: "196692e04c55f0f13d4b1eaa38e75187525106ce9da4af7e6387adde16fc1e75"
+        size: 287587858
+      - path: "cc_news_pt/train/0022.parquet"
+        sha256: "01180f6ad4e626f5140b9658899dd53f24ed8ecb74e2644616cf507cbb756e52"
+        size: 289465694
+      - path: "cc_news_pt/train/0045.parquet"
+        sha256: "554ee3c0e8694e2fa7053f825598b4e0a75999fc5d4a252244b5078715001114"
+        size: 284913880
+    license_id: unknown
+    license_note: "no licence on third-party text; internal research use; only code is redistributed"
+    access: open
+    redistributable: false
+    terms: null
+    variant: null
+    options:
+      repo: "eduagarcia/cc_news_pt"
+      subdir: "cc_news_pt/train"
+      title: "title"
+      body: "text"
+      url: "url"
+      date: "date"
+
+  - id: recognasumm
+    kind: hf_parquet
+    state: pending
+    priority: 20
+    url: "https://huggingface.co/datasets/recogna-nlp/recognasumm"
+    revision: null  # pin before the first fetch
+    files: []
+    license_id: unknown
+    license_note: "MIT declared on the dataset card by the scraper"
+    access: open
+    redistributable: false
+    terms: null
+    variant: null
+    options:
+      repo: "recogna-nlp/recognasumm"
+      title: "Titulo"
+      body: "Noticia"
+      url: "URL"
+      date: "Data"
+
+  - id: wikipedia_offline_extracts
+    kind: wikipedia_extracts
+    state: evaluation
+    priority: 100
+    url: "https://pt.wikipedia.org/w/api.php"
+    revision: null  # pinned per page by lastrevid in the snapshot index
+    files: []
+    license_id: CC-BY-SA-4.0
+    license_note: "Wikipedia text; snapshot written by tools/w/fetch_extracts.py"
+    access: open
+    redistributable: true
+    terms: null
+    variant: null
+    options:
+      raw_dir: "wikipedia_extracts"
+      subdir: "2026-11-12"
+
+  - id: demo_synthetic
+    kind: demo
+    state: accepted
+    priority: 90
+    url: null
+    revision: null
+    files: []
+    license_id: MIT
+    license_note: "original synthetic articles bundled with the package; not suitable for training"
+    access: open
+    redistributable: true
+    terms: null
+    variant: null
+    options: {}

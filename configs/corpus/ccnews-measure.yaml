@@ -1,0 +1,23 @@
+# Yield measurement of CC-News pt before the author accepts it (kind measurement: any source
+# state, same processing as train, compiled with trainable: false).
+# Build: uv run --env-file .env artigo-env data build configs/corpus/ccnews-measure.yaml
+#   [--shards cc_news_pt__train__0003] [--lemmatizer identity] [--w-index <W build id>]
+# Without w_index the decontamination is skipped and the report says so.
+name: ccnews-measure
+kind: measurement
+sources: [cc_news_pt]
+shards: {}
+playability:
+  min_title_content: 1
+  max_title_content: 6
+  require_title_lemmas_in_body: all  # all | none
+  min_body_tokens: 150
+  max_body_tokens: 16384  # L_max ([LOCAL-OBS-1]); set to the value printed by data w-splits
+tokenizer_hyphen: split
+stopwords:
+  kind: game227
+lemmatizer: open-tables
+lemma_views: [identity]
+optional_lemma_views: [open-tables]  # compiled when the open-tables data is installed
+w_index: null
+workers: null

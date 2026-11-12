@@ -1,0 +1,18 @@
+# Known mirrors and re-publishers of Wikimedia text (SDD 06 §4.2; maintained by amendment).
+# One registrable domain per line; every subdomain is blocked too.
+
+# Wikipedia mirrors and readers that re-serve article text
+wikiwand.com
+wikizero.com
+wiki2.org
+wikimili.com
+wikibrief.org
+wikiwix.com
+infogalactic.com
+everipedia.org
+dbpedia.org
+
+# Other Wikimedia Foundation domains outside the project list of wikimedia.txt
+wikidata.org
+mediawiki.org
+wikifunctions.org

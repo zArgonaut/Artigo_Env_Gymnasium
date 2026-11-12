@@ -1,0 +1,12 @@
+# Wikimedia project domains excluded from training (SDD 06 §4.1 item 2, §4.2; REQ-COR-003).
+# One registrable domain per line; every subdomain is blocked too (pt.m.wikipedia.org).
+# Changes go through an SDD amendment.
+wikipedia.org
+wikinews.org
+wikibooks.org
+wikisource.org
+wikiquote.org
+wikiversity.org
+wikivoyage.org
+wiktionary.org
+wikimedia.org

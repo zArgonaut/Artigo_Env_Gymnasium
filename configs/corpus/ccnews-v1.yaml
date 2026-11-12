@@ -1,0 +1,22 @@
+# Training corpus v1 from CC-News pt (plan F3, WP3.5; SDD 06).
+# Build: uv run --env-file .env artigo-env data build configs/corpus/ccnews-v1.yaml
+# Needs cc_news_pt in state "accepted" in sources.yaml (REQ-COR-002) and a W index.
+name: ccnews-v1
+kind: train  # train | evaluation | demo | measurement
+sources: [cc_news_pt]
+shards: {}  # source id -> shard ids (e.g. cc_news_pt__train__0003); empty = every shard
+playability:
+  min_title_content: 1
+  max_title_content: 6
+  require_title_lemmas_in_body: all  # all | none
+  min_body_tokens: 150
+  max_body_tokens: 16384  # L_max ([LOCAL-OBS-1]); set to the value printed by data w-splits
+tokenizer_hyphen: split
+stopwords:
+  kind: game227
+lemmatizer: open-tables  # playability lemmatizer (title in body)
+lemma_views: [open-tables, identity]
+optional_lemma_views: []
+# Build id of the W corpus (configs/corpus/w-v1.yaml); its windex/ decontaminates this build.
+w_index: null
+workers: null  # null = CPU count minus 2; never changes the output

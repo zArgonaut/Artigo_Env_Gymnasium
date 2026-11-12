@@ -1,0 +1,23 @@
+# Evaluation set W v1: TextExtracts snapshot of the Wikipedia Offline list (SDD 06 §12;
+# plan F3 decision 5). Every page of the snapshot is compiled; split is w-test, w-val or w-pool
+# (from assets/eval/w_splits.tsv) for eligible pages of the main list and w-extra for the rest.
+# The build also writes the decontamination index to corpus/<build id>/windex/.
+# Build: uv run --env-file .env artigo-env data build configs/corpus/w-v1.yaml
+name: w-v1
+kind: evaluation
+sources: [wikipedia_offline_extracts]
+shards: {}
+playability:  # only max_body_tokens matters here: the W eligibility cap is fixed at 32768
+  min_title_content: 1
+  max_title_content: 6
+  require_title_lemmas_in_body: none
+  min_body_tokens: 1
+  max_body_tokens: 32768
+tokenizer_hyphen: split
+stopwords:
+  kind: game227
+lemmatizer: open-tables  # used for title_in_body, which W records but never filters on
+lemma_views: [open-tables, identity]
+optional_lemma_views: []
+w_splits: null  # null = the package's assets/eval/w_splits.tsv
+workers: null
