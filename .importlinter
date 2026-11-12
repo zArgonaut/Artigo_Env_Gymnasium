@@ -1,0 +1,20 @@
+[importlinter]
+root_package = artigo_env
+
+[importlinter:contract:layers]
+name = Layered architecture (SDD 02 B.2)
+type = layers
+containers =
+    artigo_env
+layers =
+    cli
+    analysis
+    evaluation
+    agents
+    wrappers
+    envs
+    services
+    corpus | scenarios | synthetic
+    engine
+    text
+    core

@@ -1,0 +1,23 @@
+# Project-local content: internal documentation and machine-local output (reports, scratch envs, sandbox)
+/docs/
+/local/
+
+# Python environments, caches and build output
+.venv/
+__pycache__/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.import_linter_cache/
+dist/
+build/
+
+# Local configuration and secrets
+.env
+
+# Editor, assistant and knowledge-graph state
+.vscode/
+.claude/
+CLAUDE.md
+graphify-out/

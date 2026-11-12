@@ -1,0 +1,70 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  fast:
+    name: fast suite (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install
+        run: uv sync --locked
+
+      - name: Lint
+        run: |
+          uv run ruff check .
+          uv run ruff format --check .
+
+      - name: Types
+        run: uv run mypy
+
+      - name: Layer contract
+        run: uv run lint-imports
+
+      - name: Fast tests
+        run: uv run pytest -m fast
+
+      - name: Install the built wheel and open the packaged environment
+        run: |
+          uv build --wheel
+          uv venv local/.clean
+          uv pip install --python local/.clean dist/*.whl
+          if [ -x local/.clean/Scripts/python.exe ]; then PY=local/.clean/Scripts/python.exe; else PY=local/.clean/bin/python; fi
+          "$PY" - <<'EOF'
+          import importlib.util
+
+          import artigo_env
+
+          print("artigo_env", artigo_env.__version__)
+          forbidden = ["hydra", "playwright", "optuna", "wandb"]
+          present = [name for name in forbidden if importlib.util.find_spec(name)]
+          assert not present, f"forbidden runtime dependencies installed: {present}"
+
+          import gymnasium as gym
+
+          env = gym.make("ArtigoEnv-v0")
+          _, info = env.reset(seed=0)
+          print("demo corpus", info["corpus_build"])
+          EOF
