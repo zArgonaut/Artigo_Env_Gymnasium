@@ -1,0 +1,36 @@
+{
+  "format_version": 1,
+  "name": "mini",
+  "source": "synthetic test table",
+  "stages": {
+    "irregular": {
+      "type": "indexed",
+      "prefix": "",
+      "suffix": "",
+      "rules": [["tem", "ter", ""], ["teve", "ter", ""], ["tinha", "ter", ""]]
+    },
+    "regular": {
+      "type": "indexed",
+      "prefix": ".*?",
+      "suffix": "(?:ou|eu|aram|ando|ado)",
+      "rules": [["torn", "tornar", ""], ["nasc", "nascer", ""]]
+    },
+    "plural": {
+      "type": "first",
+      "members": [
+        {
+          "type": "suffix",
+          "prefix": ".*?",
+          "suffix": "",
+          "rules": [["ões", "ão", ""], ["s", "", "lápis|mais"]]
+        }
+      ]
+    },
+    "gender": {
+      "type": "suffix",
+      "prefix": ".*?",
+      "suffix": "",
+      "rules": [["na", "no", "torna"], ["a", "o", "alta|casa|torna"]]
+    }
+  }
+}

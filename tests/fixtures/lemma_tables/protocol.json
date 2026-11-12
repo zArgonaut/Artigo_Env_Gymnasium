@@ -1,0 +1,45 @@
+{
+  "format_version": 1,
+  "name": "protocol",
+  "source": "synthetic test table for the engine protocol (covers only the words of the test text)",
+  "stages": {
+    "irregular": {
+      "type": "indexed",
+      "prefix": "",
+      "suffix": "",
+      "rules": [
+        ["tem", "ter", ""],
+        ["têm", "ter", ""],
+        ["teve", "ter", ""],
+        ["tinha", "ter", ""],
+        ["tendo", "ter", ""],
+        ["tido", "ter", ""],
+        ["foi", "ser", ""],
+        ["era", "ser", ""]
+      ]
+    },
+    "regular": {
+      "type": "indexed",
+      "prefix": "",
+      "suffix": "(?:ou|aram|am|ando|ado|eu|eram|ido)",
+      "rules": [["torn", "tornar", ""], ["nasc", "nascer", ""]]
+    },
+    "plural": {
+      "type": "first",
+      "members": [
+        {
+          "type": "suffix",
+          "prefix": ".*?",
+          "suffix": "",
+          "rules": [["ões", "ão", ""], ["ais", "al", "mais"], ["s", "", "lápis|mais|país"]]
+        }
+      ]
+    },
+    "gender": {
+      "type": "suffix",
+      "prefix": ".*?",
+      "suffix": "",
+      "rules": [["eira", "eiro", ""], ["inha", "inho", ""], ["ora", "or", "hora|fora|agora|embora"]]
+    }
+  }
+}

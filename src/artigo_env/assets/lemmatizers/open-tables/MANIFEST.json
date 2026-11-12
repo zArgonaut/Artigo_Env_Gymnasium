@@ -1,0 +1,516 @@
+{
+  "name": "open-tables",
+  "tables_sha256": "c07bba7f3a95e5db690652af1d9fb7b9e9eed664c64c02766c88d1ca4206378e",
+  "inputs": {
+    "morphobr": {
+      "source": "https://github.com/LR-POR/MorphoBr",
+      "license": "Apache-2.0",
+      "commit": "b49015cd308f128338f1aae4b49f46c887ce9608",
+      "files": {
+        "LICENSE": "ee12df1ea4353abca30360bedb3dd11175a84c6e523fc8b96c64ad6f74291625",
+        "README.org": "7ff183a9f77f547ee70bd58583cd5a5e11a740d87f0eb9dfb50eaf1a29b8cb6e",
+        "TAGSET.org": "81e1476a88c44112a3f6bca6ad5f1329824e25c3b410f0d01afa99f8ce73600e",
+        "adjectives/adjectives-a.dict": "bfc60942c519ba8d2b1892458eb720f98208523eac8cad44c0fc3ad14165accc",
+        "adjectives/adjectives-b.dict": "f8af848309e1a30fe53044f7438f554897d23ab5b7eccffa897c7cbb87bbf8d7",
+        "adjectives/adjectives-c.dict": "565c7c40a88e4bd804cbacf3d1e6ca68d59c7f25fd5c39f1fafacf53d6021a2e",
+        "adjectives/adjectives-d.dict": "9bcd576835c80233d119a6bf95bacad17e7e974f95d5dd4c3ba986f4f221bd57",
+        "adjectives/adjectives-e.dict": "a2a05f903c3792d554b2f67c499fbcb16e6ab04bbcef7450ddcf089ed4e34562",
+        "adjectives/adjectives-f.dict": "1a8b6dbded1453db661cf42d560dc6e1d39ff151dd05d2eaae6babdd690a66d5",
+        "adjectives/adjectives-g.dict": "b668c16a5b78f4acf0238019097e48564d993afa174d4f38a62ee571af0988b1",
+        "adjectives/adjectives-h.dict": "40abab46a79abac5712319e5b1ab070184295addbdf17d50a5a3ff9586ba8f0c",
+        "adjectives/adjectives-i.dict": "41877bcf065abd466349ae3922d9c646c4809386005317f7ce3837e95d7c3605",
+        "adjectives/adjectives-j.dict": "59d6ed5b6bc798d9eb3bb6f090c491c7eb4fac43c7adbe112c753fe4f517343c",
+        "adjectives/adjectives-k.dict": "3d1eae70ebfa8edf0a9ff66c904d30e0ac39423555e1e1bb93c3476c2e267bdd",
+        "adjectives/adjectives-l.dict": "e383e313900e1ed890786b585e9bbdd794141826a2686dcafb09a7b54d775843",
+        "adjectives/adjectives-m.dict": "8b55be0204cbf924d01d9354a83317c489f7f9cedf61fb5bc0d7abd98365848a",
+        "adjectives/adjectives-n.dict": "a6c21b0ae38c3dab49eb36baf83fe098010609c32dfa65c88c36eec72327a7cb",
+        "adjectives/adjectives-o.dict": "f865a2332d617cb523213ed2ee8da5409c08028d59210f97cca6ead760d08b30",
+        "adjectives/adjectives-p.dict": "92144e30b7dbecf56433f70f785e8c88101f9046bc4c6d40735b0c12e36c069f",
+        "adjectives/adjectives-q.dict": "ef6084f450eb2513cc44b53b7cb19ddefa9eba9ad2cb074383dff0eb8adbcee4",
+        "adjectives/adjectives-r.dict": "2eb862c5be52ced82c06d27961720d4b97c9e0dfe8841ff24426b00ead11fd72",
+        "adjectives/adjectives-s.dict": "9adc22b94d9b84454e8bcf78ac36c0114aa4358a5277e028b860e735fed65d8f",
+        "adjectives/adjectives-t.dict": "5c72e4ff5e90cbf358d6f0297b9b45e4c5ec2501937a7ebce5bfb64005fff61a",
+        "adjectives/adjectives-u.dict": "b07bffceffdaacd50bc14412a5864ee80d42c32c83c5bd12c8d34fc7d8518ad0",
+        "adjectives/adjectives-v.dict": "670624b00d40727c3f3f4a7c9df4055e645e0ac7f09511ee3c7629cf23f93239",
+        "adjectives/adjectives-w.dict": "cfa1627e1f2af92ee0b7cfd073a164854917cb9454cfd8e45de407a7e8ad8305",
+        "adjectives/adjectives-x.dict": "76f9f59cbf787d1dc679a0958573c4b159820ff9cfc92b30f3ed80099fc45faa",
+        "adjectives/adjectives-y.dict": "4412d38c932cd7642a3de43976c8226425963ca0bdf0b011e8912ee8ea685858",
+        "adjectives/adjectives-z.dict": "2de1b7b0f7e352f8d7b235887867c88d2f8c0c54de667be1ba9920254d746c9a",
+        "adverbs/adverbs.dict": "49a10336ba709c6d87cdf57c7c64aa8efc2d83ffa8f3c405c7f710876092a98d",
+        "nouns/nouns-a.dict": "7db825adbff65ef5825c3ebcc043ea4a288f7d64fb7eefbd8a015a5bf22bc94c",
+        "nouns/nouns-b.dict": "eb5c4aab14985eec34ea4562a01d42a757bede719a83446c28bb228c21e30b61",
+        "nouns/nouns-c.dict": "114c8e184989771518d8710d51a7b958bf24a0f2c5c854f47f418ba4f0791abf",
+        "nouns/nouns-d.dict": "4ac8344bf2e3ab3dec71517f2ab4711b6cb5525eef065d8435a30081e0e0e7cd",
+        "nouns/nouns-e.dict": "44b28f656cc112694fb190f6c6f4de810a014eb84f865f7a3f8c80e92e211ba7",
+        "nouns/nouns-f.dict": "1a001ec6613d2dbb131e02c2df55430bf70f4a9f3c9d1e05a708fbc6d072f821",
+        "nouns/nouns-g.dict": "54b22617274beba856825f0d29221fab6c834588409908fa619d146f0f053033",
+        "nouns/nouns-h.dict": "640c6f61ac9f135473e92ad7149acfa62c61a25a86a05166b1e8cacb33832ff4",
+        "nouns/nouns-i.dict": "0e3e6eea970c01581852cb07eca1035a24925774f5e40507e7dcc009f685a2ef",
+        "nouns/nouns-j.dict": "4f8da227194c429481bbe2e5471c205a89d8b0fe6f76e917f6ca664b17f8371a",
+        "nouns/nouns-k.dict": "3a5109ae8cb75170c954dcad6356a160bdf0481842e89dbe56e88bb7c14f094b",
+        "nouns/nouns-l.dict": "bf141d1b20efc3f0f6696a2fe98f2c2b59e37c8d7854f45698ba0d56e53c1920",
+        "nouns/nouns-m.dict": "eb31148a3ab23c3e663593572b31f2e8158d45b0f203d7d611775c78a04cd795",
+        "nouns/nouns-n.dict": "e2b686d38cb4793b4c61be24d4c8027e54a97f2a778a86352a0c2a96db75dbd2",
+        "nouns/nouns-o.dict": "712595159c723e45cb590d6c9cf6146a9b0eb9bf7bab385b76ba1c54cbc4b92f",
+        "nouns/nouns-p.dict": "59fc618a51efdfc6544f62b03c0a474831630aba8b88189ae39b8c2dba6f25ae",
+        "nouns/nouns-q.dict": "c7cbc20c94bda9d1043646e6374f80fba325cf54643b9b25e6d60f419fc35a73",
+        "nouns/nouns-r.dict": "ebbff9070239931315bcab55b1e8c9bac21f5643a464a4d85d52245f7c225e41",
+        "nouns/nouns-s.dict": "c06b9cafdbf55122efcba9b577912e3b1cc975a387f13e952ed09e4c7af625fa",
+        "nouns/nouns-t.dict": "d46c493dfd01fff0066e6ebad7d38f45725827e751e7db6f3bbf068ed3c5de7b",
+        "nouns/nouns-u.dict": "7aada7537a9069f43bdceb8419b6b73a0a20d08c6fa49f3493a39a24aaf51501",
+        "nouns/nouns-v.dict": "def4bf20107923b29e8e56adaa0f7846e6f0066ce627a5ace135c4ba6547fa19",
+        "nouns/nouns-w.dict": "3ac83e27f1bfcf015f381c957b8a2728329c1edc2443255b712b1140b0ced5af",
+        "nouns/nouns-x.dict": "08d96c25a24a16ebabd3fff561652b59d1f990eb515a0a6ab2f68d7db8df89c7",
+        "nouns/nouns-y.dict": "450c7e7aa20dd2ba4a5aaddb6cfd990c61e491303170e4c9424f9b8a9b426a23",
+        "nouns/nouns-z.dict": "a822327806ca6e093ee62726482513b464af1e4084c4fdcb6b42b534c8b71ad3",
+        "verbs/verbs-a.dict": "d91ebe4a07cd17157917df650003ab6dc0b7e2c078cb3ed5d2c316713b141b44",
+        "verbs/verbs-b.dict": "3113240413cd6acc0a366fa8c6db22d6cb77bd75511207b3abb360db9e58eec4",
+        "verbs/verbs-c.dict": "574357c8e9bc16a1aef77f5aeeb41655f1eb236e936228d96c429257af54ea9c",
+        "verbs/verbs-d.dict": "f042d2a66b689e8731f9915872e0cdda69ae381343512fb16c9103514d60746a",
+        "verbs/verbs-e.dict": "2640b839c27fe682de43fee6bba64ee165aa1e070071875bf6ad8afb8b29a281",
+        "verbs/verbs-f.dict": "7d9581131cc9820e4b0f11308412a804823ba219a520cc8ef130615a0d0fd89b",
+        "verbs/verbs-g.dict": "da9639a193109b2b47ae984833c425542eecd4e0fef16b4b8dbad50084fca1d0",
+        "verbs/verbs-h.dict": "7e6e16a164c029a5d8a3dfa55a81fa4bd89dd80395ebe3c1173adf1ac0c45014",
+        "verbs/verbs-i.dict": "a28dcb5901823d6d2d13926dc7af59ce25b627ceccd9a83635a8e99bbd49fcf3",
+        "verbs/verbs-j.dict": "404ed7668424b72f04e1d8ed21733017f5371d4ade4741e0db6eb6c88e28f6cc",
+        "verbs/verbs-k.dict": "1cacfe3e029722fb5ccc33527cb15a72f65ee437a3da1dea7e4cbd33d51f843a",
+        "verbs/verbs-l.dict": "88c2e79b3bcaa76b10b29dccbef758eac72afc69c43261cd88be48baa2c0e62f",
+        "verbs/verbs-m.dict": "2101c5279aec167231ef51f76a2b6e0b2b3e357693aa8d3b536df67db462500b",
+        "verbs/verbs-n.dict": "4035914ddcb3b7bc2f5cf057b12c58216d9caedccc64c03743864b2017396c8b",
+        "verbs/verbs-o.dict": "913d49ba99d0635b1f359047ef9d8d73fa4aa3787482f5ac96b0a1cd1554cb03",
+        "verbs/verbs-p.dict": "45fc06e268420e6356dfd7d23894559b6b5f02d678017a0127ead33a556053bf",
+        "verbs/verbs-q.dict": "72f8970599f79cf9b5664f375f355d03e375d66249ab614bfefdf1f51217a1e6",
+        "verbs/verbs-r.dict": "fd3de7002ed861262faa3cd1c9c46e3f56372db1a3c3b2ea2f672ef131b14209",
+        "verbs/verbs-s.dict": "0718387a26c1242af54a380fc237e7cf0b70a279722b8eaf6e04a27eb6acdeb4",
+        "verbs/verbs-t.dict": "b5e9e3d39f32be03a7eb21122acc3a8678678011d17ec16a5bb349b39d880dac",
+        "verbs/verbs-u.dict": "c926b0d52869f8d46e70fa9c520bed08e8c7bb048024f5f1c16b84004732d80b",
+        "verbs/verbs-v.dict": "8513266da8f9f161d862e891959a69deffff2d8bf022b8aa2b1aa4a68138725d",
+        "verbs/verbs-w.dict": "3497da857dd300ac97327fd48224ba4ec9e933c1dffc7e654175bddd9e728bae",
+        "verbs/verbs-x.dict": "ed74ea5359798588da1a73c82e6953cc50af04dabb6d2dfc59c01f21a0628b2e",
+        "verbs/verbs-y.dict": "f0e07db87a9667a38443281b594cd1a79c20af6f772dbd0db07cc831ad8a6f14",
+        "verbs/verbs-z.dict": "7ceda968ec1c8af49b7f8a41b26b95a6c0e58bc352fea0a2c11878fcffd7578d"
+      }
+    },
+    "frequencies": {
+      "description": "CC-News PT sample, tokenized with artigo_env.text.tokenize, lower-cased (tools/lemma_tables/make_frequencies.py)",
+      "sha256": "623733b5bc90a684a462e3e661748d18854d6e68e0050ee8a1c549f9a4c8ae68",
+      "forms": 600424
+    }
+  },
+  "policy": {
+    "verb_min_freq": 16,
+    "irregular_min_freq": 16,
+    "irregular_nominal": "strong-participles",
+    "weak_max_deviating": 12,
+    "weak_skip_short_slots": true,
+    "drop_nominal_second_person": true,
+    "gender_whole_words": true,
+    "gender_whole_words_min_support": 3,
+    "priority": "alphabetical",
+    "dropped_endings": [
+      [
+        "ar",
+        "ais"
+      ],
+      [
+        "ar",
+        "eis"
+      ],
+      [
+        "ar",
+        "emo"
+      ],
+      [
+        "er",
+        "eis"
+      ],
+      [
+        "er",
+        "ais"
+      ],
+      [
+        "er",
+        "amo"
+      ],
+      [
+        "ir",
+        "ais"
+      ],
+      [
+        "ir",
+        "amo"
+      ]
+    ],
+    "prefix_min_share": 0.8,
+    "prefix_min_length": 1,
+    "gender_protect": "feminine",
+    "plural_rules": [
+      [
+        "eses",
+        "ês",
+        true
+      ],
+      [
+        "ões",
+        "ão",
+        true
+      ],
+      [
+        "ães",
+        "ão",
+        true
+      ],
+      [
+        "ãos",
+        "ão",
+        true
+      ],
+      [
+        "ais",
+        "al",
+        true
+      ],
+      [
+        "éis",
+        "el",
+        true
+      ],
+      [
+        "óis",
+        "ol",
+        true
+      ],
+      [
+        "ceis",
+        "cil",
+        true
+      ],
+      [
+        "geis",
+        "gil",
+        true
+      ],
+      [
+        "teis",
+        "til",
+        true
+      ],
+      [
+        "sseis",
+        "ssil",
+        true
+      ],
+      [
+        "eis",
+        "el",
+        true
+      ],
+      [
+        "is",
+        "il",
+        true
+      ],
+      [
+        "res",
+        "r",
+        true
+      ],
+      [
+        "zes",
+        "z",
+        true
+      ],
+      [
+        "ses",
+        "s",
+        true
+      ],
+      [
+        "ns",
+        "m",
+        true
+      ]
+    ],
+    "plural_fallback": [
+      "s",
+      "",
+      true
+    ],
+    "plural_fallback_after_vowel": false,
+    "rival_exceptions": true,
+    "expand_prefixes": true,
+    "regular_order": "ir-er-ar",
+    "gender_rules": [
+      [
+        "ica",
+        "ico",
+        false
+      ],
+      [
+        "na",
+        "no",
+        true
+      ],
+      [
+        "va",
+        "vo",
+        true
+      ],
+      [
+        "oa",
+        "ão",
+        false
+      ],
+      [
+        "ora",
+        "or",
+        true
+      ],
+      [
+        "ira",
+        "iro",
+        true
+      ],
+      [
+        "da",
+        "do",
+        true
+      ],
+      [
+        "ária",
+        "ário",
+        false
+      ],
+      [
+        "ima",
+        "imo",
+        true
+      ],
+      [
+        "osa",
+        "oso",
+        true
+      ],
+      [
+        "inta",
+        "into",
+        false
+      ],
+      [
+        "erta",
+        "erto",
+        false
+      ],
+      [
+        "eia",
+        "eu",
+        true
+      ],
+      [
+        "esa",
+        "ês",
+        true
+      ],
+      [
+        "ona",
+        "ão",
+        true
+      ],
+      [
+        "za",
+        "z",
+        true
+      ],
+      [
+        "ua",
+        "u",
+        true
+      ],
+      [
+        "ura",
+        "uro",
+        true
+      ],
+      [
+        "oga",
+        "ogo",
+        false
+      ],
+      [
+        "reta",
+        "reto",
+        false
+      ],
+      [
+        "iga",
+        "igo",
+        true
+      ],
+      [
+        "eita",
+        "eito",
+        true
+      ],
+      [
+        "inha",
+        "inho",
+        true
+      ],
+      [
+        "reia",
+        "reu",
+        false
+      ],
+      [
+        "ara",
+        "aro",
+        false
+      ],
+      [
+        "ava",
+        "avo",
+        false
+      ],
+      [
+        "deira",
+        "dor",
+        true
+      ],
+      [
+        "mã",
+        "mão",
+        false
+      ]
+    ]
+  },
+  "paradigms": [
+    {
+      "name": "car",
+      "ending": "car",
+      "model": "ficar",
+      "cut": 3,
+      "conjugation": "ar"
+    },
+    {
+      "name": "gar",
+      "ending": "gar",
+      "model": "chegar",
+      "cut": 3,
+      "conjugation": "ar"
+    },
+    {
+      "name": "çar",
+      "ending": "çar",
+      "model": "começar",
+      "cut": 3,
+      "conjugation": "ar"
+    },
+    {
+      "name": "ear",
+      "ending": "ear",
+      "model": "passear",
+      "cut": 2,
+      "conjugation": "ar"
+    },
+    {
+      "name": "ar",
+      "ending": "ar",
+      "model": "tornar",
+      "cut": 2,
+      "conjugation": "ar"
+    },
+    {
+      "name": "guer",
+      "ending": "guer",
+      "model": "erguer",
+      "cut": 4,
+      "conjugation": "er"
+    },
+    {
+      "name": "cer",
+      "ending": "cer",
+      "model": "conhecer",
+      "cut": 3,
+      "conjugation": "er"
+    },
+    {
+      "name": "ger",
+      "ending": "ger",
+      "model": "proteger",
+      "cut": 3,
+      "conjugation": "er"
+    },
+    {
+      "name": "er",
+      "ending": "er",
+      "model": "vender",
+      "cut": 2,
+      "conjugation": "er"
+    },
+    {
+      "name": "guir",
+      "ending": "guir",
+      "model": "distinguir",
+      "cut": 4,
+      "conjugation": "ir"
+    },
+    {
+      "name": "gir",
+      "ending": "gir",
+      "model": "agir",
+      "cut": 3,
+      "conjugation": "ir"
+    },
+    {
+      "name": "cir",
+      "ending": "cir",
+      "model": "ressarcir",
+      "cut": 3,
+      "conjugation": "ir"
+    },
+    {
+      "name": "ir",
+      "ending": "ir",
+      "model": "partir",
+      "cut": 2,
+      "conjugation": "ir"
+    }
+  ],
+  "short_endings": {
+    "ar": [
+      "o",
+      "a",
+      "as",
+      "e",
+      "es"
+    ],
+    "er": [
+      "o",
+      "e",
+      "es",
+      "a",
+      "as"
+    ],
+    "ir": [
+      "o",
+      "e",
+      "es",
+      "a",
+      "as"
+    ]
+  },
+  "stats": {
+    "verbs_regular": 3727,
+    "verbs_near_regular": 191,
+    "verbs_weak_irregular": 185,
+    "verbs_irregular": 79,
+    "irregular_forms": 6509,
+    "prefix_rule_sets": 28,
+    "prefixed_targets": 1776,
+    "plural_rules": 17,
+    "plural_exceptions": 4150,
+    "gender_rules": 28,
+    "gender_whole_words": 36,
+    "gender_exceptions": 5861
+  }
+}
