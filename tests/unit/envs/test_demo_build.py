@@ -27,11 +27,12 @@ def _digest(root: Path) -> dict[str, str]:
 @pytest.mark.req("REQ-ENV-004")
 def test_rebuild_gives_identical_bytes(tmp_path):
     summary = build_demo(tmp_path)
-    for part in ("corpus", "vocab"):
+    for part in ("corpus", "vocab", "knowledge"):
         assert _digest(tmp_path / part) == _digest(DEMO / part), part
     manifest = json.loads((DEMO / "corpus" / "manifest.json").read_text(encoding="utf-8"))
     assert summary["build_id"] == manifest["build_id"] and manifest["l_max"] == 1024
     assert manifest["n_docs"] == 30
+    assert sorted(summary["knowledge"]) == sorted(p.name for p in (DEMO / "vocab").iterdir())
 
 
 @pytest.mark.fast

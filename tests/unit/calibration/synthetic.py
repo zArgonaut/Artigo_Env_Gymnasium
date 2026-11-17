@@ -32,47 +32,93 @@ class Guess:
     message: str | None = None
 
 
-def _span(token: Token, position: int, revealed: set[int]) -> str:
+def _span(
+    kind: str, token: Token, base: int, revealed: set[int], position: int, matched: bool
+) -> str:
+    offset = base + token.start
+    classes = "token" + (" guess-match" if matched else "")
     if position in revealed:
-        return f'<span class="token" data-token-length="{len(token.text)}">{token.text}</span>'
-    return f'<span class="token hidden" data-token-length="{len(token.text)}"></span>'
+        shown = token.text
+    else:
+        classes = "token obfuscated"
+        shown = "█" * len(token.text)
+    return (
+        f'<span id="token-{kind}-{offset}" data-token-length="{len(token.text)}" '
+        f'class="{classes}">{shown}</span>'
+    )
 
 
-def _line_html(line: str, start: int, revealed: set[int]) -> tuple[str, int]:
+def _line_html(
+    line: str, base: int, start: int, revealed: set[int], matched: set[int]
+) -> tuple[str, int]:
     tokens = tokenize(line)
     position = start
+    spans = [
+        _span("text", token, base, revealed, start + i, start + i in matched)
+        for i, token in enumerate(tokens)
+    ]
     if tokens and tokens[0].header:
-        spans = " ".join(_span(token, start + i, revealed) for i, token in enumerate(tokens))
-        return f"<h2>{spans}</h2>", start + len(tokens)
+        return f"<h2>{' '.join(spans)}</h2>", start + len(tokens)
     parts: list[str] = []
     cursor = 0
-    for token in tokens:
+    for token, span in zip(tokens, spans, strict=True):
         parts.append(html.escape(line[cursor : token.start]))
-        parts.append(_span(token, position, revealed))
+        parts.append(span)
         position += 1
         cursor = token.end
     parts.append(html.escape(line[cursor:]))
     return f"<p>{''.join(parts)}</p>", position
 
 
+def _row(label: str, status: str, value: str, selected: bool) -> str:
+    inner = (
+        f'<div class="{status} list-item-left">{html.escape(label)}</div>'
+        f'<div class="{status} list-item-right">{html.escape(value)}</div>'
+    )
+    css = "list-item Mui-selected" if selected else "list-item"
+    return f'<li><div class="{css}">{inner}</div></li>'
+
+
 def render_game(
-    title: str, text: str, revealed: set[int], counter: int, message: str | None
+    title: str,
+    text: str,
+    revealed: set[int],
+    rows: list[tuple[str, int]],
+    warning: tuple[str, str] | None = None,
+    matched: set[int] | None = None,
 ) -> str:
-    """The ``outerHTML`` of ``#game`` in the contract's structure."""
+    """The ``#root`` HTML in the real page's structure.
+
+    ``rows`` are the counted guesses (label, shown count), newest first; ``warning`` is the
+    transient (label, message) row; ``matched`` the positions carrying ``guess-match``.
+    """
+    matched = matched or set()
     title_tokens = tokenize(title)
-    title_html = " ".join(_span(token, i, revealed) for i, token in enumerate(title_tokens))
+    title_html = " ".join(
+        _span("title", token, 0, revealed, i, i in matched) for i, token in enumerate(title_tokens)
+    )
     position = len(title_tokens)
     body: list[str] = []
+    base = 0
     for line in text.split("\n"):
-        rendered, position = _line_html(line, position, revealed)
+        rendered, position = _line_html(line, base, position, revealed, matched)
         body.append(rendered)
+        base += len(line) + 1
+    count = len(rows)
+    items = [f"<li><span>{count} {'palpite' if count == 1 else 'palpites'}</span></li>"]
+    if warning is not None:
+        items.append(_row(warning[0], "guess-warning", warning[1], False))
+    for index, (label, shown) in enumerate(rows):
+        status = "guess-found" if shown else "guess-not-found"
+        items.append(_row(label, status, str(shown), index == 0))
     return (
-        '<div id="game">'
-        '<form id="guess-form"><input id="guess-input"><button type="submit">Enviar</button></form>'
-        f'<span id="guess-count">{counter}</span>'
-        f'<div id="message">{html.escape(message or "")}</div>'
-        f'<div id="article"><h1 id="title">{title_html}</h1>{"".join(body)}</div>'
-        "</div>"
+        '<div id="root"><div id="single-mode">'
+        f'<section id="app-text-section"><h1 id="article-title">{title_html}</h1>'
+        f'<div id="article-text">{"".join(body)}</div></section>'
+        '<div id="app-controls-section"><form><input id="guess-input">'
+        '<button type="button" title="Enviar"></button></form>'
+        f"<section><ul>{''.join(items)}</ul></section></div>"
+        "</div></div>"
     )
 
 
@@ -101,12 +147,13 @@ def build_session(
     emit("net.response", {"url": ARTICLE_URL, "status": 200, "headers": {}, "body_file": body_file})
 
     revealed: set[int] = set()
-    counter = 0
+    rows: list[tuple[str, int]] = []
+    matched: set[int] = set()
     snapshot_seq = emitted
     emit(
         "snapshot",
         {
-            "file": writer.save_snapshot(snapshot_seq, render_game(title, text, revealed, 0, None)),
+            "file": writer.save_snapshot(snapshot_seq, render_game(title, text, revealed, rows)),
             "reason": "load",
         },
     )
@@ -119,8 +166,13 @@ def build_session(
             )
         emit("dom.quiescent", {"after_ms": 300, "mutations": len(guess.reveal)})
         revealed.update(guess.reveal)
-        counter += int(guess.counted)
-        page = render_game(title, text, revealed, counter, guess.message)
+        warning = None
+        if guess.counted:
+            rows.insert(0, (guess.raw, len(guess.reveal)))
+            matched = set(guess.reveal)
+        else:
+            warning = (guess.raw, guess.message or "não conta")
+        page = render_game(title, text, revealed, rows, warning, matched)
         snapshot_seq = emitted
         emit("snapshot", {"file": writer.save_snapshot(snapshot_seq, page), "reason": "guess"})
     if complete:

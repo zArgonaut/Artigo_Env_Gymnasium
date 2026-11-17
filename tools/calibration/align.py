@@ -74,8 +74,46 @@ def _resync(
     return None
 
 
-def align(dom: Sequence[DomToken], tokens: Sequence[Token]) -> Alignment:
-    """Pair DOM elements with tokens in order, recording every divergence found."""
+def align_by_offset(dom: Sequence[DomToken], tokens: Sequence[Token], n_title: int) -> Alignment:
+    """Pair DOM elements with tokens through the character offset in the element id.
+
+    ``tokens`` is the unified list (title first, ``n_title`` title tokens). Every DOM element
+    must carry an ``offset``. Elements or tokens without a partner are ``count`` divergences.
+    """
+    by_offset = {(j < n_title, token.start): j for j, token in enumerate(tokens)}
+    pairs: list[tuple[int, int]] = []
+    divergences: list[Divergence] = []
+    used: set[int] = set()
+    for position, element in enumerate(dom):
+        j = by_offset.get((element.in_title, element.offset if element.offset is not None else -1))
+        if j is None:
+            where = "title" if element.in_title else "body"
+            detail = f"no token at {where} offset {element.offset}"
+            divergences.append(Divergence("count", element.index, None, detail))
+            continue
+        used.add(j)
+        pairs.append((position, j))
+        problem = _mismatch(element, tokens[j])
+        if problem is not None:
+            divergences.append(Divergence(problem[0], element.index, j, problem[1]))
+    for j, token in enumerate(tokens):
+        if j not in used:
+            where = "title" if j < n_title else "body"
+            detail = f"no dom element for {where} token at offset {token.start}"
+            divergences.append(Divergence("count", None, j, detail))
+    return Alignment(tuple(pairs), tuple(divergences))
+
+
+def align(
+    dom: Sequence[DomToken], tokens: Sequence[Token], n_title: int | None = None
+) -> Alignment:
+    """Pair DOM elements with tokens, recording every divergence found.
+
+    With ``n_title`` and element offsets the pairing is exact (by offset); otherwise elements
+    and tokens are paired in order with resynchronisation.
+    """
+    if n_title is not None and dom and all(element.offset is not None for element in dom):
+        return align_by_offset(dom, tokens, n_title)
     pairs: list[tuple[int, int]] = []
     divergences: list[Divergence] = []
     i = j = 0
@@ -116,6 +154,16 @@ def align(dom: Sequence[DomToken], tokens: Sequence[Token]) -> Alignment:
 
 
 def revealed_indices(before: Sequence[DomToken], after: Sequence[DomToken]) -> list[int]:
-    """Indices revealed in ``after`` that were not revealed in ``before``."""
+    """Indices fully revealed in ``after`` that were not fully revealed in ``before``."""
     already = {token.index for token in before if token.revealed}
     return [token.index for token in after if token.revealed and token.index not in already]
+
+
+def partial_indices(before: Sequence[DomToken], after: Sequence[DomToken]) -> list[int]:
+    """Indices that gained visible characters without becoming fully revealed."""
+    old = {token.index: token.mask for token in before}
+    return [
+        token.index
+        for token in after
+        if not token.revealed and token.mask & ~old.get(token.index, 0)
+    ]

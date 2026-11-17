@@ -8,12 +8,12 @@ import os
 from pathlib import Path
 from typing import Any
 
-from tools.calibration.align import revealed_indices
-from tools.calibration.dom import dom_tokens, read_counter, read_message
+from tools.calibration.align import partial_indices, revealed_indices
+from tools.calibration.dom import dom_tokens, read_guess_list
 from tools.calibration.segment import GuessSegment, segment_guesses
 from tools.calibration.session import RecordedSession, extract_article
 
-FIXTURE_VERSION = 1
+FIXTURE_VERSION = 2
 
 
 def sha256_text(value: str) -> str:
@@ -21,29 +21,60 @@ def sha256_text(value: str) -> str:
 
 
 def _expected(session: RecordedSession, segment: GuessSegment) -> dict[str, Any]:
+    """What the game showed for one guess, read from the snapshot taken after it.
+
+    ``count`` is the number the game shows in the guess list (0 for warnings), ``status`` the
+    row status (``found``, ``not-found`` or ``warning``), ``revealed_token_indices`` the tokens
+    that became fully visible (diff of the snapshots), ``partial_token_indices`` those that only
+    gained some visible characters (numeric guesses) and ``matched_token_indices`` every token
+    carrying the game's match class after the guess (including tokens already revealed, which
+    the shown count includes).
+    """
     unreliable = segment.overlapped or segment.quiescent_seq is None
-    if segment.snapshot_after is None or segment.snapshot_before is None:
-        # Without both snapshots nothing can be derived reliably.
+    if segment.snapshot_after is None:
         return {
             "counted": False,
             "count": 0,
             "revealed_token_indices": [],
+            "matched_token_indices": [],
+            "partial_token_indices": [],
             "message": None,
+            "status": None,
             "unreliable": True,
         }
-    before_html = session.read_snapshot(segment.snapshot_before)
     after_html = session.read_snapshot(segment.snapshot_after)
-    counter_before, counter_after = read_counter(before_html), read_counter(after_html)
-    revealed = revealed_indices(dom_tokens(before_html), dom_tokens(after_html))
+    after_list = read_guess_list(after_html)
+    after_tokens = dom_tokens(after_html)
+    newest = after_list.newest
+    if segment.snapshot_before is not None:
+        before_html = session.read_snapshot(segment.snapshot_before)
+        before_total = read_guess_list(before_html).total
+        before_tokens = dom_tokens(before_html)
+        revealed = revealed_indices(before_tokens, after_tokens)
+        partial = partial_indices(before_tokens, after_tokens)
+        counted = (
+            after_list.total > before_total
+            if after_list.total is not None and before_total is not None
+            else newest is not None and newest.status != "warning"
+        )
+    else:
+        # No snapshot precedes the guess (the page loaded after it was typed): the diff is
+        # unknown, the rest still comes from the guess list and the match class.
+        unreliable = True
+        counted = newest is not None and newest.status != "warning"
+        matched = [t.index for t in after_tokens if t.matched] if counted else []
+        revealed = [i for i in matched if after_tokens[i].revealed]
+        partial = [i for i in matched if not after_tokens[i].revealed]
     expected: dict[str, Any] = {
-        "counted": (
-            counter_before is not None
-            and counter_after is not None
-            and counter_after > counter_before
-        ),
-        "count": len(revealed),
+        "counted": counted,
+        "count": (newest.count or 0) if counted and newest is not None else 0,
         "revealed_token_indices": revealed,
-        "message": read_message(after_html),
+        "partial_token_indices": partial,
+        "matched_token_indices": [t.index for t in after_tokens if t.matched] if counted else [],
+        "message": newest.value if newest is not None and newest.status == "warning" else None,
+        "status": newest.status
+        if newest is not None and (counted or newest.status == "warning")
+        else None,
     }
     if unreliable:
         expected["unreliable"] = True

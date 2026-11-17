@@ -83,7 +83,10 @@ def session_dir(fake_game, tmp_path_factory) -> Path:
         # The test, not the recorder, drives the page.
         for number, guess in enumerate(GUESSES, start=1):
             await page.fill("#guess-input", guess)
-            await page.press("#guess-input", "Enter")
+            if number == len(GUESSES):  # the last guess goes through the send button
+                await page.click("button[title='Enviar']")
+            else:
+                await page.press("#guess-input", "Enter")
             deadline = time.monotonic() + 15
             while not _committed(out_root, number) and time.monotonic() < deadline:
                 await asyncio.sleep(0.1)
@@ -149,13 +152,13 @@ def test_order_after_a_guess_follows_the_contract(events):
 def test_snapshots_hold_the_game_state(session_dir, events):
     snapshots = [e for e in events if e["type"] == "snapshot"]
     load = (session_dir / snapshots[0]["payload"]["file"]).read_text(encoding="utf-8")
-    assert 'id="game"' in load
+    assert 'id="root"' in load and 'id="token-text-0"' in load
     assert 'data-token-length="5"' in load
     last_guess = [e for e in snapshots if e["payload"]["reason"] == "guess"][-1]
     html = (session_dir / last_guess["payload"]["file"]).read_text(encoding="utf-8")
     assert ">chuva<" in html
     counts = [e for e in events if e["type"] == "dom.mutation"]
-    assert any(e["payload"].get("target") == "#guess-count" for e in counts)
+    assert any(e["payload"].get("target") == "#guess-list" for e in counts)
 
 
 @pytest.mark.req("REQ-REC-004")

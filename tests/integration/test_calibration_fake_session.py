@@ -21,10 +21,42 @@ pytestmark = pytest.mark.slow
 # body repeats "guarda" at 3 and 15 and "chuva" at 4 and 16.
 GUESSES = ("chuva", "de", "chuva", "guarda")
 EXPECTED = [
-    {"counted": True, "count": 3, "revealed_token_indices": [1, 4, 16], "message": None},
-    {"counted": False, "count": 0, "revealed_token_indices": [], "message": "não conta"},
-    {"counted": False, "count": 0, "revealed_token_indices": [], "message": "já foi"},
-    {"counted": True, "count": 3, "revealed_token_indices": [0, 3, 15], "message": None},
+    {
+        "counted": True,
+        "count": 3,
+        "revealed_token_indices": [1, 4, 16],
+        "matched_token_indices": [1, 4, 16],
+        "partial_token_indices": [],
+        "message": None,
+        "status": "found",
+    },
+    {
+        "counted": False,
+        "count": 0,
+        "revealed_token_indices": [],
+        "matched_token_indices": [],
+        "partial_token_indices": [],
+        "message": "não conta",
+        "status": "warning",
+    },
+    {
+        "counted": False,
+        "count": 0,
+        "revealed_token_indices": [],
+        "matched_token_indices": [],
+        "partial_token_indices": [],
+        "message": "já foi",
+        "status": "warning",
+    },
+    {
+        "counted": True,
+        "count": 3,
+        "revealed_token_indices": [0, 3, 15],
+        "matched_token_indices": [0, 3, 15],
+        "partial_token_indices": [],
+        "message": None,
+        "status": "found",
+    },
 ]
 
 
@@ -65,7 +97,10 @@ def processed(tmp_path_factory):
         async def play(page) -> None:
             for number, guess in enumerate(GUESSES, start=1):
                 await page.fill("#guess-input", guess)
-                await page.press("#guess-input", "Enter")
+                if number == len(GUESSES):  # the last guess goes through the send button
+                    await page.click("button[title='Enviar']")
+                else:
+                    await page.press("#guess-input", "Enter")
                 deadline = time.monotonic() + 15
                 while _guess_screens(out_root) < number and time.monotonic() < deadline:
                     await asyncio.sleep(0.1)
@@ -94,7 +129,7 @@ def processed(tmp_path_factory):
 def test_recorded_session_becomes_the_expected_fixture(processed):
     session_dir, fixtures_dir, _, _ = processed
     fixture = json.loads((fixtures_dir / f"{session_dir.name}.json").read_text(encoding="utf-8"))
-    assert fixture["fixture_version"] == 1
+    assert fixture["fixture_version"] == 2
     assert fixture["calibration_version"] == "cal-test"
     assert fixture["bundle_hash"] == "0a1b2c3d"
     assert fixture["source_session"] == session_dir.name

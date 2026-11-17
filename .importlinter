@@ -18,3 +18,22 @@ layers =
     engine
     text
     core
+
+[importlinter:contract:selftest]
+name = Only the CLI imports the product self-test (selftest sits beside cli, above every layer)
+type = forbidden
+source_modules =
+    artigo_env.analysis
+    artigo_env.evaluation
+    artigo_env.agents
+    artigo_env.wrappers
+    artigo_env.envs
+    artigo_env.services
+    artigo_env.corpus
+    artigo_env.scenarios
+    artigo_env.synthetic
+    artigo_env.engine
+    artigo_env.text
+    artigo_env.core
+forbidden_modules =
+    artigo_env.selftest

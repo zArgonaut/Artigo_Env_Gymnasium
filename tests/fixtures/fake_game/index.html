@@ -5,16 +5,19 @@
   <title>Fake game</title>
 </head>
 <body>
-  <div id="game">
-    <form id="guess-form" autocomplete="off">
-      <input id="guess-input" name="guess" type="text">
-      <button type="submit">Enviar</button>
-    </form>
-    <span id="guess-count">0</span>
-    <div id="message"></div>
-    <div id="article">
-      <h1 id="title"></h1>
-      <div id="body"></div>
+  <div id="root">
+    <div id="single-mode">
+      <section id="app-text-section">
+        <h1 id="article-title"></h1>
+        <div id="article-text"></div>
+      </section>
+      <div id="app-controls-section">
+        <form autocomplete="off">
+          <input id="guess-input" type="text" placeholder="palpite uma palavra">
+          <button type="button" title="Enviar">Enviar</button>
+        </form>
+        <section id="guess-list"></section>
+      </div>
     </div>
   </div>
   <script src="/static/js/main.0a1b2c3d.js"></script>

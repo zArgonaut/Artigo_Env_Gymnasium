@@ -7,7 +7,7 @@ from typing import Any
 
 from tools.recorder.capture.storage import capture_storage
 from tools.recorder.events import make_event
-from tools.recorder.selectors import GAME_CONTAINER
+from tools.recorder.selectors import GAME_CONTAINER, READY
 from tools.recorder.writer import SessionWriter
 
 _OUTER_HTML = (
@@ -18,10 +18,14 @@ _BODY_HTML = "() => (document.body ? document.body.outerHTML : '')"
 
 
 async def wait_for_container(page: Any, timeout_s: float = 10.0) -> bool:
-    """Poll (read-only) until the game container exists; False on timeout."""
+    """Poll (read-only) until the article is rendered (first token present); False on timeout.
+
+    The container (``#root``) exists in the HTML shell before the app renders, so the first
+    token is the real readiness signal.
+    """
     deadline = asyncio.get_running_loop().time() + timeout_s
     while True:
-        if await page.evaluate("(s) => !!document.querySelector(s)", GAME_CONTAINER):
+        if await page.evaluate("(s) => !!document.querySelector(s)", READY):
             return True
         if asyncio.get_running_loop().time() >= deadline:
             return False
@@ -30,7 +34,7 @@ async def wait_for_container(page: Any, timeout_s: float = 10.0) -> bool:
 
 async def capture_snapshot(writer: SessionWriter, page: Any, reason: str) -> None:
     """Emit ``snapshot`` with the container's outerHTML (whole body if the container is absent,
-    which helps fixing the provisional selectors, LOCAL-REC-1)."""
+    which helps diagnosing a changed page structure)."""
     html = await page.evaluate(_OUTER_HTML, GAME_CONTAINER)
     if html is None:
         html = await page.evaluate(_BODY_HTML)

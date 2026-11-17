@@ -20,6 +20,20 @@ GUESSES = [
 ]
 
 
+def _expect(
+    counted: bool, count: int, revealed: list[int], message: str | None, status: str
+) -> dict[str, object]:
+    return {
+        "counted": counted,
+        "count": count,
+        "revealed_token_indices": revealed,
+        "matched_token_indices": revealed,
+        "partial_token_indices": [],
+        "message": message,
+        "status": status,
+    }
+
+
 def run_cli(session: Path, tmp_path: Path, version: str = "cal-v1") -> None:
     code = main(
         [
@@ -98,18 +112,18 @@ def test_load_fixtures_does_not_mix_versions(tmp_path: Path) -> None:
 def test_fixture_values_for_known_session(tmp_path: Path) -> None:
     session = load_session(build_session(tmp_path, GUESSES))
     fixture = build_fixture(session, "cal-v1")
-    assert fixture["fixture_version"] == 1
+    assert fixture["fixture_version"] == 2
     assert fixture["calibration_version"] == "cal-v1"
     assert fixture["bundle_hash"] == "0a1b2c3d"
     assert fixture["source_session"] == session.path.name
     assert [g["raw"] for g in fixture["guesses"]] == ["rio", "de", "rio", "vale", "zzz"]
     expected = [g["expected"] for g in fixture["guesses"]]
     assert expected == [
-        {"counted": True, "count": 3, "revealed_token_indices": [0, 3, 22], "message": None},
-        {"counted": False, "count": 0, "revealed_token_indices": [], "message": "não conta"},
-        {"counted": False, "count": 0, "revealed_token_indices": [], "message": "já foi"},
-        {"counted": True, "count": 2, "revealed_token_indices": [7, 19], "message": None},
-        {"counted": True, "count": 0, "revealed_token_indices": [], "message": None},
+        _expect(True, 3, [0, 3, 22], None, "found"),
+        _expect(False, 0, [], "não conta", "warning"),
+        _expect(False, 0, [], "já foi", "warning"),
+        _expect(True, 2, [7, 19], None, "found"),
+        _expect(True, 0, [], None, "not-found"),
     ]
     dumped = dump_fixture(fixture)
     assert dumped.endswith("}\n")

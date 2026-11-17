@@ -1,5 +1,5 @@
 // Passive page-side capture (REQ-REC-001). Prepended by session.py with:
-//   window.__artigoRecorderConfig = { gameContainer, guessInput, guessForm, quiescenceMs };
+//   window.__artigoRecorderConfig = { gameContainer, guessInput, guessForm, sendButton, quiescenceMs };
 // Observes input events and DOM mutations inside the game container and reports them through
 // the exposed binding window.__artigoRecorder(type, payload). It never changes the page.
 (() => {
@@ -67,11 +67,30 @@
     return el && typeof el.value === "string" ? el.value : "";
   }
 
+  let lastSubmit = { value: null, at: 0 };
+
+  function reportSubmit(value, target) {
+    lastSubmit = { value: value, at: performance.now() };
+    report("input.submit", { value: value, target: target });
+    // A guess opens a fresh quiet window: the next dom.quiescent must come after the page
+    // reacted to THIS guess (or after QUIESCENCE_MS without any reaction, for a miss), never
+    // from a timer armed by earlier, unrelated mutations.
+    restartQuietWindow();
+  }
+
   document.addEventListener(
     "click",
     (event) => {
       const el = event.target && event.target.nodeType === 1 ? event.target : null;
       report("input.click", { target: describe(el), text: truncate(el && el.textContent) });
+      // The real page's send button has type="button", so clicking it fires no submit event:
+      // the click itself is the guess (capture phase, before the page clears the field).
+      const button = el && el.closest && cfg.sendButton ? el.closest(cfg.sendButton) : null;
+      if (button) {
+        const field = guessField();
+        const value = inputValue(field) || lastGuessValue;
+        if (value.trim()) reportSubmit(value, describe(button));
+      }
     },
     true
   );
@@ -103,11 +122,10 @@
       if (form && cfg.guessInput && form.querySelector) field = form.querySelector(cfg.guessInput);
       if (!field) field = guessField();
       const value = field ? inputValue(field) : lastGuessValue;
-      report("input.submit", { value: value, target: describe(form) });
-      // A guess opens a fresh quiet window: the next dom.quiescent must come after the page
-      // reacted to THIS guess (or after QUIESCENCE_MS without any reaction, for a miss), never
-      // from a timer armed by earlier, unrelated mutations.
-      restartQuietWindow();
+      // The page may also submit programmatically right after a click on the send button,
+      // which was already reported: skip that duplicate.
+      if (lastSubmit.value === value && performance.now() - lastSubmit.at < 100) return;
+      reportSubmit(value, describe(form));
     },
     true
   );

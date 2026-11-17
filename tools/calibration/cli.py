@@ -10,6 +10,7 @@ from dataclasses import asdict
 from pathlib import Path
 
 from artigo_env.core.paths import data_path
+from artigo_env.text.tokenizer import tokenize
 from tools.calibration.align import align, article_tokens
 from tools.calibration.dom import dom_tokens
 from tools.calibration.fixtures import build_fixture, dump_fixture, store_article
@@ -39,7 +40,11 @@ def process(session_dir: Path, version: str, fixtures_dir: Path, calibration_roo
         raise SystemExit("error: the session has no recorded article response")
     title, text = article
     fixture = build_fixture(session, version)
-    alignment = align(dom_tokens(_first_snapshot_html(session)), article_tokens(title, text))
+    alignment = align(
+        dom_tokens(_first_snapshot_html(session)),
+        article_tokens(title, text),
+        n_title=len(tokenize(title)),
+    )
 
     version_dir = calibration_root / version
     store_article(title, text, version_dir)
@@ -78,3 +83,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         print(f"error: {error}", file=sys.stderr)
         return 1
     return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

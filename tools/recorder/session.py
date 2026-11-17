@@ -51,6 +51,7 @@ def build_init_script(config: RecorderConfig) -> str:
         "gameContainer": selectors.GAME_CONTAINER,
         "guessInput": selectors.GUESS_INPUT,
         "guessForm": selectors.GUESS_FORM,
+        "sendButton": selectors.SEND_BUTTON,
         "quiescenceMs": config.quiescence_ms,
     }
     prefix = f"window.__artigoRecorderConfig = {json.dumps(page_config)};\n"
@@ -142,6 +143,8 @@ async def _record(
             await page.goto(config.start_url)
 
             await wait_for_container(page)
+            # Wait for a quiet period after the article was rendered, not for an earlier one.
+            first_quiet.clear()
             with contextlib.suppress(TimeoutError):
                 await asyncio.wait_for(first_quiet.wait(), timeout=5.0)
             await capture(page, "load")

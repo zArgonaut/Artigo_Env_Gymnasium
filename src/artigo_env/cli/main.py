@@ -8,7 +8,9 @@ import sys
 from collections.abc import Sequence
 from typing import TextIO
 
-from artigo_env.cli import data, play, vocab
+from artigo_env.cli import data, knowledge, play, vocab
+from artigo_env.cli import eval as eval_cmd
+from artigo_env.cli import selftest as selftest_cmd
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -19,6 +21,9 @@ def build_parser() -> argparse.ArgumentParser:
     play.add_parser(subparsers)
     data.add_parser(subparsers)
     vocab.add_parser(subparsers)
+    eval_cmd.add_parser(subparsers)
+    selftest_cmd.add_parser(subparsers)
+    knowledge.add_parser(subparsers)
     return parser
 
 

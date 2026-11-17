@@ -64,14 +64,15 @@ def build_report(session: RecordedSession, alignment: Alignment, fixture: dict[s
         "",
         "## Palpites",
         "",
-        "| Índice | Palpite | Contou | Quantidade | Mensagem | Não confiável |",
-        "|---|---|---|---|---|---|",
+        "| Índice | Palpite | Contou | Quantidade | Estado | Mensagem | Não confiável |",
+        "|---|---|---|---|---|---|---|",
     ]
     for index, guess in enumerate(fixture["guesses"]):
         expected = guess["expected"]
         lines.append(
             f"| {index} | {_cell(guess['raw'])} | {'sim' if expected['counted'] else 'não'} "
-            f"| {expected['count']} | {_optional(expected['message'])} "
+            f"| {expected['count']} | {_optional(expected['status'])} "
+            f"| {_optional(expected['message'])} "
             f"| {'sim' if expected.get('unreliable') else 'não'} |"
         )
     return "\n".join(lines) + "\n"

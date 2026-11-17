@@ -13,10 +13,12 @@ writes, below ``DIR`` (default ``src/artigo_env/assets/demo``):
 - ``vocab/<vocab_id>/``: one vocabulary per ruleset preset (the vocabulary id includes the
   ruleset hash, so presets that share a lemmatizer still get distinct artifacts), each with the
   observation map of the demo build already cached under ``maps/<build_id>/`` so an installed
-  (read-only) package never has to write it.
+  (read-only) package never has to write it;
+- ``knowledge/<knowledge_id>/``: one minimal knowledge store per vocabulary (``X->W``, regime
+  ``open``), built from the ``demo`` partition.
 
 The output is byte-identical for the same inputs and library versions; the tool deletes and
-rewrites ``corpus/`` and ``vocab/`` on every run.
+rewrites ``corpus/``, ``vocab/`` and ``knowledge/`` on every run.
 """
 
 from __future__ import annotations
@@ -35,7 +37,8 @@ from artigo_env.corpus.store import CorpusStore, CorpusWriter
 from artigo_env.corpus.store.writer import FORMAT_VERSION
 from artigo_env.corpus.types import DOC_SCHEMA, Row
 from artigo_env.corpus.vocab import VocabConfig, build_vocab, map_store
-from artigo_env.engine.rulesets import PRESETS, get_ruleset
+from artigo_env.engine.rulesets import PRESETS, Ruleset, get_ruleset
+from artigo_env.services.knowledge_build import build_knowledge
 from artigo_env.text.guess import clean_guess
 from artigo_env.text.lemmatizers import get_lemmatizer
 from artigo_env.text.normalize import lower, normalize
@@ -156,21 +159,38 @@ def build_vocabularies(corpus_dir: Path, vocab_root: Path) -> dict[str, str]:
     return ids
 
 
+def build_knowledge_stores(
+    corpus_dir: Path, vocab_root: Path, knowledge_root: Path
+) -> dict[str, str]:
+    """One knowledge store per packaged vocabulary; vocab id -> knowledge id."""
+    ids: dict[str, str] = {}
+    with CorpusStore.open(corpus_dir) as store:
+        for manifest in sorted(vocab_root.glob("*/manifest.json")):
+            with Vocabulary.open(manifest.parent) as vocab:
+                ruleset = Ruleset.from_dict(vocab.manifest["ruleset"])
+                path = build_knowledge(store, ruleset, vocab, knowledge_root)
+                ids[vocab.vocab_id] = path.name
+    return ids
+
+
 def build_demo(out: Path, source_path: Path | None = None) -> dict[str, Any]:
-    """Rebuild ``out/corpus`` and ``out/vocab``; returns a summary."""
+    """Rebuild ``out/corpus``, ``out/vocab`` and ``out/knowledge``; returns a summary."""
     source_path = source_path or DEMO_DIR / "articles.jsonl"
     out = Path(out)
     corpus_dir = out / "corpus"
     vocab_root = out / "vocab"
-    for directory in (corpus_dir, vocab_root):
+    knowledge_root = out / "knowledge"
+    for directory in (corpus_dir, vocab_root, knowledge_root):
         if directory.exists():
             shutil.rmtree(directory)
     out.mkdir(parents=True, exist_ok=True)
     build_id = build_corpus(source_path, corpus_dir)
     vocabs = build_vocabularies(corpus_dir, vocab_root)
-    files = [p for d in (corpus_dir, vocab_root) for p in d.rglob("*") if p.is_file()]
+    knowledge = build_knowledge_stores(corpus_dir, vocab_root, knowledge_root)
+    parts = (corpus_dir, vocab_root, knowledge_root)
+    files = [p for d in parts for p in d.rglob("*") if p.is_file()]
     size = sum(p.stat().st_size for p in files)
-    return {"build_id": build_id, "vocabularies": vocabs, "bytes": size}
+    return {"build_id": build_id, "vocabularies": vocabs, "knowledge": knowledge, "bytes": size}
 
 
 def main(argv: list[str] | None = None) -> int:
