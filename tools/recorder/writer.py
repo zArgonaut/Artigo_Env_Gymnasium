@@ -1,7 +1,10 @@
 """Session writer: one folder per recording session, tolerant to interruption (REQ-REC-006).
 
-``events.jsonl`` is append-only and flushed to disk per event, so a killed process loses at most
-a partially written last line (ignored by :func:`read_events`). Every other file is written to
+``events.jsonl`` is append-only and flushed per event (a killed process loses at most a partially
+written last line, ignored by :func:`read_events`); it is fsynced at most every ``FSYNC_EVERY_S``
+seconds and on close. An fsync per event costs about 30 ms on Windows, which saturated the
+event loop during DOM bursts: captures queued behind the backlog and snapshots arrived minutes
+late (see the 2026-11-18 session). Every other file is written to
 a temporary name and renamed.
 """
 
@@ -22,6 +25,7 @@ RECORDER_VERSION = "0.1.0"
 MODES = ("daily", "random", "history", "free")
 EVENTS_FILE = "events.jsonl"
 META_FILE = "meta.json"
+FSYNC_EVERY_S = 0.25
 
 
 def _atomic_write(path: Path, data: bytes) -> None:
@@ -50,6 +54,7 @@ class SessionWriter:
         self._monotonic = monotonic
         self._origin = monotonic()
         self._seq = 0
+        self._last_sync = monotonic()
         started = now()
         self.path = root / f"{started.strftime('%Y-%m-%d_%H%M%S')}_{mode}"
         for name in ("bodies", "snapshots", "screens"):
@@ -98,7 +103,9 @@ class SessionWriter:
         }
         self._events.write(json.dumps(record, ensure_ascii=False) + "\n")
         self._events.flush()
-        os.fsync(self._events.fileno())
+        if self._monotonic() - self._last_sync >= FSYNC_EVERY_S:
+            os.fsync(self._events.fileno())
+            self._last_sync = self._monotonic()
         return seq
 
     def save_body(self, seq: int, data: bytes, ext: str, *, textual: bool = True) -> str:
@@ -123,6 +130,8 @@ class SessionWriter:
         """Mark the session as complete."""
         if self._events.closed:
             return
+        self._events.flush()
+        os.fsync(self._events.fileno())
         self._events.close()
         self.write_meta(
             ended_at=self._now().astimezone().isoformat(timespec="seconds"),

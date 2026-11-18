@@ -62,6 +62,7 @@ GUESS_NOT_FOUND_CLASS = "guess-not-found"
 GUESS_WARNING_CLASS = "guess-warning"
 GUESS_SELECTED_CLASS = "Mui-selected"
 GUESS_HEADER_PATTERN = r"(\d+)\s+palpites?"
+GUESS_ROW_HEIGHT = 40  # px; rows are absolutely positioned at ``top = index * 40px``
 
 # The recorder waits for this element (the first token) before the "load" snapshot.
 READY = f"{ARTICLE_TEXT} {TOKEN}"

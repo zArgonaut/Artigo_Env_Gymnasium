@@ -206,3 +206,21 @@ def test_bodies_and_snapshots_are_redacted_on_disk(writer):
 @pytest.mark.req("REQ-REC-002")
 def test_redacted_event_type_is_exported():
     assert isinstance(make_event("console", {"level": "log", "text": "x"}), RedactedEvent)
+
+
+@pytest.mark.req("REQ-REC-006")
+def test_events_are_flushed_per_event_but_fsynced_in_batches(tmp_path, monkeypatch):
+    # An fsync per event (about 30 ms on Windows) saturated the event loop during DOM bursts.
+    import os
+
+    synced: list[int] = []
+    monkeypatch.setattr(os, "fsync", lambda fd: synced.append(fd))
+    clock = [0.0]
+    writer = SessionWriter(tmp_path, "free", monotonic=lambda: clock[0])
+    for _ in range(50):
+        writer.emit(make_event("input.key", {"code": "KeyA"}))
+        clock[0] += 0.01
+    assert len(synced) < 5
+    assert len(read_events(writer.path)) == 50  # flushed, readable while still open
+    writer.close(0)
+    assert synced  # the close syncs the tail

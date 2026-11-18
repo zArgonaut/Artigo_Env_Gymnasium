@@ -56,6 +56,7 @@ class GuessEntry:
     status: GuessStatus
     value: str
     selected: bool
+    index: int = 1  # row position in the list: 0 is the header, 1 the newest row
 
     @property
     def count(self) -> int | None:
@@ -69,11 +70,22 @@ class GuessList:
 
     total: int | None
     entries: tuple[GuessEntry, ...]
+    container_rows: int | None = None  # rows the list holds (header and warning included)
 
     @property
     def newest(self) -> GuessEntry | None:
-        """The first row after the header: the latest guess or warning."""
-        return self.entries[0] if self.entries else None
+        """The row right after the header (list position 1): the latest guess or warning.
+
+        ``None`` when that row is not in the DOM (a scrolled list): the first rendered row
+        would then be an older guess and must never be mistaken for the newest one.
+        """
+        first = self.entries[0] if self.entries else None
+        return first if first is not None and first.index == 1 else None
+
+    @property
+    def has_warning(self) -> bool:
+        """True when the transient warning row (list position 1) is shown."""
+        return any(entry.index == 1 and entry.status == "warning" for entry in self.entries)
 
 
 @dataclass
@@ -102,6 +114,16 @@ class _Row:
     right: list[str] = field(default_factory=list)
     status: GuessStatus | None = None
     selected: bool = False
+    top: int | None = None
+
+
+_TOP = re.compile(r"(?:^|;)\s*top:\s*(\d+(?:\.\d+)?)px")
+_CONTAINER_HEIGHT = re.compile(r'<section[^>]*>\s*<div\s+style="[^"]*?height:\s*(\d+)px')
+
+
+def _row_top(style: str) -> int | None:
+    found = _TOP.search(style)
+    return round(float(found.group(1))) // selectors.GUESS_ROW_HEIGHT if found else None
 
 
 class _Parser(HTMLParser):
@@ -134,7 +156,7 @@ class _Parser(HTMLParser):
                 )
                 frame.token = len(self.records) - 1
         if tag == selectors.GUESS_ROW_TAG:
-            self.rows.append(_Row())
+            self.rows.append(_Row(top=_row_top(values.get("style", ""))))
             frame.row = len(self.rows) - 1
         self._open_row(frame, classes)
         self._stack.append(frame)
@@ -209,11 +231,16 @@ def dom_tokens(snapshot_html: str) -> list[DomToken]:
 
 
 def read_guess_list(snapshot_html: str) -> GuessList:
-    """Header total and guess rows present in the snapshot (the list is virtualized, so rows
-    scrolled out of view are absent; the header total still counts every counted guess)."""
+    """Header total and guess rows present in the snapshot.
+
+    The list is virtualized: rows scrolled out of view are absent (the header too), so every
+    row keeps its position (``top / 40`` when the page gives it, else the DOM order). The header
+    total still counts every counted guess when it is present.
+    """
     total: int | None = None
     entries: list[GuessEntry] = []
-    for row in _parse(snapshot_html).rows:
+    for position, row in enumerate(_parse(snapshot_html).rows):
+        index = row.top if row.top is not None else position
         if row.status is not None:
             entries.append(
                 GuessEntry(
@@ -221,10 +248,14 @@ def read_guess_list(snapshot_html: str) -> GuessList:
                     status=row.status,
                     value="".join(row.right).strip(),
                     selected=row.selected,
+                    index=index,
                 )
             )
             continue
         header = _HEADER.match(" ".join("".join(row.parts).split()))
         if header is not None:
             total = int(header.group(1))
-    return GuessList(total, tuple(entries))
+    entries.sort(key=lambda entry: entry.index)
+    height = _CONTAINER_HEIGHT.search(snapshot_html)
+    rows = int(height.group(1)) // selectors.GUESS_ROW_HEIGHT if height else None
+    return GuessList(total, tuple(entries), rows)

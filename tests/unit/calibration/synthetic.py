@@ -70,13 +70,19 @@ def _line_html(
     return f"<p>{''.join(parts)}</p>", position
 
 
-def _row(label: str, status: str, value: str, selected: bool) -> str:
+def _style(top: int | None) -> str:
+    if top is None:
+        return ""
+    return f' style="position: absolute; left: 0px; top: {top * 40}px; height: 40px; width: 100%;"'
+
+
+def _row(label: str, status: str, value: str, selected: bool, top: int | None = None) -> str:
     inner = (
         f'<div class="{status} list-item-left">{html.escape(label)}</div>'
         f'<div class="{status} list-item-right">{html.escape(value)}</div>'
     )
     css = "list-item Mui-selected" if selected else "list-item"
-    return f'<li><div class="{css}">{inner}</div></li>'
+    return f'<li{_style(top)}><div class="{css}">{inner}</div></li>'
 
 
 def render_game(
@@ -86,11 +92,16 @@ def render_game(
     rows: list[tuple[str, int]],
     warning: tuple[str, str] | None = None,
     matched: set[int] | None = None,
+    *,
+    positioned: bool = False,
+    scroll: int = 0,
 ) -> str:
     """The ``#root`` HTML in the real page's structure.
 
-    ``rows`` are the counted guesses (label, shown count), newest first; ``warning`` is the
-    transient (label, message) row; ``matched`` the positions carrying ``guess-match``.
+    ``rows`` are the counted guesses (label, shown count), newest first, prior history last;
+    ``warning`` is the transient (label, message) row; ``matched`` the positions carrying
+    ``guess-match``. ``positioned`` gives every row the absolute ``top`` of the virtualized list
+    and ``scroll`` drops that many leading list items (header first), as a scrolled list does.
     """
     matched = matched or set()
     title_tokens = tokenize(title)
@@ -105,21 +116,44 @@ def render_game(
         body.append(rendered)
         base += len(line) + 1
     count = len(rows)
-    items = [f"<li><span>{count} {'palpite' if count == 1 else 'palpites'}</span></li>"]
+    header = f"{count} {'palpite' if count == 1 else 'palpites'}"
+    items = [f"<li{_style(0 if positioned else None)}><span>{header}</span></li>"]
     if warning is not None:
-        items.append(_row(warning[0], "guess-warning", warning[1], False))
+        items.append(
+            _row(warning[0], "guess-warning", warning[1], False, 1 if positioned else None)
+        )
+    first = len(items)
     for index, (label, shown) in enumerate(rows):
         status = "guess-found" if shown else "guess-not-found"
-        items.append(_row(label, status, str(shown), index == 0))
+        top = first + index if positioned else None
+        items.append(_row(label, status, str(shown), index == 0, top))
+    items = items[scroll:]
+    inner = "".join(items)
+    if positioned:
+        height = 40 * (count + 1 + (warning is not None))
+        inner = f'<div style="height: {height}px; width: 100%;">{inner}</div>'
+        listing = f'<section style="position: relative; height: 720px;">{inner}</section>'
+    else:
+        listing = f"<section><ul>{inner}</ul></section>"
     return (
         '<div id="root"><div id="single-mode">'
         f'<section id="app-text-section"><h1 id="article-title">{title_html}</h1>'
         f'<div id="article-text">{"".join(body)}</div></section>'
         '<div id="app-controls-section"><form><input id="guess-input">'
         '<button type="button" title="Enviar"></button></form>'
-        f"<section><ul>{''.join(items)}</ul></section></div>"
+        f"{listing}</div>"
         "</div></div>"
     )
+
+
+def token_ids(title: str, text: str) -> list[tuple[str, Token]]:
+    """Element id and token of every unified position (title first)."""
+    found = [(f"token-title-{token.start}", token) for token in tokenize(title)]
+    base = 0
+    for line in text.split("\n"):
+        found += [(f"token-text-{base + token.start}", token) for token in tokenize(line)]
+        base += len(line) + 1
+    return found
 
 
 def build_session(
@@ -130,15 +164,47 @@ def build_session(
     text: str = TEXT,
     mode: str = "free",
     complete: bool = True,
+    positioned: bool = False,
+    snapshots: str = "each",
+    scroll_at: dict[int, int] | None = None,
+    token_events: bool = False,
+    prior: tuple[tuple[str, int], ...] = (),
 ) -> Path:
-    """Record ``guesses`` through the real writer and return the session folder."""
+    """Record ``guesses`` through the real writer and return the session folder.
+
+    ``positioned`` renders the list like the real virtualized one (rows with ``top``);
+    ``snapshots="last"`` takes no snapshot per guess, only one after the last (a recorder that
+    lagged behind the page); ``scroll_at`` maps a guess index to the number of leading list
+    items missing from its snapshot; ``token_events`` makes the mutations carry the token ids
+    and the shown text as the real page does; ``prior`` are the (label, count) rows the game
+    already holds when the page loads (oldest last), stored in ``localStorage`` too.
+    """
     writer = SessionWriter(root, mode, now=lambda: datetime(2026, 11, 12, 21, 3, 1))
     emitted = 0
+    scroll_at = scroll_at or {}
 
     def emit(kind: str, payload: dict[str, object]) -> int:
         nonlocal emitted
         emitted += 1
         return writer.emit(make_event(kind, payload))
+
+    def page_html(
+        revealed: set[int],
+        rows: list[tuple[str, int]],
+        warning: tuple[str, str] | None,
+        matched: set[int],
+        scroll: int = 0,
+    ) -> str:
+        return render_game(
+            title,
+            text,
+            revealed,
+            [*rows, *prior],
+            warning,
+            matched,
+            positioned=positioned,
+            scroll=scroll,
+        )
 
     writer.write_meta(bundle_hash="0a1b2c3d")
     emit("session.start", {"url": "https://artigo.app/", "mode": mode})
@@ -149,32 +215,82 @@ def build_session(
     revealed: set[int] = set()
     rows: list[tuple[str, int]] = []
     matched: set[int] = set()
+    ids = token_ids(title, text)
     snapshot_seq = emitted
     emit(
         "snapshot",
         {
-            "file": writer.save_snapshot(snapshot_seq, render_game(title, text, revealed, rows)),
+            "file": writer.save_snapshot(snapshot_seq, page_html(revealed, rows, None, matched)),
             "reason": "load",
         },
     )
-    for guess in guesses:
+    if prior:
+        games = {
+            mode: {"guesses": {label: {"matchCount": shown} for label, shown in reversed(prior)}}
+        }
+        state = json.dumps({"games": json.dumps({"current": None, "list": games})})
+        emit("storage", {"items": {"persist:root": state}, "reason": "load"})
+
+    def snapshot(index: int) -> None:
+        page = page_html(revealed, rows, warning, matched, scroll_at.get(index, 0))
+        seq = emitted
+        emit("snapshot", {"file": writer.save_snapshot(seq, page), "reason": "guess"})
+
+    warning: tuple[str, str] | None = None
+    for index, guess in enumerate(guesses):
         emit("input.submit", {"value": guess.raw, "target": "#guess-form"})
+        previous = matched
+        matched = set(guess.reveal) if guess.counted else matched
         for position in guess.reveal:
-            emit(
-                "dom.mutation",
-                {"kind": "attributes", "target": f"span.token:nth-of-type({position + 1})"},
-            )
+            if token_events:
+                token_id, token = ids[position]
+                emit(
+                    "dom.mutation",
+                    {
+                        "kind": "attributes",
+                        "target": f"#{token_id}",
+                        "attribute": "class",
+                        "old": "token",
+                        "new": "token guess-match",
+                    },
+                )
+                emit(
+                    "dom.mutation",
+                    {
+                        "kind": "childList",
+                        "target": f"#{token_id}",
+                        "added": [f"#text:{token.text}"],
+                        "removed": ["#text:" + "█" * len(token.text)],
+                    },
+                )
+            else:
+                emit(
+                    "dom.mutation",
+                    {"kind": "attributes", "target": f"span.token:nth-of-type({position + 1})"},
+                )
+        if token_events and guess.counted:
+            for position in previous - matched:
+                emit(
+                    "dom.mutation",
+                    {
+                        "kind": "attributes",
+                        "target": f"#{ids[position][0]}",
+                        "attribute": "class",
+                        "old": "token guess-match",
+                        "new": "token",
+                    },
+                )
         emit("dom.quiescent", {"after_ms": 300, "mutations": len(guess.reveal)})
         revealed.update(guess.reveal)
         warning = None
         if guess.counted:
             rows.insert(0, (guess.raw, len(guess.reveal)))
-            matched = set(guess.reveal)
         else:
             warning = (guess.raw, guess.message or "não conta")
-        page = render_game(title, text, revealed, rows, warning, matched)
-        snapshot_seq = emitted
-        emit("snapshot", {"file": writer.save_snapshot(snapshot_seq, page), "reason": "guess"})
+        if snapshots == "each":
+            snapshot(index)
+    if snapshots == "last":
+        snapshot(len(guesses) - 1)
     if complete:
         emit("session.end", {"reason": "window-closed"})
         writer.close(len(guesses))

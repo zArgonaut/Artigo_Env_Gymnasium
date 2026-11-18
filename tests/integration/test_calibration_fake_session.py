@@ -129,12 +129,14 @@ def processed(tmp_path_factory):
 def test_recorded_session_becomes_the_expected_fixture(processed):
     session_dir, fixtures_dir, _, _ = processed
     fixture = json.loads((fixtures_dir / f"{session_dir.name}.json").read_text(encoding="utf-8"))
-    assert fixture["fixture_version"] == 2
+    assert fixture["fixture_version"] == 3
+    assert fixture["prior_guesses"] == []
     assert fixture["calibration_version"] == "cal-test"
     assert fixture["bundle_hash"] == "0a1b2c3d"
     assert fixture["source_session"] == session_dir.name
     assert [guess["raw"] for guess in fixture["guesses"]] == list(GUESSES)
-    assert [guess["expected"] for guess in fixture["guesses"]] == EXPECTED
+    expected = [{**item, "label": raw} for item, raw in zip(EXPECTED, GUESSES, strict=True)]
+    assert [guess["expected"] for guess in fixture["guesses"]] == expected
 
 
 @pytest.mark.req("REQ-REC-001")

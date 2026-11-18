@@ -5,80 +5,136 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
 from tools.calibration.align import partial_indices, revealed_indices
-from tools.calibration.dom import dom_tokens, read_guess_list
+from tools.calibration.dom import DomToken, dom_tokens
+from tools.calibration.effects import TokenEffects, replay_effects
+from tools.calibration.outcomes import (
+    ListObservation,
+    Outcome,
+    clean_label,
+    observations,
+    read_outcomes,
+    read_prior_guesses,
+)
 from tools.calibration.segment import GuessSegment, segment_guesses
 from tools.calibration.session import RecordedSession, extract_article
 
-FIXTURE_VERSION = 2
+FIXTURE_VERSION = 3
 
 
 def sha256_text(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
-def _expected(session: RecordedSession, segment: GuessSegment) -> dict[str, Any]:
-    """What the game showed for one guess, read from the snapshot taken after it.
+_EMPTY: dict[str, Any] = {
+    "counted": False,
+    "count": 0,
+    "revealed_token_indices": [],
+    "matched_token_indices": [],
+    "partial_token_indices": [],
+    "message": None,
+    "status": None,
+}
 
-    ``count`` is the number the game shows in the guess list (0 for warnings), ``status`` the
-    row status (``found``, ``not-found`` or ``warning``), ``revealed_token_indices`` the tokens
-    that became fully visible (diff of the snapshots), ``partial_token_indices`` those that only
-    gained some visible characters (numeric guesses) and ``matched_token_indices`` every token
-    carrying the game's match class after the guess (including tokens already revealed, which
-    the shown count includes).
-    """
-    unreliable = segment.overlapped or segment.quiescent_seq is None
-    if segment.snapshot_after is None:
-        return {
-            "counted": False,
-            "count": 0,
-            "revealed_token_indices": [],
-            "matched_token_indices": [],
-            "partial_token_indices": [],
-            "message": None,
-            "status": None,
-            "unreliable": True,
-        }
-    after_html = session.read_snapshot(segment.snapshot_after)
-    after_list = read_guess_list(after_html)
-    after_tokens = dom_tokens(after_html)
-    newest = after_list.newest
-    if segment.snapshot_before is not None:
-        before_html = session.read_snapshot(segment.snapshot_before)
-        before_total = read_guess_list(before_html).total
-        before_tokens = dom_tokens(before_html)
-        revealed = revealed_indices(before_tokens, after_tokens)
-        partial = partial_indices(before_tokens, after_tokens)
-        counted = (
-            after_list.total > before_total
-            if after_list.total is not None and before_total is not None
-            else newest is not None and newest.status != "warning"
+
+def _snapshot_tokens(
+    session: RecordedSession,
+    items: Sequence[ListObservation],
+    segment: GuessSegment,
+    outcome: Outcome,
+    *,
+    after: bool,
+) -> list[DomToken] | None:
+    """Tokens of the snapshot that shows the page right after (or before) ``segment``, chosen by
+    its guess list (the header total, and for ``after`` the newest row), never by position."""
+    total = outcome.total_after
+    if total is None:
+        return None
+    if not after:
+        total -= 1 if outcome.counted else 0
+    for item in reversed(items) if not after else items:
+        if (item.seq > segment.submit_seq) != after:
+            continue
+        newest = item.guess_list.newest
+        right_total = item.guess_list.total == total
+        right_row = not after or (newest is not None and clean_label(newest.label) == outcome.label)
+        if right_total and right_row:
+            return dom_tokens(session.read_snapshot(item.file))
+    return None
+
+
+def _effects(
+    session: RecordedSession,
+    items: Sequence[ListObservation],
+    segment: GuessSegment,
+    outcome: Outcome,
+    replayed: TokenEffects | None,
+) -> tuple[dict[str, list[int]], str | None]:
+    """Token effects of a counted guess: from the mutation stream, else from snapshots."""
+    if replayed is not None and replayed.touched > 0:
+        return (
+            {
+                "revealed_token_indices": list(replayed.revealed),
+                "partial_token_indices": list(replayed.partial),
+                "matched_token_indices": list(replayed.matched),
+            },
+            None,
         )
-    else:
-        # No snapshot precedes the guess (the page loaded after it was typed): the diff is
-        # unknown, the rest still comes from the guess list and the match class.
-        unreliable = True
-        counted = newest is not None and newest.status != "warning"
-        matched = [t.index for t in after_tokens if t.matched] if counted else []
-        revealed = [i for i in matched if after_tokens[i].revealed]
-        partial = [i for i in matched if not after_tokens[i].revealed]
-    expected: dict[str, Any] = {
-        "counted": counted,
-        "count": (newest.count or 0) if counted and newest is not None else 0,
-        "revealed_token_indices": revealed,
-        "partial_token_indices": partial,
-        "matched_token_indices": [t.index for t in after_tokens if t.matched] if counted else [],
-        "message": newest.value if newest is not None and newest.status == "warning" else None,
-        "status": newest.status
-        if newest is not None and (counted or newest.status == "warning")
-        else None,
-    }
-    if unreliable:
-        expected["unreliable"] = True
-    return expected
+    before = _snapshot_tokens(session, items, segment, outcome, after=False)
+    after = _snapshot_tokens(session, items, segment, outcome, after=True)
+    if before is None or after is None:
+        return {}, "token effects were not observed"
+    return (
+        {
+            "revealed_token_indices": revealed_indices(before, after),
+            "partial_token_indices": partial_indices(before, after),
+            "matched_token_indices": [t.index for t in after if t.matched],
+        },
+        None,
+    )
+
+
+def _expectations(
+    session: RecordedSession, segments: Sequence[GuessSegment], prior: Sequence[str]
+) -> tuple[list[dict[str, Any]], int]:
+    """The expected outcome of every guess, and the number of guesses the list held at load."""
+    items = observations(session)
+    first_total = items[0].guess_list.total if items else None
+    initial_total = first_total if first_total is not None else len(prior)
+    outcomes = read_outcomes(segments, items, initial_total)
+    first_html = next(
+        (session.read_snapshot(item.file) for item in items), ""
+    )  # the load snapshot: token state before any guess
+    initial = dom_tokens(first_html)
+    replayed = replay_effects(initial, session.events, len(segments))
+    seen: set[str] = set()
+    expectations: list[dict[str, Any]] = []
+    for index, (segment, outcome) in enumerate(zip(segments, outcomes, strict=True)):
+        expected: dict[str, Any] = {**_EMPTY, "label": outcome.label}
+        reason = outcome.reason
+        if reason is None:
+            expected["counted"] = outcome.counted
+            expected["status"] = outcome.status
+            expected["count"] = outcome.count
+            expected["message"] = outcome.message
+            if outcome.counted and outcome.count > 0:
+                effects, reason = _effects(
+                    session, items, segment, outcome, replayed[index] if replayed else None
+                )
+                expected.update(effects)
+            if outcome.message == "já foi" and outcome.label not in seen:
+                expected["prior_history"] = True  # repeat of a guess made in an earlier game
+            if outcome.counted and outcome.label is not None:
+                seen.add(outcome.label)
+        if reason is not None:
+            expected["unreliable"] = True
+            expected["reason"] = reason
+        expectations.append(expected)
+    return expectations, initial_total
 
 
 def build_fixture(session: RecordedSession, calibration_version: str) -> dict[str, Any]:
@@ -87,15 +143,20 @@ def build_fixture(session: RecordedSession, calibration_version: str) -> dict[st
     if article is None:
         raise ValueError("the session has no recorded article response")
     title, text = article
+    segments = segment_guesses(session.events)
+    prior = read_prior_guesses(session)
+    expectations, prior_total = _expectations(session, segments, prior)
     return {
         "fixture_version": FIXTURE_VERSION,
         "calibration_version": calibration_version,
         "bundle_hash": session.meta.get("bundle_hash"),
         "source_session": session.path.name,
         "article_ref": {"sha256": sha256_text(text), "title_sha256": sha256_text(title)},
+        "prior_guesses": prior,
+        "prior_total": prior_total,
         "guesses": [
-            {"raw": segment.raw, "expected": _expected(session, segment)}
-            for segment in segment_guesses(session.events)
+            {"raw": segment.raw, "expected": expected}
+            for segment, expected in zip(segments, expectations, strict=True)
         ],
     }
 
